@@ -8,7 +8,7 @@
 
 * ルートのフォルダ・ファイル構成
 
-  ```text
+```text
 terraform-work1
  ∟ .terrtaform - init 時に作成される Provider がダウンロードされるフォルダ
  ∟ image - readme の画像ファイルを格納するフォルダ
@@ -18,7 +18,7 @@ terraform-work1
  ∟ terraform.tfstate - terraform apply 時に作成された tfstate ファイル
  ∟ work1-readme.html - Markdown を HTML 化したファイル
  ∟ README.md - この Markdown ファイル
-  ```
+```
 
 ---
 

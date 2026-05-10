@@ -10,7 +10,7 @@ work6 では「3. aztfexport を使用する」を検証します。
 
 * ルートのフォルダ・ファイル構成
 
-  ```text
+```text
 terraform-work6
  ∟ aztfexportfiles - aztfexport を実行した作業ディレクトリ
   ∟ .terrtaform - init 時に作成される Provider がダウンロードされるフォルダ
@@ -26,7 +26,7 @@ terraform-work6
  ∟ tfstate - リモートバックエンドからダウンロードした tfstate ファイル
  ∟ work6-readme.html - Markdown を HTML 化したファイル
  ∟ README.md - この Markdown ファイル
-  ```
+```
 
 ---
 

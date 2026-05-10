@@ -1,0 +1,62 @@
+{
+	"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish": {
+		"resource_id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish",
+		"resource_type": "azurerm_resource_group",
+		"resource_name": "res-0"
+	},
+	"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm": {
+		"resource_id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm",
+		"resource_type": "azurerm_windows_virtual_machine",
+		"resource_name": "res-1"
+	},
+	"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm/extensions/win-vm-iis-monkfish-wsi": {
+		"resource_id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm/extensions/win-vm-iis-monkfish-wsi",
+		"resource_type": "azurerm_virtual_machine_extension",
+		"resource_name": "res-2"
+	},
+	"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/networkInterfaces/win-vm-iis-monkfish-nic": {
+		"resource_id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/networkInterfaces/win-vm-iis-monkfish-nic",
+		"resource_type": "azurerm_network_interface",
+		"resource_name": "res-3"
+	},
+	"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/networkInterfaces/win-vm-iis-monkfish-nic/networkSecurityGroups/L3N1YnNjcmlwdGlvbnMvZDk2ZWI4YzItMmRlYi00ZWQ1LThjZjItZjlmYjE3OGNiM2VlL3Jlc291cmNlR3JvdXBzL3JnLXdpbi12bS1paXMtbW9ua2Zpc2gvcHJvdmlkZXJzL01pY3Jvc29mdC5OZXR3b3JrL25ldHdvcmtTZWN1cml0eUdyb3Vwcy93aW4tdm0taWlzLW1vbmtmaXNoLW5zZw==": {
+		"resource_id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/networkInterfaces/win-vm-iis-monkfish-nic|/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-monkfish-nsg",
+		"resource_type": "azurerm_network_interface_security_group_association",
+		"resource_name": "res-4"
+	},
+	"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-monkfish-nsg": {
+		"resource_id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-monkfish-nsg",
+		"resource_type": "azurerm_network_security_group",
+		"resource_name": "res-5"
+	},
+	"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-monkfish-nsg/securityRules/RDP": {
+		"resource_id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-monkfish-nsg/securityRules/RDP",
+		"resource_type": "azurerm_network_security_rule",
+		"resource_name": "res-6"
+	},
+	"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-monkfish-public-ip": {
+		"resource_id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-monkfish-public-ip",
+		"resource_type": "azurerm_public_ip",
+		"resource_name": "res-8"
+	},
+	"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/virtualNetworks/win-vm-iis-monkfish-vnet": {
+		"resource_id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/virtualNetworks/win-vm-iis-monkfish-vnet",
+		"resource_type": "azurerm_virtual_network",
+		"resource_name": "res-9"
+	},
+	"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/virtualNetworks/win-vm-iis-monkfish-vnet/subnets/win-vm-iis-monkfish-subnet": {
+		"resource_id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/virtualNetworks/win-vm-iis-monkfish-vnet/subnets/win-vm-iis-monkfish-subnet",
+		"resource_type": "azurerm_subnet",
+		"resource_name": "res-10"
+	},
+	"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Storage/storageAccounts/diagb547f32af9c5b514": {
+		"resource_id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Storage/storageAccounts/diagb547f32af9c5b514",
+		"resource_type": "azurerm_storage_account",
+		"resource_name": "res-11"
+	},
+	"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Storage/storageAccounts/diagb547f32af9c5b514/blobServices/default/containers/bootdiagnostics-winvmiisv-c939e3cb-3cad-43b8-8881-0bbf0a9abfa2": {
+		"resource_id": "https://diagb547f32af9c5b514.blob.core.windows.net/bootdiagnostics-winvmiisv-c939e3cb-3cad-43b8-8881-0bbf0a9abfa2",
+		"resource_type": "azurerm_storage_container",
+		"resource_name": "res-13"
+	}
+}

@@ -1,0 +1,237 @@
+resource "azurerm_resource_group" "res-0" {
+  location = "japanwest"
+  name     = "rg-win-vm-iis-monkfish"
+}
+resource "azurerm_windows_virtual_machine" "res-1" {
+  admin_password        = "Dummy!pw#123"
+  admin_username        = "azureuser"
+  location              = "japanwest"
+  name                  = "win-vm-iis-vm"
+  network_interface_ids = ["/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/networkInterfaces/win-vm-iis-monkfish-nic"]
+  resource_group_name   = "rg-win-vm-iis-monkfish"
+  size                  = "Standard_DS1_v2"
+  boot_diagnostics {
+    storage_account_uri = "https://diagb547f32af9c5b514.blob.core.windows.net/"
+  }
+  os_disk {
+    caching              = "ReadWrite"
+    storage_account_type = "Premium_LRS"
+  }
+  source_image_reference {
+    offer     = "WindowsServer"
+    publisher = "MicrosoftWindowsServer"
+    sku       = "2022-datacenter-azure-edition"
+    version   = "latest"
+  }
+  depends_on = [
+    azurerm_network_interface.res-3,
+  ]
+}
+resource "azurerm_virtual_machine_extension" "res-2" {
+  auto_upgrade_minor_version = true
+  name                       = "win-vm-iis-monkfish-wsi"
+  publisher                  = "Microsoft.Compute"
+  settings = jsonencode({
+    commandToExecute = "powershell -ExecutionPolicy Unrestricted Install-WindowsFeature -Name Web-Server -IncludeAllSubFeature -IncludeManagementTools"
+  })
+  type                 = "CustomScriptExtension"
+  type_handler_version = "1.8"
+  virtual_machine_id   = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm"
+  depends_on = [
+    azurerm_windows_virtual_machine.res-1,
+  ]
+}
+resource "azurerm_network_interface" "res-3" {
+  location            = "japanwest"
+  name                = "win-vm-iis-monkfish-nic"
+  resource_group_name = "rg-win-vm-iis-monkfish"
+  ip_configuration {
+    name                          = "terraform_work3_nic_configuration"
+    private_ip_address_allocation = "Dynamic"
+    public_ip_address_id          = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-monkfish-public-ip"
+    subnet_id                     = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/virtualNetworks/win-vm-iis-monkfish-vnet/subnets/win-vm-iis-monkfish-subnet"
+  }
+  depends_on = [
+    azurerm_public_ip.res-8,
+    azurerm_subnet.res-10,
+  ]
+}
+resource "azurerm_network_interface_security_group_association" "res-4" {
+  network_interface_id      = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/networkInterfaces/win-vm-iis-monkfish-nic"
+  network_security_group_id = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-monkfish-nsg"
+  depends_on = [
+    azurerm_network_interface.res-3,
+    azurerm_network_security_group.res-5,
+  ]
+}
+resource "azurerm_network_security_group" "res-5" {
+  location            = "japanwest"
+  name                = "win-vm-iis-monkfish-nsg"
+  resource_group_name = "rg-win-vm-iis-monkfish"
+  depends_on = [
+    azurerm_resource_group.res-0,
+  ]
+}
+resource "azurerm_network_security_rule" "res-6" {
+  access                      = "Allow"
+  destination_address_prefix  = "*"
+  destination_port_range      = "3389"
+  direction                   = "Inbound"
+  name                        = "RDP"
+  network_security_group_name = "win-vm-iis-monkfish-nsg"
+  priority                    = 1000
+  protocol                    = "*"
+  resource_group_name         = "rg-win-vm-iis-monkfish"
+  source_address_prefix       = "120.75.97.239"
+  source_port_range           = "*"
+  depends_on = [
+    azurerm_network_security_group.res-5,
+  ]
+}
+resource "azurerm_public_ip" "res-8" {
+  allocation_method   = "Static"
+  location            = "japanwest"
+  name                = "win-vm-iis-monkfish-public-ip"
+  resource_group_name = "rg-win-vm-iis-monkfish"
+  sku                 = "Standard"
+  depends_on = [
+    azurerm_resource_group.res-0,
+  ]
+}
+resource "azurerm_virtual_network" "res-9" {
+  address_space       = ["10.0.0.0/16"]
+  location            = "japanwest"
+  name                = "win-vm-iis-monkfish-vnet"
+  resource_group_name = "rg-win-vm-iis-monkfish"
+  depends_on = [
+    azurerm_resource_group.res-0,
+  ]
+}
+resource "azurerm_subnet" "res-10" {
+  address_prefixes     = ["10.0.1.0/24"]
+  name                 = "win-vm-iis-monkfish-subnet"
+  resource_group_name  = "rg-win-vm-iis-monkfish"
+  virtual_network_name = "win-vm-iis-monkfish-vnet"
+  depends_on = [
+    azurerm_virtual_network.res-9,
+  ]
+}
+resource "azurerm_storage_account" "res-11" {
+  account_replication_type         = "LRS"
+  account_tier                     = "Standard"
+  cross_tenant_replication_enabled = false
+  location                         = "japanwest"
+  name                             = "diagb547f32af9c5b514"
+  resource_group_name              = "rg-win-vm-iis-monkfish"
+  depends_on = [
+    azurerm_resource_group.res-0,
+  ]
+}
+resource "azurerm_storage_container" "res-13" {
+  name                 = "bootdiagnostics-winvmiisv-c939e3cb-3cad-43b8-8881-0bbf0a9abfa2"
+  storage_account_name = "diagb547f32af9c5b514"
+}
+
+# ####################################################################
+# Application Gateway を追加
+# ####################################################################
+variable "backend_address_pool_name" {
+  default = "myBackendPool"
+}
+
+variable "frontend_port_name" {
+  default = "myFrontendPort"
+}
+
+variable "frontend_ip_configuration_name" {
+  default = "myAGIPConfig"
+}
+
+variable "http_setting_name" {
+  default = "myHTTPsetting"
+}
+
+variable "listener_name" {
+  default = "myListener"
+}
+
+variable "request_routing_rule_name" {
+  default = "myRoutingRule"
+}
+
+resource "azurerm_subnet" "frontend" {
+  name                 = "myAGSubnet"
+  resource_group_name  = azurerm_resource_group.res-0.name
+  virtual_network_name = azurerm_virtual_network.res-9.name
+  address_prefixes     = ["10.0.10.0/24"]
+}
+
+resource "azurerm_public_ip" "pip" {
+  name                = "myAGPublicIPAddress"
+  resource_group_name = azurerm_resource_group.res-0.name
+  location            = azurerm_resource_group.res-0.location
+  allocation_method   = "Static"
+  sku                 = "Standard"
+}
+
+
+resource "azurerm_application_gateway" "main" {
+  name                = "myAppGateway"
+  resource_group_name = azurerm_resource_group.res-0.name
+  location            = azurerm_resource_group.res-0.location
+
+  sku {
+    name     = "Standard_v2"
+    tier     = "Standard_v2"
+    capacity = 2
+  }
+
+  gateway_ip_configuration {
+    name      = "my-gateway-ip-configuration"
+    subnet_id = azurerm_subnet.frontend.id
+  }
+
+  frontend_port {
+    name = var.frontend_port_name
+    port = 80
+  }
+
+  frontend_ip_configuration {
+    name                 = var.frontend_ip_configuration_name
+    public_ip_address_id = azurerm_public_ip.pip.id
+  }
+
+  backend_address_pool {
+    name = var.backend_address_pool_name
+  }
+
+  backend_http_settings {
+    name                  = var.http_setting_name
+    cookie_based_affinity = "Disabled"
+    port                  = 80
+    protocol              = "Http"
+    request_timeout       = 60
+  }
+
+  http_listener {
+    name                           = var.listener_name
+    frontend_ip_configuration_name = var.frontend_ip_configuration_name
+    frontend_port_name             = var.frontend_port_name
+    protocol                       = "Http"
+  }
+
+  request_routing_rule {
+    name                       = var.request_routing_rule_name
+    rule_type                  = "Basic"
+    http_listener_name         = var.listener_name
+    backend_address_pool_name  = var.backend_address_pool_name
+    backend_http_settings_name = var.http_setting_name
+    priority                   = 1
+  }
+}
+
+resource "azurerm_network_interface_application_gateway_backend_address_pool_association" "nic-assoc" {
+  network_interface_id    = azurerm_network_interface.res-3.id
+  ip_configuration_name   = "terraform_work3_nic_configuration"
+  backend_address_pool_id = one(azurerm_application_gateway.main.backend_address_pool).id
+}

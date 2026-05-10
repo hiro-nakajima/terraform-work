@@ -1,0 +1,901 @@
+<!DOCTYPE html><html><head>
+      <title>work1-readme</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\HNakajima\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.15\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="概要">概要 </h1>
+<ul>
+<li>
+<p>work1 は以下の Hashicorp のサンプルでリソースグループと仮想ネットワークを作成します。<br>
+<a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs#example-usage">Docs overview | hashicorp/azurerm | Terraform | Terraform Registry</a><br>
+<img src="image/work1-readme/1732533115107.png" alt="1732533115107"></p>
+</li>
+<li>
+<p>ルートのフォルダ・ファイル構成</p>
+<ul>
+<li>terraform-work1<br>
+∟ .terrtaform - init 時に作成される Provider がダウンロードされるフォルダ<br>
+∟ image - readme の画像ファイルを格納するフォルダ<br>
+∟ .terraform.lock.hcl - init 時に作成される、Provider と .tf ファイルの依存関係等が記録されたファイル ⇒ <a href="https://developer.hashicorp.com/terraform/language/files/dependency-lock">Dependency Lock File</a><br>
+∟ <a href="http://main.tf">main.tf</a> - リソースを記述した tf ファイル<br>
+∟ <a href="http://provider.tf">provider.tf</a> - プロバイダーを記述した tf ファイル<br>
+∟ terraform.tfstate - terraform apply 時に作成された tfstate ファイル<br>
+∟ work1-readme.html - Markdown を HTML 化したファイル<br>
+∟ <a href="http://work1-readme.md">work1-readme.md</a> - この Markdown ファイル</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>terraform ブロック
+<ul>
+<li>CSP を指定する。Azure なら azurerm、AWS なら aws。</li>
+<li>version によりサポートされるリソースや使用可能な Terraform の機能が相違する。<br>
+<a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/4.0-upgrade-guide?product_intent=terraform#resource_provider_registrations">Azure Resource Manager: 4.0 Upgrade Guide | Guides | hashicorp/azurerm | Terraform | Terraform Registry</a><pre data-role="codeBlock" data-info="js" class="language-javascript js"><code>terraform <span class="token punctuation">{</span>
+    required_providers <span class="token punctuation">{</span>
+        azurerm <span class="token operator">=</span> <span class="token punctuation">{</span>
+        source  <span class="token operator">=</span> <span class="token string">"hashicorp/azurerm"</span>
+        version <span class="token operator">=</span> <span class="token string">"=4.4.0"</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>provider ブロック
+<ul>
+<li>
+<p>CSP の設定を記述する。</p>
+<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code>provider <span class="token string">"azurerm"</span> <span class="token punctuation">{</span>
+    subscription_id <span class="token operator">=</span> <span class="token string">"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxx"</span>
+
+    # <span class="token maybe-class-name">This</span> is only required when the <span class="token maybe-class-name">User</span><span class="token punctuation">,</span> <span class="token maybe-class-name">Service</span> <span class="token maybe-class-name">Principal</span><span class="token punctuation">,</span>
+        or <span class="token maybe-class-name">Identity</span> running <span class="token maybe-class-name">Terraform</span> lacks the permissions to register <span class="token maybe-class-name">Azure</span> <span class="token maybe-class-name">Resource</span> <span class="token maybe-class-name">Providers</span><span class="token punctuation">.</span>
+    <span class="token property-access">resource_provider_registrations</span> <span class="token operator">=</span> <span class="token string">"none"</span>
+    features <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+<li>
+<p>version 4.0 より、サブスクリプションの指定が必須となった。以下のように環境変数に設定しておくことも可能。<br>
+<a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/4.0-upgrade-guide?product_intent=terraform#specifying-subscription-id-is-now-mandatory">Azure Resource Manager: 4.0 Upgrade Guide | Guides | hashicorp/azurerm | Terraform | Terraform Registry</a></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code># Bash etc.
+export ARM_SUBSCRIPTION_ID=00000000-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+
+# PowerShell
+[System.Environment]::SetEnvironmentVariable('ARM_SUBSCRIPTION_ID', '00000000-xxxx-xxxx-xxxx-xxxxxxxxxxxx', [System.EnvironmentVariableTarget]::User)
+</code></pre></li>
+<li>
+<p>リソースプロバイダーを登録するか指定する。<br>
+<a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/4.0-upgrade-guide?product_intent=terraform#resource_provider_registrations">Azure Resource Manager: 4.0 Upgrade Guide | Guides | hashicorp/azurerm | Terraform | Terraform Registry</a></p>
+<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code># none はリソースプロバイダーを自動的に登録しない設定。
+resource_provider_registrations <span class="token operator">=</span> <span class="token string">"none"</span>  
+</code></pre><pre data-role="codeBlock" data-info="js" class="language-javascript js"><code># サブスクリプションに必要と見なされる <span class="token constant">RP</span> の最小セット。
+provider <span class="token string">"azurerm"</span> <span class="token punctuation">{</span>
+   resource_provider_registrations <span class="token operator">=</span> <span class="token string">"core"</span>
+<span class="token punctuation">}</span>
+</code></pre><pre data-role="codeBlock" data-info="js" class="language-javascript js"><code># サブスクリプションの <span class="token constant">RP</span> に加えて、特定の <span class="token constant">RP</span> のセットを登録する。
+provider <span class="token string">"azurerm"</span> <span class="token punctuation">{</span>
+    resource_provider_registrations <span class="token operator">=</span> <span class="token string">"core"</span>
+
+    resource_providers_to_register <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token string">"Microsoft.ContainerService"</span><span class="token punctuation">,</span>
+        <span class="token string">"Microsoft.KeyVault"</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><pre data-role="codeBlock" data-info="js" class="language-javascript js"><code># サブスクリプションで定義された <span class="token constant">RP</span> のカスタムセットのみを登録する。
+provider <span class="token string">"azurerm"</span> <span class="token punctuation">{</span>
+    resource_provider_registrations <span class="token operator">=</span> <span class="token string">"none"</span>
+
+    resource_providers_to_register <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token string">"Microsoft.ApiManagement"</span><span class="token punctuation">,</span>
+        <span class="token string">"Microsoft.Compute"</span><span class="token punctuation">,</span>
+        <span class="token string">"Microsoft.KeyVault"</span><span class="token punctuation">,</span>
+        <span class="token string">"Microsoft.Network"</span><span class="token punctuation">,</span>
+        <span class="token string">"Microsoft.Storage"</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>resource ブロック
+<ul>
+<li>
+<p>location でリージョンを指定する。Region Name または AZ CLI name で指定可能。Short notationは不可。<br>
+<a href="https://github.com/claranet/terraform-azurerm-regions/blob/master/REGIONS.md">terraform-azurerm-regions/REGIONS.md at master · claranet/terraform-azurerm-regions · GitHub</a></p>
+<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code># <span class="token maybe-class-name">Create</span> a resource group
+resource <span class="token string">"azurerm_resource_group"</span> <span class="token string">"example"</span> <span class="token punctuation">{</span>
+    name     <span class="token operator">=</span> <span class="token string">"rg-terraform-work1"</span>
+    <span class="token dom variable">location</span> <span class="token operator">=</span> <span class="token string">"West Europe"</span>
+<span class="token punctuation">}</span>
+
+# <span class="token maybe-class-name">Create</span> a virtual network within the resource group
+resource <span class="token string">"azurerm_virtual_network"</span> <span class="token string">"example"</span> <span class="token punctuation">{</span>
+    name                <span class="token operator">=</span> <span class="token string">"terraform-work1"</span>
+    resource_group_name <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">example</span><span class="token punctuation">.</span><span class="token property-access">name</span>
+    <span class="token dom variable">location</span>            <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">example</span><span class="token punctuation">.</span><span class="token property-access">location</span>
+    address_space       <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"10.0.0.0/16"</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+<li>
+<p>「resource 規定リソース名 変数名」でリソースを指定し、{} 内でプロパティを指定する。<br>
+下記ページの左部メニューから必要なリソースを参照し resource を記載する。<br>
+<a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs">Docs overview | hashicorp/azurerm | Terraform | Terraform Registry</a><br>
+<img src="image/work1-readme/1732539150667.png" alt="1732539150667">]</p>
+</li>
+<li>
+<p>VS Code ならスニペットあり。「res」まで打って TAB でリソース選択ダイアログが表示される。<br>
+<img src="image/work1-readme/1733031781520.png" alt="1733031781520"></p>
+<ul>
+<li>プロパティの入力候補も表示される。<br>
+<img src="image/work1-readme/1733031947063.png" alt="1733031947063"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="azure-リージョンリスト">Azure リージョンリスト </h4>
+<p><a href="https://github.com/claranet/terraform-azurerm-regions/blob/master/REGIONS.md">terraform-azurerm-regions/REGIONS.md at master · claranet/terraform-azurerm-regions · GitHub</a></p>
+<table>
+<thead>
+<tr>
+<th>Region name</th>
+<th>AZ CLI name</th>
+<th>Short notation</th>
+<th>Internal terraform notation</th>
+<th>Paired region</th>
+<th>Suggested data location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Asia</td>
+<td>asia</td>
+<td>asia</td>
+<td>asia</td>
+<td>N/A</td>
+<td>Asia Pacific</td>
+</tr>
+<tr>
+<td>East Asia</td>
+<td>eastasia</td>
+<td>asea</td>
+<td>asia-east</td>
+<td>asia-south-east</td>
+<td>Asia Pacific</td>
+</tr>
+<tr>
+<td>Asia Pacific</td>
+<td>asiapacific</td>
+<td>apac</td>
+<td>asia-pa</td>
+<td>N/A</td>
+<td>Asia Pacific</td>
+</tr>
+<tr>
+<td>Southeast Asia</td>
+<td>southeastasia</td>
+<td>asse</td>
+<td>asia-south-east</td>
+<td>asia-east</td>
+<td>Asia Pacific</td>
+</tr>
+<tr>
+<td>Australia</td>
+<td>australia</td>
+<td>aus</td>
+<td>aus</td>
+<td>N/A</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>Australia Central</td>
+<td>australiacentral</td>
+<td>auc</td>
+<td>aus-central</td>
+<td>aus-central-2</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>Australia Central 2</td>
+<td>australiacentral2</td>
+<td>auc2</td>
+<td>aus-central-2</td>
+<td>aus-central</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>Australia East</td>
+<td>australiaeast</td>
+<td>aue</td>
+<td>aus-east</td>
+<td>aus-south-east</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>Australia Southeast</td>
+<td>australiasoutheast</td>
+<td>ause</td>
+<td>aus-south-east</td>
+<td>aus-east</td>
+<td>Australia</td>
+</tr>
+<tr>
+<td>Brazil</td>
+<td>brazil</td>
+<td>bra</td>
+<td>bra</td>
+<td>N/A</td>
+<td>Brazil</td>
+</tr>
+<tr>
+<td>Brazil South</td>
+<td>brazilsouth</td>
+<td>brs</td>
+<td>bra-south</td>
+<td>us-south-central</td>
+<td>Brazil</td>
+</tr>
+<tr>
+<td>Brazil Southeast</td>
+<td>brazilsoutheast</td>
+<td>brse</td>
+<td>bra-south-east</td>
+<td>bra-south</td>
+<td>Brazil</td>
+</tr>
+<tr>
+<td>Canada</td>
+<td>canada</td>
+<td>can</td>
+<td>can</td>
+<td>N/A</td>
+<td>Canada</td>
+</tr>
+<tr>
+<td>Canada Central</td>
+<td>canadacentral</td>
+<td>cac</td>
+<td>can-central</td>
+<td>can-east</td>
+<td>Canada</td>
+</tr>
+<tr>
+<td>Canada East</td>
+<td>canadaeast</td>
+<td>cae</td>
+<td>can-east</td>
+<td>can-central</td>
+<td>Canada</td>
+</tr>
+<tr>
+<td>China East</td>
+<td>chinaeast</td>
+<td>cne</td>
+<td>cn-east</td>
+<td>cn-north</td>
+<td>Asia Pacific</td>
+</tr>
+<tr>
+<td>China East 2</td>
+<td>chinaeast2</td>
+<td>cne2</td>
+<td>cn-east-2</td>
+<td>cn-north-2</td>
+<td>Asia Pacific</td>
+</tr>
+<tr>
+<td>China East 3</td>
+<td>chinaeast3</td>
+<td>cne3</td>
+<td>cn-east-3</td>
+<td>cn-north-3</td>
+<td>Asia Pacific</td>
+</tr>
+<tr>
+<td>China North</td>
+<td>chinanorth</td>
+<td>cnn</td>
+<td>cn-north</td>
+<td>cn-east</td>
+<td>Asia Pacific</td>
+</tr>
+<tr>
+<td>China North 2</td>
+<td>chinanorth2</td>
+<td>cnn2</td>
+<td>cn-north-2</td>
+<td>cn-east-2</td>
+<td>Asia Pacific</td>
+</tr>
+<tr>
+<td>China North 3</td>
+<td>chinanorth3</td>
+<td>cnn3</td>
+<td>cn-north-3</td>
+<td>cn-east-3</td>
+<td>Asia Pacific</td>
+</tr>
+<tr>
+<td>Europe</td>
+<td>europe</td>
+<td>eu</td>
+<td>eu</td>
+<td>N/A</td>
+<td>Europe</td>
+</tr>
+<tr>
+<td>North Europe</td>
+<td>northeurope</td>
+<td>eun</td>
+<td>eu-north</td>
+<td>eu-west</td>
+<td>Europe</td>
+</tr>
+<tr>
+<td>West Europe</td>
+<td>westeurope</td>
+<td>euw</td>
+<td>eu-west</td>
+<td>eu-north</td>
+<td>Europe</td>
+</tr>
+<tr>
+<td>France Central</td>
+<td>francecentral</td>
+<td>frc</td>
+<td>fr-central</td>
+<td>fr-south</td>
+<td>France</td>
+</tr>
+<tr>
+<td>France South</td>
+<td>francesouth</td>
+<td>frs</td>
+<td>fr-south</td>
+<td>fr-central</td>
+<td>France</td>
+</tr>
+<tr>
+<td>Germany Central</td>
+<td>germanycentral</td>
+<td>gce</td>
+<td>ger-central</td>
+<td>N/A</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>Germany North</td>
+<td>germanynorth</td>
+<td>gno</td>
+<td>ger-north</td>
+<td>ger-west-central</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>Germany Northeast</td>
+<td>germanynortheast</td>
+<td>gne</td>
+<td>ger-north-east</td>
+<td>N/A</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>Germany West Central</td>
+<td>germanywestcentral</td>
+<td>gwc</td>
+<td>ger-west-central</td>
+<td>ger-north</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>Global</td>
+<td>global</td>
+<td>glob</td>
+<td>global</td>
+<td>N/A</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>India</td>
+<td>india</td>
+<td>ind</td>
+<td>ind</td>
+<td>N/A</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Central India</td>
+<td>centralindia</td>
+<td>inc</td>
+<td>ind-central</td>
+<td>ind-south</td>
+<td>India</td>
+</tr>
+<tr>
+<td>South India</td>
+<td>southindia</td>
+<td>ins</td>
+<td>ind-south</td>
+<td>ind-central</td>
+<td>India</td>
+</tr>
+<tr>
+<td>West India</td>
+<td>westindia</td>
+<td>inw</td>
+<td>ind-west</td>
+<td>ind-south</td>
+<td>India</td>
+</tr>
+<tr>
+<td>Israel Central</td>
+<td>israelcentral</td>
+<td>ilc</td>
+<td>isr-central</td>
+<td>N/A</td>
+<td>Asia Pacific</td>
+</tr>
+<tr>
+<td>Italy North</td>
+<td>italynorth</td>
+<td>itn</td>
+<td>ita-north</td>
+<td>N/A</td>
+<td>Europe</td>
+</tr>
+<tr>
+<td>Japan</td>
+<td>japan</td>
+<td>jap</td>
+<td>jap</td>
+<td>N/A</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>Japan East</td>
+<td>japaneast</td>
+<td>jpe</td>
+<td>jap-east</td>
+<td>jap-west</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>Japan West</td>
+<td>japanwest</td>
+<td>jpw</td>
+<td>jap-west</td>
+<td>jap-east</td>
+<td>Japan</td>
+</tr>
+<tr>
+<td>Korea</td>
+<td>korea</td>
+<td>kor</td>
+<td>kor</td>
+<td>N/A</td>
+<td>Korea</td>
+</tr>
+<tr>
+<td>Korea Central</td>
+<td>koreacentral</td>
+<td>krc</td>
+<td>kor-central</td>
+<td>kor-south</td>
+<td>Korea</td>
+</tr>
+<tr>
+<td>Korea South</td>
+<td>koreasouth</td>
+<td>krs</td>
+<td>kor-south</td>
+<td>kor-central</td>
+<td>Korea</td>
+</tr>
+<tr>
+<td>Norway</td>
+<td>norway</td>
+<td>nor</td>
+<td>nor</td>
+<td>N/A</td>
+<td>Norway</td>
+</tr>
+<tr>
+<td>Norway East</td>
+<td>norwayeast</td>
+<td>noe</td>
+<td>norw-east</td>
+<td>norw-west</td>
+<td>Norway</td>
+</tr>
+<tr>
+<td>Norway West</td>
+<td>norwaywest</td>
+<td>now</td>
+<td>norw-west</td>
+<td>norw-east</td>
+<td>Norway</td>
+</tr>
+<tr>
+<td>Poland Central</td>
+<td>polandcentral</td>
+<td>polc</td>
+<td>pol-central</td>
+<td>N/A</td>
+<td>Europe</td>
+</tr>
+<tr>
+<td>Qatar Central</td>
+<td>qatarcentral</td>
+<td>qatc</td>
+<td>qat-central</td>
+<td>N/A</td>
+<td>UAE</td>
+</tr>
+<tr>
+<td>South Africa North</td>
+<td>southafricanorth</td>
+<td>san</td>
+<td>saf-north</td>
+<td>saf-west</td>
+<td>Africa</td>
+</tr>
+<tr>
+<td>South Africa West</td>
+<td>southafricawest</td>
+<td>saw</td>
+<td>saf-west</td>
+<td>saf-north</td>
+<td>Africa</td>
+</tr>
+<tr>
+<td>Singapore</td>
+<td>singapore</td>
+<td>sgp</td>
+<td>sgp</td>
+<td>N/A</td>
+<td>Asia Pacific</td>
+</tr>
+<tr>
+<td>Sweden</td>
+<td>sweden</td>
+<td>swe</td>
+<td>swe</td>
+<td>N/A</td>
+<td>Europe</td>
+</tr>
+<tr>
+<td>Sweden Central</td>
+<td>swedencentral</td>
+<td>swec</td>
+<td>swe-central</td>
+<td>swe-south</td>
+<td>Europe</td>
+</tr>
+<tr>
+<td>Sweden South</td>
+<td>swedensouth</td>
+<td>swes</td>
+<td>swe-south</td>
+<td>swe-central</td>
+<td>Europe</td>
+</tr>
+<tr>
+<td>Switzerland North</td>
+<td>switzerlandnorth</td>
+<td>swn</td>
+<td>swz-north</td>
+<td>swz-west</td>
+<td>Switzerland</td>
+</tr>
+<tr>
+<td>Switzerland West</td>
+<td>switzerlandwest</td>
+<td>sww</td>
+<td>swz-west</td>
+<td>swz-north</td>
+<td>Switzerland</td>
+</tr>
+<tr>
+<td>UAE Central</td>
+<td>uaecentral</td>
+<td>uaec</td>
+<td>uae-central</td>
+<td>uae-north</td>
+<td>UAE</td>
+</tr>
+<tr>
+<td>UAE North</td>
+<td>uaenorth</td>
+<td>uaen</td>
+<td>uae-north</td>
+<td>uae-central</td>
+<td>UAE</td>
+</tr>
+<tr>
+<td>United Kingdom</td>
+<td>uk</td>
+<td>uk</td>
+<td>uk</td>
+<td>N/A</td>
+<td>UK</td>
+</tr>
+<tr>
+<td>UK South</td>
+<td>uksouth</td>
+<td>uks</td>
+<td>uk-south</td>
+<td>uk-west</td>
+<td>UAE</td>
+</tr>
+<tr>
+<td>UK West</td>
+<td>ukwest</td>
+<td>ukw</td>
+<td>uk-west</td>
+<td>uk-south</td>
+<td>UK</td>
+</tr>
+<tr>
+<td>United States</td>
+<td>unitedstates</td>
+<td>us</td>
+<td>us</td>
+<td>N/A</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>Central US</td>
+<td>centralus</td>
+<td>usc</td>
+<td>us-central</td>
+<td>us-east-2</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>East US</td>
+<td>eastus</td>
+<td>use</td>
+<td>us-east</td>
+<td>us-west</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>East US 2</td>
+<td>eastus2</td>
+<td>use2</td>
+<td>us-east-2</td>
+<td>us-central</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>North Central US</td>
+<td>northcentralus</td>
+<td>usnc</td>
+<td>us-north-central</td>
+<td>us-south-central</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>South Central US</td>
+<td>southcentralus</td>
+<td>ussc</td>
+<td>us-south-central</td>
+<td>us-north-central</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>West US</td>
+<td>westus</td>
+<td>usw</td>
+<td>us-west</td>
+<td>us-east</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>West US 2</td>
+<td>westus2</td>
+<td>usw2</td>
+<td>us-west-2</td>
+<td>us-west-central</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>West US 3</td>
+<td>westus3</td>
+<td>usw3</td>
+<td>us-west-3</td>
+<td>us-east</td>
+<td>United States</td>
+</tr>
+<tr>
+<td>West Central US</td>
+<td>westcentralus</td>
+<td>uswc</td>
+<td>us-west-central</td>
+<td>us-west-2</td>
+<td>United States</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="実行概要">実行概要 </h1>
+<h2 id="実行方法">実行方法 </h2>
+<ul>
+<li>
+<p>フォルダを右クリック ⇒ ターミナルで開く ⇒ PowerShell を起動する。<br>
+<img src="image/work1-readme/1732679775844.png" alt="1732679775844"></p>
+</li>
+<li>
+<p>az account show でテナント・サブスクリプションを確認する。<br>
+<img src="image/work1-readme/1732678941510.png" alt="1732678941510"></p>
+</li>
+<li>
+<p>terraform init で初期化。作業ディレクトリにプロバイダー (azurerm/225MB) がダウンロードされる。<br>
+<img src="image/work1-readme/1732678964565.png" alt="1732678964565"><br>
+<img src="image/work1-readme/1732711506017.png" alt="1732711506017"></p>
+<pre data-role="codeBlock" data-info="PowerShell" class="language-powershell PowerShell"><code><span class="token function">PS</span> C:\Users\HNakajima\OneDrive <span class="token operator">-</span> 個人契約\Work\source\terraform\terraform-work1&gt; terraform init
+Initializing the backend<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+Initializing provider plugins<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token operator">-</span> Finding hashicorp/azurerm versions matching <span class="token string">"4.4.0"</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token operator">-</span> Installing hashicorp/azurerm v4<span class="token punctuation">.</span>4<span class="token punctuation">.</span>0<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token operator">-</span> Installed hashicorp/azurerm v4<span class="token punctuation">.</span>4<span class="token punctuation">.</span>0 <span class="token punctuation">(</span>signed by HashiCorp<span class="token punctuation">)</span>
+Terraform has created a lock file <span class="token punctuation">.</span>terraform<span class="token punctuation">.</span>lock<span class="token punctuation">.</span>hcl to record the provider
+selections it made above<span class="token punctuation">.</span> Include this file in your version control repository
+so that Terraform can guarantee to make the same selections by default when
+you run <span class="token string">"terraform init"</span> in the future<span class="token punctuation">.</span>
+
+Terraform has been successfully initialized!
+
+You may now <span class="token keyword keyword-begin">begin</span> working with Terraform<span class="token punctuation">.</span> <span class="token keyword keyword-Try">Try</span> running <span class="token string">"terraform plan"</span> to see
+any changes that are required <span class="token keyword keyword-for">for</span> your infrastructure<span class="token punctuation">.</span> All Terraform commands
+should now work<span class="token punctuation">.</span>
+
+<span class="token keyword keyword-If">If</span> you ever <span class="token function">set</span> or change modules or backend configuration <span class="token keyword keyword-for">for</span> Terraform<span class="token punctuation">,</span>
+rerun this command to reinitialize your working directory<span class="token punctuation">.</span> <span class="token keyword keyword-If">If</span> you forget<span class="token punctuation">,</span> other
+commands will detect it and remind you to <span class="token keyword keyword-do">do</span> so <span class="token keyword keyword-if">if</span> necessary<span class="token punctuation">.</span>
+</code></pre></li>
+<li>
+<p>terraform plan で実行内容を確認。⇒ 2 リソース追加される。<br>
+<img src="image/work1-readme/1732679145071.png" alt="1732679145071"></p>
+<pre data-role="codeBlock" data-info="PowerShell" class="language-powershell PowerShell"><code><span class="token function">PS</span> C:\Users\HNakajima\OneDrive <span class="token operator">-</span> 個人契約\Work\source\terraform\terraform-work1&gt; terraform plan   
+
+Terraform used the selected providers to generate the following execution plan<span class="token punctuation">.</span> Resource actions are indicated with the following symbols:
+  <span class="token operator">+</span> create
+
+Terraform will perform the following actions:
+
+  <span class="token comment"># azurerm_resource_group.example will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_resource_group"</span> <span class="token string">"example"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> id       = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location = <span class="token string">"westeurope"</span>
+      <span class="token operator">+</span> name     = <span class="token string">"rg-terraform-work1"</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_virtual_network.example will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_virtual_network"</span> <span class="token string">"example"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> address_space       = <span class="token punctuation">[</span>
+          <span class="token operator">+</span> <span class="token string">"10.0.0.0/16"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+      <span class="token operator">+</span> dns_servers         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> guid                = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> id                  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location            = <span class="token string">"westeurope"</span>
+      <span class="token operator">+</span> name                = <span class="token string">"terraform-work1"</span>
+      <span class="token operator">+</span> resource_group_name = <span class="token string">"rg-terraform-work1"</span>
+      <span class="token operator">+</span> subnet              = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+Plan: 2 to add<span class="token punctuation">,</span> 0 to change<span class="token punctuation">,</span> 0 to destroy<span class="token punctuation">.</span>
+
+──────────────────────────────────────────────────
+
+Note: You didn<span class="token string">'t use the -out option to save this plan, so Terraform can'</span>t guarantee to take exactly these actions <span class="token keyword keyword-if">if</span> you run <span class="token string">"terraform apply"</span> now<span class="token punctuation">.</span>
+</code></pre></li>
+<li>
+<p>terraform apply で環境に適用する。</p>
+<ul>
+<li>「Enter a value: に yes を入力することで実行する。⇒「Enter a value: 」までは terraform plan と同じ。<br>
+<img src="image/work1-readme/1732679305144.png" alt="1732679305144"><pre data-role="codeBlock" data-info="PowerShell" class="language-powershell PowerShell"><code><span class="token function">PS</span> C:\Users\HNakajima\OneDrive <span class="token operator">-</span> 個人契約\Work\source\terraform\terraform-work1&gt; terraform apply      
+
+Terraform used the selected providers to generate the following execution plan<span class="token punctuation">.</span> Resource actions are indicated with the following symbols:
+  <span class="token operator">+</span> create
+
+Terraform will perform the following actions:
+
+  <span class="token comment"># azurerm_resource_group.example will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_resource_group"</span> <span class="token string">"example"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> id       = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location = <span class="token string">"westeurope"</span>
+      <span class="token operator">+</span> name     = <span class="token string">"rg-terraform-work1"</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_virtual_network.example will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_virtual_network"</span> <span class="token string">"example"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> address_space       = <span class="token punctuation">[</span>
+          <span class="token operator">+</span> <span class="token string">"10.0.0.0/16"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+      <span class="token operator">+</span> dns_servers         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> guid                = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> id                  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location            = <span class="token string">"westeurope"</span>
+      <span class="token operator">+</span> name                = <span class="token string">"terraform-work1"</span>
+      <span class="token operator">+</span> resource_group_name = <span class="token string">"rg-terraform-work1"</span>
+      <span class="token operator">+</span> subnet              = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+Plan: 2 to add<span class="token punctuation">,</span> 0 to change<span class="token punctuation">,</span> 0 to destroy<span class="token punctuation">.</span>
+
+<span class="token keyword keyword-Do">Do</span> you want to perform these actions?
+  Terraform will perform the actions described above<span class="token punctuation">.</span>
+  Only <span class="token string">'yes'</span> will be accepted to approve<span class="token punctuation">.</span>
+
+  Enter a value: yes
+
+azurerm_resource_group<span class="token punctuation">.</span>example: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+azurerm_resource_group<span class="token punctuation">.</span>example: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>10s elapsed<span class="token punctuation">]</span>
+azurerm_resource_group<span class="token punctuation">.</span>example: Creation complete after 14s <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-terraform-work1]</span>
+azurerm_virtual_network<span class="token punctuation">.</span>example: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+azurerm_virtual_network<span class="token punctuation">.</span>example: Creation complete after 8s <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-terraform-work1/providers/Microsoft.Network/virtualNetworks/terraform-work1]</span>
+
+Apply complete! Resources: 2 added<span class="token punctuation">,</span> 0 changed<span class="token punctuation">,</span> 0 destroyed<span class="token punctuation">.</span>
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<h2 id="実行結果">実行結果 </h2>
+<ul>
+<li>
+<p>リソースグループと仮想ネットワークが作成された。<br>
+<img src="image/work1-readme/1732679648068.png" alt="1732679648068"><br>
+<img src="image/work1-readme/1732679725002.png" alt="1732679725002"></p>
+</li>
+<li>
+<p>アクティビティログには、サインインした Entra 実行ユーザーのログが残る。<br>
+<img src="image/work1-readme/1732679669065.png" alt="1732679669065"></p>
+</li>
+<li>
+<p>一方、デプロイ履歴には残らない。⇒ Azure ポータルでデプロイした際は履歴が残る。<br>
+<img src="image/work1-readme/1732679669066.png" alt="1732679669066"></p>
+</li>
+</ul>
+<hr>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

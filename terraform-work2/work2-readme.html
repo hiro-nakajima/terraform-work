@@ -1,0 +1,896 @@
+<!DOCTYPE html><html><head>
+      <title>work2-readme</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\HNakajima\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.15\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="概要">概要 </h1>
+<ul>
+<li>
+<p>work2 は以下の MS Learning を拡張し、リソースグループ・仮想ネットワーク・サブネット・サブネットへの委任・NSGを作成します。</p>
+</li>
+<li>
+<p>random、backend、variables、output を使用します。<br>
+<a href="https://learn.microsoft.com/ja-jp/azure/virtual-network/quick-create-terraform?tabs=azure-cli">クイックスタート: Terraform を使用して仮想ネットワークを作成する - Azure Virtual Network | Microsoft Learn</a><br>
+<img src="image/work2-readme/1732539883991.png" alt="1732539883991"></p>
+</li>
+<li>
+<p>ルートのフォルダ・ファイル構成</p>
+<ul>
+<li>terraform-work2<br>
+∟ .terrtaform - init 時に作成される Provider がダウンロードされるフォルダ<br>
+∟ image - readme の画像ファイルを格納するフォルダ<br>
+∟ tfstate - リモートバックエンドからダウンロードした tfstate ファイル<br>
+∟ .terraform.lock.hcl - init 時に作成される、Provider と .tf ファイルの依存関係等が記録されたファイル ⇒ <a href="https://developer.hashicorp.com/terraform/language/files/dependency-lock">Dependency Lock File</a><br>
+∟ <a href="http://main.tf">main.tf</a> - リソースを記述した tf ファイル<br>
+∟ <a href="http://outputs.tf">outputs.tf</a> - 出力を記述した tf ファイル<br>
+∟ <a href="http://provider.tf">provider.tf</a> - プロバイダーを記述した tf ファイル<br>
+∟ <a href="http://variables.tf">variables.tf</a> - 変数を記述した tf ファイル<br>
+∟ work2-readme.html - Markdown を HTML 化したファイル<br>
+∟ <a href="http://work2-readme.md">work2-readme.md</a> - この Markdown ファイル</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>terraform ブロック</p>
+<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code>terraform <span class="token punctuation">{</span>
+  required_providers <span class="token punctuation">{</span>
+      azurerm <span class="token operator">=</span> <span class="token punctuation">{</span>
+      source  <span class="token operator">=</span> <span class="token string">"hashicorp/azurerm"</span>
+      version <span class="token operator">=</span> <span class="token string">"=4.4.0"</span>
+      <span class="token punctuation">}</span>  
+      random <span class="token operator">=</span> <span class="token punctuation">{</span>
+      source  <span class="token operator">=</span> <span class="token string">"hashicorp/random"</span>
+      version <span class="token operator">=</span> <span class="token string">"~&gt;3.0"</span>
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>  
+  backend <span class="token string">"azurerm"</span> <span class="token punctuation">{</span>
+      resource_group_name  <span class="token operator">=</span> <span class="token string">"rg-logs"</span>
+      storage_account_name <span class="token operator">=</span> <span class="token string">"stohradtf01"</span>
+      container_name       <span class="token operator">=</span> <span class="token string">"tfstate"</span>
+      key                  <span class="token operator">=</span> <span class="token string">"terraform-work2.tfstate"</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li><a href="https://registry.terraform.io/providers/hashicorp/random/latest/docs">Random Provider</a> でランダムな文字列や数値やペット名を生成可能となる。</li>
+<li>backend でステート (tfstate) の保存先を指定する。
+<ul>
+<li>container_name は Blob コンテナ名。自動作成してくれないので先に作成しておく必要がある。</li>
+<li>key はストレージアカウントのキーではなく、保存先のコンテナファイル名。</li>
+<li>backend の認証は Entra、Access Key、SAS で設定する。
+<ul>
+<li>環境変数(ARM_ACCESS_KEY)、AzCLI、ServicePrincipal、Managed ID、Access Key、SAS Token 等を指定可能。<br>
+以下参照。<br>
+<a href="https://developer.hashicorp.com/terraform/language/backend/azurerm">Backend Type: azurerm | Terraform | HashiCorp Developer</a><br>
+<a href="https://learn.microsoft.com/ja-jp/azure/developer/terraform/store-state-in-azure-storage?tabs=azure-cli">Terraform 状態を Azure Storage に格納する</a></li>
+</ul>
+</li>
+<li>backend 自体はローカル以外に Blob、S3、Kubernetes、HTTP、PostgreSQL等を設定・保存可能。</li>
+<li>ローカル－リモート間で backend を切り替えることが可能。ローカルで作成してしまった後共有するため等。<br>
+terraform init -migrate-state / terraform -reconfigure を使用する。<br>
+<a href="https://qiita.com/empty948/items/9564858aa4783ffa9cf7">【Terraform】Backend の切り替え方法とは？</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>variable ブロック</p>
+<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code>variable <span class="token string">"resource_group_location"</span> <span class="token punctuation">{</span>
+  type        <span class="token operator">=</span> string
+  <span class="token keyword module keyword-default">default</span>     <span class="token operator">=</span> <span class="token string">"japanwest"</span>
+  description <span class="token operator">=</span> <span class="token string">"Location of the resource group."</span>
+<span class="token punctuation">}</span>
+
+variable <span class="token string">"resource_group_name_prefix"</span> <span class="token punctuation">{</span>
+  type        <span class="token operator">=</span> string
+  <span class="token keyword module keyword-default">default</span>     <span class="token operator">=</span> <span class="token string">"rg"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li>変数を別ファイルにし、resource ブロックで参照する。</li>
+<li>location とリソースグループ名の prefix を変数化している。</li>
+<li>実運用では既存リソース名やVNETのアドレス空間/サブネットサイズ、設定情報等をすべて <a href="http://variables.tf">variables.tf</a> で保持する想定。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>resource ブロック
+<ul>
+<li>
+<p>random_pet でランダムなペット名を生成する。</p>
+<ul>
+<li>prefix に変数をセットしている。length は 単語数 (デフォルト 2)。<br>
+<a href="https://www.tama-negi.com/2021/12/18/terraform_randam/">Terraform Randomの使い方をAzure ストレージアカウント作成しながら学ぶ</a></li>
+</ul>
+</li>
+<li>
+<p>リソースグループに location と random_pet の変数をセットして作成する。</p>
+<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code>resource <span class="token string">"random_pet"</span> <span class="token string">"prefix"</span> <span class="token punctuation">{</span>
+  prefix <span class="token operator">=</span> <span class="token keyword keyword-var">var</span><span class="token punctuation">.</span><span class="token property-access">resource_group_name_prefix</span>
+  length <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token punctuation">}</span>
+
+# <span class="token maybe-class-name">Resource</span> <span class="token maybe-class-name">Group</span>
+resource <span class="token string">"azurerm_resource_group"</span> <span class="token string">"rg"</span> <span class="token punctuation">{</span>
+  <span class="token dom variable">location</span> <span class="token operator">=</span> <span class="token keyword keyword-var">var</span><span class="token punctuation">.</span><span class="token property-access">resource_group_location</span>
+  name     <span class="token operator">=</span> <span class="token string">"${random_pet.prefix.id}"</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+<li>
+<p>VNET/Subnet/NSG の作成と NSG 割当を行う。</p>
+<ul>
+<li>Subnet は委任するパターンとサービスエンドポイントを設定するパターンを定義する。</li>
+<li>NSG はグローバルIPを許可する受信規則を作成する。</li>
+<li>Subnet1 に NSG を割り当てる。</li>
+</ul>
+<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code># <span class="token maybe-class-name">Virtual</span> <span class="token maybe-class-name">Network</span>
+resource <span class="token string">"azurerm_virtual_network"</span> <span class="token string">"terraform-work2-network"</span> <span class="token punctuation">{</span>
+  name                <span class="token operator">=</span> <span class="token string">"${random_pet.prefix.id}-vnet"</span>
+  address_space       <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"10.0.0.0/16"</span><span class="token punctuation">]</span>
+  <span class="token dom variable">location</span>            <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">location</span>
+  resource_group_name <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">name</span>
+<span class="token punctuation">}</span>
+
+# subnet は vnet にnestできない
+# https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>qiita<span class="token punctuation">.</span><span class="token property-access">com</span><span class="token operator">/</span><span class="token maybe-class-name">Rami21</span><span class="token operator">/</span>items<span class="token operator">/</span>00a94e77cc8c8cbc7a45
+# <span class="token maybe-class-name">Subnet</span> <span class="token number">1</span>
+resource <span class="token string">"azurerm_subnet"</span> <span class="token string">"terraform-work2-subnet-1"</span> <span class="token punctuation">{</span>
+  name                 <span class="token operator">=</span> <span class="token string">"subnet-1"</span>
+  resource_group_name  <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">name</span>
+  virtual_network_name <span class="token operator">=</span> azurerm_virtual_network<span class="token punctuation">.</span><span class="token property-access">my_terraform_network</span><span class="token punctuation">.</span><span class="token property-access">name</span>
+  address_prefixes     <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"10.0.0.0/24"</span><span class="token punctuation">]</span>
+  delegation <span class="token punctuation">{</span>
+      name <span class="token operator">=</span> <span class="token string">"delegation"</span>
+
+      service_delegation <span class="token punctuation">{</span>
+      name    <span class="token operator">=</span> <span class="token string">"Microsoft.ContainerInstance/containerGroups"</span>
+      actions <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"Microsoft.Network/virtualNetworks/subnets/join/action"</span><span class="token punctuation">,</span>
+                  <span class="token string">"Microsoft.Network/virtualNetworks/subnets/prepareNetworkPolicies/action"</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+# <span class="token maybe-class-name">Subnet</span> <span class="token number">2</span>
+resource <span class="token string">"azurerm_subnet"</span> <span class="token string">"terraform-work2-subnet-2"</span> <span class="token punctuation">{</span>
+  name                 <span class="token operator">=</span> <span class="token string">"subnet-2"</span>
+  resource_group_name  <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">name</span>
+  virtual_network_name <span class="token operator">=</span> azurerm_virtual_network<span class="token punctuation">.</span><span class="token property-access">my_terraform_network</span><span class="token punctuation">.</span><span class="token property-access">name</span>
+  address_prefixes     <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"10.0.1.0/24"</span><span class="token punctuation">]</span>
+  service_endpoints    <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"Microsoft.Storage"</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+# <span class="token maybe-class-name">Network</span> <span class="token maybe-class-name">Security</span> <span class="token maybe-class-name">Group</span>
+resource <span class="token string">"azurerm_network_security_group"</span> <span class="token string">"terraform-work2-nsg"</span> <span class="token punctuation">{</span>
+  name                <span class="token operator">=</span> <span class="token string">"terraform-work2-nsg"</span>
+  <span class="token dom variable">location</span>            <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">location</span>
+  resource_group_name <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">name</span>
+
+  security_rule <span class="token punctuation">{</span>
+      name                       <span class="token operator">=</span> <span class="token string">"allow"</span>
+      priority                   <span class="token operator">=</span> <span class="token number">100</span>
+      direction                  <span class="token operator">=</span> <span class="token string">"Inbound"</span>
+      access                     <span class="token operator">=</span> <span class="token string">"Allow"</span>
+      protocol                   <span class="token operator">=</span> <span class="token string">"*"</span>
+      source_port_range          <span class="token operator">=</span> <span class="token string">"*"</span>
+      destination_port_range     <span class="token operator">=</span> <span class="token string">"*"</span>
+      source_address_prefix      <span class="token operator">=</span> <span class="token string">"120.75.97.239"</span> # your global ip
+      destination_address_prefix <span class="token operator">=</span> <span class="token string">"10.0.0.0/24"</span>
+  <span class="token punctuation">}</span>  
+<span class="token punctuation">}</span>
+
+# <span class="token constant">NSG</span> の割当 <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token maybe-class-name">Subnet1</span>
+resource <span class="token string">"azurerm_subnet_network_security_group_association"</span> <span class="token string">"subnet1"</span> <span class="token punctuation">{</span>
+  subnet_id                 <span class="token operator">=</span> azurerm_subnet<span class="token punctuation">.</span><span class="token property-access">terraform</span><span class="token operator">-</span>work2<span class="token operator">-</span>subnet<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">.</span><span class="token property-access">id</span>
+  network_security_group_id <span class="token operator">=</span> azurerm_network_security_group<span class="token punctuation">.</span><span class="token property-access">terraform</span><span class="token operator">-</span>work2<span class="token operator">-</span>nsg<span class="token punctuation">.</span><span class="token property-access">id</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>output ブロック
+<ul>
+<li>terraform apply 実行後、CLI にプリントする。Public IP アドレスや Random で作成した VM パスワード等。<br>
+<a href="https://qiita.com/kyntk/items/2cdd38c2438ac257ac4e">Terraformのoutputとは何か</a></li>
+<li>実際の運用では、別ファイル化した (モジュール化した) リソース作成において、作成したリソースの ID を output で連携して他リソース作成時のプロパティとして使用する事が多いと思われる。<br>
+例）VNET/Subnet 作成後、VM に 割り当てる NIC に サブネット ID を連携して使用する。<br>
+<a href="https://zenn.dev/not75743/articles/8b98519fc9fde0">TerraformのModule間で値をやり取りする</a><pre data-role="codeBlock" data-info="" class="language-text"><code>output "resource_group_name" {
+  description = "The name of the created resource group."
+  value       = azurerm_resource_group.rg.name
+}
+
+output "virtual_network_name" {
+  description = "The name of the created virtual network."
+  value       = azurerm_virtual_network.terraform-work2-network.name
+}
+～略～
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="実行概要">実行概要 </h1>
+<h2 id="実行方法">実行方法 </h2>
+<ul>
+<li>
+<p>terraform init で初期化。プロバイダー (azurerm / random) がダウンロードされる。<br>
+<img src="image/work2-readme/1732680052891.png" alt="1732680052891"><br>
+<img src="image/work2-readme/1732681022904.png" alt="1732681022904"></p>
+<pre data-role="codeBlock" data-info="PowerShell" class="language-powershell PowerShell"><code><span class="token function">PS</span> C:\Users\HNakajima\OneDrive <span class="token operator">-</span> 個人契約\Work\source\terraform\terraform-work2&gt; terraform init 
+Initializing the backend<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+Successfully configured the backend <span class="token string">"azurerm"</span><span class="token operator">!</span> Terraform will automatically
+use this backend unless the backend configuration changes<span class="token punctuation">.</span>
+Initializing provider plugins<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token operator">-</span> Finding hashicorp/azurerm versions matching <span class="token string">"4.4.0"</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token operator">-</span> Finding hashicorp/random versions matching <span class="token string">"~&gt; 3.0"</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token operator">-</span> Installing hashicorp/azurerm v4<span class="token punctuation">.</span>4<span class="token punctuation">.</span>0<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token operator">-</span> Installed hashicorp/azurerm v4<span class="token punctuation">.</span>4<span class="token punctuation">.</span>0 <span class="token punctuation">(</span>signed by HashiCorp<span class="token punctuation">)</span>
+<span class="token operator">-</span> Installing hashicorp/random v3<span class="token punctuation">.</span>6<span class="token punctuation">.</span>3<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token operator">-</span> Installed hashicorp/random v3<span class="token punctuation">.</span>6<span class="token punctuation">.</span>3 <span class="token punctuation">(</span>signed by HashiCorp<span class="token punctuation">)</span>
+Terraform has created a lock file <span class="token punctuation">.</span>terraform<span class="token punctuation">.</span>lock<span class="token punctuation">.</span>hcl to record the provider
+selections it made above<span class="token punctuation">.</span> Include this file in your version control repository
+so that Terraform can guarantee to make the same selections by default when
+you run <span class="token string">"terraform init"</span> in the future<span class="token punctuation">.</span>
+
+Terraform has been successfully initialized!
+
+You may now <span class="token keyword keyword-begin">begin</span> working with Terraform<span class="token punctuation">.</span> <span class="token keyword keyword-Try">Try</span> running <span class="token string">"terraform plan"</span> to see
+any changes that are required <span class="token keyword keyword-for">for</span> your infrastructure<span class="token punctuation">.</span> All Terraform commands
+should now work<span class="token punctuation">.</span>
+
+<span class="token keyword keyword-If">If</span> you ever <span class="token function">set</span> or change modules or backend configuration <span class="token keyword keyword-for">for</span> Terraform<span class="token punctuation">,</span>
+rerun this command to reinitialize your working directory<span class="token punctuation">.</span> <span class="token keyword keyword-If">If</span> you forget<span class="token punctuation">,</span> other
+commands will detect it and remind you to <span class="token keyword keyword-do">do</span> so <span class="token keyword keyword-if">if</span> necessary<span class="token punctuation">.</span>
+</code></pre></li>
+<li>
+<p>terraform plan で実行内容を確認する。</p>
+<ul>
+<li>サブネットにおいて VNET の変数名を間違えているエラーだった。その他、リージョン名が間違っている場合などエラーがあれば表示される。<br>
+<img src="image/work2-readme/1732680133358.png" alt="1732680133358"><pre data-role="codeBlock" data-info="PowerShell" class="language-powershell PowerShell"><code><span class="token function">PS</span> C:\Users\HNakajima\OneDrive <span class="token operator">-</span> 個人契約\Work\source\terraform\terraform-work2&gt; terraform plan 
+╷
+│ Error: Reference to undeclared resource
+│ 
+│   on main<span class="token punctuation">.</span>tf line 28<span class="token punctuation">,</span> in resource <span class="token string">"azurerm_subnet"</span> <span class="token string">"terraform-work2-subnet-1"</span>:
+│   28:   virtual_network_name = azurerm_virtual_network<span class="token punctuation">.</span>my_terraform_network<span class="token punctuation">.</span>name
+│ 
+│ A managed resource <span class="token string">"azurerm_virtual_network"</span> <span class="token string">"my_terraform_network"</span> has not been declared in the root module<span class="token punctuation">.</span>
+╵
+╷
+│ Error: Reference to undeclared resource
+│ 
+│   on main<span class="token punctuation">.</span>tf line 45<span class="token punctuation">,</span> in resource <span class="token string">"azurerm_subnet"</span> <span class="token string">"terraform-work2-subnet-2"</span>:
+│   45:   virtual_network_name = azurerm_virtual_network<span class="token punctuation">.</span>my_terraform_network<span class="token punctuation">.</span>name
+│ 
+│ A managed resource <span class="token string">"azurerm_virtual_network"</span> <span class="token string">"my_terraform_network"</span> has not been declared in the root module<span class="token punctuation">.</span>
+╵
+</code></pre></li>
+<li>変数名を正しいものに修正した。<br>
+<img src="image/work2-readme/1732680298490.png" alt="1732680298490"><br>
+<img src="image/work2-readme/1732680332180.png" alt="1732680332180"></li>
+</ul>
+</li>
+<li>
+<p>改めて terraform plan で実行内容を確認すると、エラーは解消された。<br>
+<img src="image/work2-readme/1732680396182.png" alt="1732680396182"></p>
+<pre data-role="codeBlock" data-info="PowerShell" class="language-powershell PowerShell"><code><span class="token function">PS</span> C:\Users\HNakajima\OneDrive <span class="token operator">-</span> 個人契約\Work\source\terraform\terraform-work2&gt; terraform plan
+
+Terraform used the selected providers to generate the following execution plan<span class="token punctuation">.</span> Resource actions are indicated with the following symbols:
+  <span class="token operator">+</span> create
+
+Terraform will perform the following actions:
+
+  <span class="token comment"># azurerm_network_security_group.terraform-work2-nsg will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_network_security_group"</span> <span class="token string">"terraform-work2-nsg"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> id                  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location            = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> name                = <span class="token string">"terraform-work2-nsg"</span>
+      <span class="token operator">+</span> resource_group_name = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> security_rule       = <span class="token punctuation">[</span>
+          <span class="token operator">+</span> <span class="token punctuation">{</span>
+              <span class="token operator">+</span> access                                     = <span class="token string">"Allow"</span>
+              <span class="token operator">+</span> destination_address_prefix                 = <span class="token string">"10.0.0.0/24"</span>
+              <span class="token operator">+</span> destination_address_prefixes               = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> destination_application_security_group_ids = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> destination_port_range                     = <span class="token string">"*"</span>
+              <span class="token operator">+</span> destination_port_ranges                    = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> direction                                  = <span class="token string">"Inbound"</span>
+              <span class="token operator">+</span> name                                       = <span class="token string">"allow"</span>
+              <span class="token operator">+</span> priority                                   = 100
+              <span class="token operator">+</span> protocol                                   = <span class="token string">"*"</span>
+              <span class="token operator">+</span> source_address_prefix                      = <span class="token string">"120.75.97.239"</span>
+              <span class="token operator">+</span> source_address_prefixes                    = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> source_application_security_group_ids      = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> source_port_range                          = <span class="token string">"*"</span>
+              <span class="token operator">+</span> source_port_ranges                         = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+                <span class="token comment"># (1 unchanged attribute hidden)</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_resource_group.rg will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_resource_group"</span> <span class="token string">"rg"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> id       = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> name     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_subnet.terraform-work2-subnet-1 will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_subnet"</span> <span class="token string">"terraform-work2-subnet-1"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> address_prefixes                              = <span class="token punctuation">[</span>
+          <span class="token operator">+</span> <span class="token string">"10.0.0.0/24"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+      <span class="token operator">+</span> default_outbound_access_enabled               = true
+      <span class="token operator">+</span> id                                            = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> name                                          = <span class="token string">"subnet-1"</span>
+      <span class="token operator">+</span> private_endpoint_network_policies             = <span class="token string">"Disabled"</span>
+      <span class="token operator">+</span> private_link_service_network_policies_enabled = true
+      <span class="token operator">+</span> resource_group_name                           = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> virtual_network_name                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+      <span class="token operator">+</span> delegation <span class="token punctuation">{</span>
+          <span class="token operator">+</span> name = <span class="token string">"delegation"</span>
+
+          <span class="token operator">+</span> service_delegation <span class="token punctuation">{</span>
+              <span class="token operator">+</span> actions = <span class="token punctuation">[</span>
+                  <span class="token operator">+</span> <span class="token string">"Microsoft.Network/virtualNetworks/subnets/join/action"</span><span class="token punctuation">,</span>
+                  <span class="token operator">+</span> <span class="token string">"Microsoft.Network/virtualNetworks/subnets/prepareNetworkPolicies/action"</span><span class="token punctuation">,</span>
+                <span class="token punctuation">]</span>
+              <span class="token operator">+</span> name    = <span class="token string">"Microsoft.ContainerInstance/containerGroups"</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_subnet.terraform-work2-subnet-2 will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_subnet"</span> <span class="token string">"terraform-work2-subnet-2"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> address_prefixes                              = <span class="token punctuation">[</span>
+          <span class="token operator">+</span> <span class="token string">"10.0.1.0/24"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+      <span class="token operator">+</span> default_outbound_access_enabled               = true
+      <span class="token operator">+</span> id                                            = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> name                                          = <span class="token string">"subnet-2"</span>
+      <span class="token operator">+</span> private_endpoint_network_policies             = <span class="token string">"Disabled"</span>
+      <span class="token operator">+</span> private_link_service_network_policies_enabled = true
+      <span class="token operator">+</span> resource_group_name                           = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> service_endpoints                             = <span class="token punctuation">[</span>
+          <span class="token operator">+</span> <span class="token string">"Microsoft.Storage"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+      <span class="token operator">+</span> virtual_network_name                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_subnet_network_security_group_association.subnet1 will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_subnet_network_security_group_association"</span> <span class="token string">"subnet1"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> id                        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> network_security_group_id = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> subnet_id                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_virtual_network.terraform-work2-network will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_virtual_network"</span> <span class="token string">"terraform-work2-network"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> address_space       = <span class="token punctuation">[</span>
+          <span class="token operator">+</span> <span class="token string">"10.0.0.0/16"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+      <span class="token operator">+</span> dns_servers         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> guid                = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> id                  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location            = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> name                = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> resource_group_name = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> subnet              = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># random_pet.prefix will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"random_pet"</span> <span class="token string">"prefix"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> id        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> length    = 1
+      <span class="token operator">+</span> prefix    = <span class="token string">"rg"</span>
+      <span class="token operator">+</span> separator = <span class="token string">"-"</span>
+    <span class="token punctuation">}</span>
+
+Plan: 7 to add<span class="token punctuation">,</span> 0 to change<span class="token punctuation">,</span> 0 to destroy<span class="token punctuation">.</span>
+
+Changes to Outputs:
+  <span class="token operator">+</span> resource_group_name  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+  <span class="token operator">+</span> subnet_name_1        = <span class="token string">"subnet-1"</span>
+  <span class="token operator">+</span> subnet_name_2        = <span class="token string">"subnet-2"</span>
+  <span class="token operator">+</span> virtual_network_name = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+───────────────────────────────────────────────────────────
+
+Note: You didn<span class="token string">'t use the -out option to save this plan, so Terraform can'</span>t guarantee to take exactly these actions <span class="token keyword keyword-if">if</span> you run <span class="token string">"terraform apply"</span> now<span class="token punctuation">.</span>
+</code></pre></li>
+<li>
+<p>terraform apply で環境に適用する。45秒程度掛かった。<br>
+<img src="image/work2-readme/1732680529489.png" alt="1732680529489"></p>
+<pre data-role="codeBlock" data-info="PowerShell" class="language-powershell PowerShell"><code><span class="token function">PS</span> C:\Users\HNakajima\OneDrive <span class="token operator">-</span> 個人契約\Work\source\terraform\terraform-work2&gt; terraform apply
+
+Terraform used the selected providers to generate the following execution plan<span class="token punctuation">.</span> Resource actions are indicated with the following symbols:
+  <span class="token operator">+</span> create
+
+Terraform will perform the following actions:
+
+  <span class="token comment"># azurerm_network_security_group.terraform-work2-nsg will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_network_security_group"</span> <span class="token string">"terraform-work2-nsg"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> id                  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location            = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> name                = <span class="token string">"terraform-work2-nsg"</span>
+      <span class="token operator">+</span> resource_group_name = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> security_rule       = <span class="token punctuation">[</span>
+          <span class="token operator">+</span> <span class="token punctuation">{</span>
+              <span class="token operator">+</span> access                                     = <span class="token string">"Allow"</span>
+              <span class="token operator">+</span> destination_address_prefix                 = <span class="token string">"10.0.0.0/24"</span>
+              <span class="token operator">+</span> destination_address_prefixes               = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> destination_application_security_group_ids = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> destination_port_range                     = <span class="token string">"*"</span>
+              <span class="token operator">+</span> destination_port_ranges                    = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> direction                                  = <span class="token string">"Inbound"</span>
+              <span class="token operator">+</span> name                                       = <span class="token string">"allow"</span>
+              <span class="token operator">+</span> priority                                   = 100
+              <span class="token operator">+</span> protocol                                   = <span class="token string">"*"</span>
+              <span class="token operator">+</span> source_address_prefix                      = <span class="token string">"120.75.97.239"</span>
+              <span class="token operator">+</span> source_address_prefixes                    = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> source_application_security_group_ids      = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> source_port_range                          = <span class="token string">"*"</span>
+              <span class="token operator">+</span> source_port_ranges                         = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+                <span class="token comment"># (1 unchanged attribute hidden)</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_resource_group.rg will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_resource_group"</span> <span class="token string">"rg"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> id       = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> name     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_subnet.terraform-work2-subnet-1 will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_subnet"</span> <span class="token string">"terraform-work2-subnet-1"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> address_prefixes                              = <span class="token punctuation">[</span>
+          <span class="token operator">+</span> <span class="token string">"10.0.0.0/24"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+      <span class="token operator">+</span> default_outbound_access_enabled               = true
+      <span class="token operator">+</span> id                                            = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> name                                          = <span class="token string">"subnet-1"</span>
+      <span class="token operator">+</span> private_endpoint_network_policies             = <span class="token string">"Disabled"</span>
+      <span class="token operator">+</span> private_link_service_network_policies_enabled = true
+      <span class="token operator">+</span> resource_group_name                           = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> virtual_network_name                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+      <span class="token operator">+</span> delegation <span class="token punctuation">{</span>
+          <span class="token operator">+</span> name = <span class="token string">"delegation"</span>
+
+          <span class="token operator">+</span> service_delegation <span class="token punctuation">{</span>
+              <span class="token operator">+</span> actions = <span class="token punctuation">[</span>
+                  <span class="token operator">+</span> <span class="token string">"Microsoft.Network/virtualNetworks/subnets/join/action"</span><span class="token punctuation">,</span>
+                  <span class="token operator">+</span> <span class="token string">"Microsoft.Network/virtualNetworks/subnets/prepareNetworkPolicies/action"</span><span class="token punctuation">,</span>
+                <span class="token punctuation">]</span>
+              <span class="token operator">+</span> name    = <span class="token string">"Microsoft.ContainerInstance/containerGroups"</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_subnet.terraform-work2-subnet-2 will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_subnet"</span> <span class="token string">"terraform-work2-subnet-2"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> address_prefixes                              = <span class="token punctuation">[</span>
+          <span class="token operator">+</span> <span class="token string">"10.0.1.0/24"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+      <span class="token operator">+</span> default_outbound_access_enabled               = true
+      <span class="token operator">+</span> id                                            = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> name                                          = <span class="token string">"subnet-2"</span>
+      <span class="token operator">+</span> private_endpoint_network_policies             = <span class="token string">"Disabled"</span>
+      <span class="token operator">+</span> private_link_service_network_policies_enabled = true
+      <span class="token operator">+</span> resource_group_name                           = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> service_endpoints                             = <span class="token punctuation">[</span>
+          <span class="token operator">+</span> <span class="token string">"Microsoft.Storage"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+      <span class="token operator">+</span> virtual_network_name                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_subnet_network_security_group_association.subnet1 will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_subnet_network_security_group_association"</span> <span class="token string">"subnet1"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> id                        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> network_security_group_id = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> subnet_id                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_virtual_network.terraform-work2-network will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_virtual_network"</span> <span class="token string">"terraform-work2-network"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> address_space       = <span class="token punctuation">[</span>
+          <span class="token operator">+</span> <span class="token string">"10.0.0.0/16"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+      <span class="token operator">+</span> dns_servers         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> guid                = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> id                  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location            = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> name                = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> resource_group_name = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> subnet              = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># random_pet.prefix will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"random_pet"</span> <span class="token string">"prefix"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> id        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> length    = 1
+      <span class="token operator">+</span> prefix    = <span class="token string">"rg"</span>
+      <span class="token operator">+</span> separator = <span class="token string">"-"</span>
+    <span class="token punctuation">}</span>
+
+Plan: 7 to add<span class="token punctuation">,</span> 0 to change<span class="token punctuation">,</span> 0 to destroy<span class="token punctuation">.</span>
+
+Changes to Outputs:
+  <span class="token operator">+</span> resource_group_name  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+  <span class="token operator">+</span> subnet_name_1        = <span class="token string">"subnet-1"</span>
+  <span class="token operator">+</span> subnet_name_2        = <span class="token string">"subnet-2"</span>
+  <span class="token operator">+</span> virtual_network_name = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+<span class="token keyword keyword-Do">Do</span> you want to perform these actions?
+  Terraform will perform the actions described above<span class="token punctuation">.</span>
+  Only <span class="token string">'yes'</span> will be accepted to approve<span class="token punctuation">.</span>
+
+  Enter a value: yes
+
+random_pet<span class="token punctuation">.</span>prefix: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+random_pet<span class="token punctuation">.</span>prefix: Creation complete after 0s <span class="token namespace">[id=rg-mackerel]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>10s elapsed<span class="token punctuation">]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Creation complete after 12s <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-mackerel]</span>
+azurerm_virtual_network<span class="token punctuation">.</span>terraform-work2-network: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+azurerm_network_security_group<span class="token punctuation">.</span>terraform-work2-nsg: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+azurerm_network_security_group<span class="token punctuation">.</span>terraform-work2-nsg: Creation complete after 2s <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-mackerel/providers/Microsoft.Network/networkSecurityGroups/terraform-work2-nsg]</span>
+azurerm_virtual_network<span class="token punctuation">.</span>terraform-work2-network: Creation complete after 5s <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-mackerel/providers/Microsoft.Network/virtualNetworks/rg-mackerel-vnet]</span>
+azurerm_subnet<span class="token punctuation">.</span>terraform-work2-subnet-2: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+azurerm_subnet<span class="token punctuation">.</span>terraform-work2-subnet-1: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+azurerm_subnet<span class="token punctuation">.</span>terraform-work2-subnet-2: Creation complete after 3s <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-mackerel/providers/Microsoft.Network/virtualNetworks/rg-mackerel-vnet/subnets/subnet-2]</span>
+azurerm_subnet<span class="token punctuation">.</span>terraform-work2-subnet-1: Creation complete after 7s <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-mackerel/providers/Microsoft.Network/virtualNetworks/rg-mackerel-vnet/subnets/subnet-1]</span>
+azurerm_subnet_network_security_group_association<span class="token punctuation">.</span>subnet1: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+azurerm_subnet_network_security_group_association<span class="token punctuation">.</span>subnet1: Creation complete after 4s <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-mackerel/providers/Microsoft.Network/virtualNetworks/rg-mackerel-vnet/subnets/subnet-1]</span>
+
+Apply complete! Resources: 7 added<span class="token punctuation">,</span> 0 changed<span class="token punctuation">,</span> 0 destroyed<span class="token punctuation">.</span>
+
+Outputs:
+
+resource_group_name = <span class="token string">"rg-mackerel"</span>
+subnet_name_1 = <span class="token string">"subnet-1"</span>
+subnet_name_2 = <span class="token string">"subnet-2"</span>
+virtual_network_name = <span class="token string">"rg-mackerel-vnet"</span>
+</code></pre><ul>
+<li>Outputs として、各リソースの名前がプリントされた。ペット名は mackerel だった。</li>
+</ul>
+</li>
+</ul>
+<h2 id="実行結果">実行結果 </h2>
+<ul>
+<li>
+<p>リソースグループ、仮想ネットワーク、サブネット、NSG が作成された。<br>
+<img src="image/work2-readme/1732680676507.png" alt="1732680676507"><br>
+<img src="image/work2-readme/1732680697183.png" alt="1732680697183"></p>
+</li>
+<li>
+<p>アドレス空間が重複している警告は出なかった。<br>
+<img src="image/work2-readme/1732680727586.png" alt="1732680727586"></p>
+</li>
+<li>
+<p>Subnet1 に NSG の割当及び委任先が設定されている。<br>
+<img src="image/work2-readme/1732680788452.png" alt="1732680788452"></p>
+</li>
+<li>
+<p>Subnet 2 にサービスエンドポイントが設定されている。<br>
+<img src="image/work2-readme/1732680844561.png" alt="1732680844561"></p>
+</li>
+<li>
+<p>デプロイ履歴には残らない。<br>
+<img src="image/work2-readme/1732680844565.png" alt="1732680844565"></p>
+</li>
+<li>
+<p>Backend に tfstate が生成される。<br>
+<img src="image/work2-readme/1732687108014.png" alt="1732687108014"></p>
+<ul>
+<li>tfstate の内容は以下 Json となる。terraform apply 毎に作成され管理する。</li>
+<li>指定していないプロパティ等のリソースの状態が保持されている。
+<ul>
+<li>例えば tfstate を削除してしまった後、terraform apply するとリソースが存在するためエラーとなり、復旧が必要となる (復旧はかなり難しいとの記述が多数見受けられる)。</li>
+</ul>
+</li>
+</ul>
+<pre data-role="codeBlock" data-info="json" class="language-json json"><code><span class="token punctuation">{</span>
+  <span class="token property">"version"</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+  <span class="token property">"terraform_version"</span><span class="token operator">:</span> <span class="token string">"1.9.8"</span><span class="token punctuation">,</span>
+  <span class="token property">"serial"</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+  <span class="token property">"lineage"</span><span class="token operator">:</span> <span class="token string">"ee567991-efde-ae7a-5d53-d2078c2bc913"</span><span class="token punctuation">,</span>
+  <span class="token property">"outputs"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"resource_group_name"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"rg-mackerel"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"string"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"subnet_name_1"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"subnet-1"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"string"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"subnet_name_2"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"subnet-2"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"string"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"virtual_network_name"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"value"</span><span class="token operator">:</span> <span class="token string">"rg-mackerel-vnet"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"string"</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"resources"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"mode"</span><span class="token operator">:</span> <span class="token string">"managed"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"azurerm_network_security_group"</span><span class="token punctuation">,</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"terraform-work2-nsg"</span><span class="token punctuation">,</span>
+      <span class="token property">"provider"</span><span class="token operator">:</span> <span class="token string">"provider[\"registry.terraform.io/hashicorp/azurerm\"]"</span><span class="token punctuation">,</span>
+      <span class="token property">"instances"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"schema_version"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+          <span class="token property">"attributes"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-mackerel/providers/Microsoft.Network/networkSecurityGroups/terraform-work2-nsg"</span><span class="token punctuation">,</span>
+            <span class="token property">"location"</span><span class="token operator">:</span> <span class="token string">"japanwest"</span><span class="token punctuation">,</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"terraform-work2-nsg"</span><span class="token punctuation">,</span>
+            <span class="token property">"resource_group_name"</span><span class="token operator">:</span> <span class="token string">"rg-mackerel"</span><span class="token punctuation">,</span>
+            <span class="token property">"security_rule"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">{</span>
+                <span class="token property">"access"</span><span class="token operator">:</span> <span class="token string">"Allow"</span><span class="token punctuation">,</span>
+                <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+                <span class="token property">"destination_address_prefix"</span><span class="token operator">:</span> <span class="token string">"10.0.0.0/24"</span><span class="token punctuation">,</span>
+                <span class="token property">"destination_address_prefixes"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token property">"destination_application_security_group_ids"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token property">"destination_port_range"</span><span class="token operator">:</span> <span class="token string">"*"</span><span class="token punctuation">,</span>
+                <span class="token property">"destination_port_ranges"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token property">"direction"</span><span class="token operator">:</span> <span class="token string">"Inbound"</span><span class="token punctuation">,</span>
+                <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"allow"</span><span class="token punctuation">,</span>
+                <span class="token property">"priority"</span><span class="token operator">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+                <span class="token property">"protocol"</span><span class="token operator">:</span> <span class="token string">"*"</span><span class="token punctuation">,</span>
+                <span class="token property">"source_address_prefix"</span><span class="token operator">:</span> <span class="token string">"120.75.97.239"</span><span class="token punctuation">,</span>
+                <span class="token property">"source_address_prefixes"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token property">"source_application_security_group_ids"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token property">"source_port_range"</span><span class="token operator">:</span> <span class="token string">"*"</span><span class="token punctuation">,</span>
+                <span class="token property">"source_port_ranges"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"tags"</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+            <span class="token property">"timeouts"</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">"sensitive_attributes"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"private"</span><span class="token operator">:</span> <span class="token string">"eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0="</span><span class="token punctuation">,</span>
+          <span class="token property">"dependencies"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">"azurerm_resource_group.rg"</span><span class="token punctuation">,</span>
+            <span class="token string">"random_pet.prefix"</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"mode"</span><span class="token operator">:</span> <span class="token string">"managed"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"azurerm_resource_group"</span><span class="token punctuation">,</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"rg"</span><span class="token punctuation">,</span>
+      <span class="token property">"provider"</span><span class="token operator">:</span> <span class="token string">"provider[\"registry.terraform.io/hashicorp/azurerm\"]"</span><span class="token punctuation">,</span>
+      <span class="token property">"instances"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"schema_version"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+          <span class="token property">"attributes"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-mackerel"</span><span class="token punctuation">,</span>
+            <span class="token property">"location"</span><span class="token operator">:</span> <span class="token string">"japanwest"</span><span class="token punctuation">,</span>
+            <span class="token property">"managed_by"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"rg-mackerel"</span><span class="token punctuation">,</span>
+            <span class="token property">"tags"</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+            <span class="token property">"timeouts"</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">"sensitive_attributes"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"private"</span><span class="token operator">:</span> <span class="token string">"eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="</span><span class="token punctuation">,</span>
+          <span class="token property">"dependencies"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">"random_pet.prefix"</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"mode"</span><span class="token operator">:</span> <span class="token string">"managed"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"azurerm_subnet"</span><span class="token punctuation">,</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"terraform-work2-subnet-1"</span><span class="token punctuation">,</span>
+      <span class="token property">"provider"</span><span class="token operator">:</span> <span class="token string">"provider[\"registry.terraform.io/hashicorp/azurerm\"]"</span><span class="token punctuation">,</span>
+      <span class="token property">"instances"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"schema_version"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+          <span class="token property">"attributes"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"address_prefixes"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token string">"10.0.0.0/24"</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"default_outbound_access_enabled"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">"delegation"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token punctuation">{</span>
+                <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"delegation"</span><span class="token punctuation">,</span>
+                <span class="token property">"service_delegation"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                  <span class="token punctuation">{</span>
+                    <span class="token property">"actions"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                      <span class="token string">"Microsoft.Network/virtualNetworks/subnets/join/action"</span><span class="token punctuation">,</span>
+                      <span class="token string">"Microsoft.Network/virtualNetworks/subnets/prepareNetworkPolicies/action"</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Microsoft.ContainerInstance/containerGroups"</span>
+                  <span class="token punctuation">}</span>
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-mackerel/providers/Microsoft.Network/virtualNetworks/rg-mackerel-vnet/subnets/subnet-1"</span><span class="token punctuation">,</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"subnet-1"</span><span class="token punctuation">,</span>
+            <span class="token property">"private_endpoint_network_policies"</span><span class="token operator">:</span> <span class="token string">"Disabled"</span><span class="token punctuation">,</span>
+            <span class="token property">"private_link_service_network_policies_enabled"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">"resource_group_name"</span><span class="token operator">:</span> <span class="token string">"rg-mackerel"</span><span class="token punctuation">,</span>
+            <span class="token property">"service_endpoint_policy_ids"</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+            <span class="token property">"service_endpoints"</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+            <span class="token property">"timeouts"</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+            <span class="token property">"virtual_network_name"</span><span class="token operator">:</span> <span class="token string">"rg-mackerel-vnet"</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">"sensitive_attributes"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"private"</span><span class="token operator">:</span> <span class="token string">"eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0="</span><span class="token punctuation">,</span>
+          <span class="token property">"dependencies"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">"azurerm_resource_group.rg"</span><span class="token punctuation">,</span>
+            <span class="token string">"azurerm_virtual_network.terraform-work2-network"</span><span class="token punctuation">,</span>
+            <span class="token string">"random_pet.prefix"</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"mode"</span><span class="token operator">:</span> <span class="token string">"managed"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"azurerm_subnet"</span><span class="token punctuation">,</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"terraform-work2-subnet-2"</span><span class="token punctuation">,</span>
+      <span class="token property">"provider"</span><span class="token operator">:</span> <span class="token string">"provider[\"registry.terraform.io/hashicorp/azurerm\"]"</span><span class="token punctuation">,</span>
+      <span class="token property">"instances"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"schema_version"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+          <span class="token property">"attributes"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"address_prefixes"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token string">"10.0.1.0/24"</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"default_outbound_access_enabled"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">"delegation"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-mackerel/providers/Microsoft.Network/virtualNetworks/rg-mackerel-vnet/subnets/subnet-2"</span><span class="token punctuation">,</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"subnet-2"</span><span class="token punctuation">,</span>
+            <span class="token property">"private_endpoint_network_policies"</span><span class="token operator">:</span> <span class="token string">"Disabled"</span><span class="token punctuation">,</span>
+            <span class="token property">"private_link_service_network_policies_enabled"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            <span class="token property">"resource_group_name"</span><span class="token operator">:</span> <span class="token string">"rg-mackerel"</span><span class="token punctuation">,</span>
+            <span class="token property">"service_endpoint_policy_ids"</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+            <span class="token property">"service_endpoints"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token string">"Microsoft.Storage"</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"timeouts"</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+            <span class="token property">"virtual_network_name"</span><span class="token operator">:</span> <span class="token string">"rg-mackerel-vnet"</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">"sensitive_attributes"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"private"</span><span class="token operator">:</span> <span class="token string">"eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0="</span><span class="token punctuation">,</span>
+          <span class="token property">"dependencies"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">"azurerm_resource_group.rg"</span><span class="token punctuation">,</span>
+            <span class="token string">"azurerm_virtual_network.terraform-work2-network"</span><span class="token punctuation">,</span>
+            <span class="token string">"random_pet.prefix"</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"mode"</span><span class="token operator">:</span> <span class="token string">"managed"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"azurerm_subnet_network_security_group_association"</span><span class="token punctuation">,</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"subnet1"</span><span class="token punctuation">,</span>
+      <span class="token property">"provider"</span><span class="token operator">:</span> <span class="token string">"provider[\"registry.terraform.io/hashicorp/azurerm\"]"</span><span class="token punctuation">,</span>
+      <span class="token property">"instances"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"schema_version"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+          <span class="token property">"attributes"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-mackerel/providers/Microsoft.Network/virtualNetworks/rg-mackerel-vnet/subnets/subnet-1"</span><span class="token punctuation">,</span>
+            <span class="token property">"network_security_group_id"</span><span class="token operator">:</span> <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-mackerel/providers/Microsoft.Network/networkSecurityGroups/terraform-work2-nsg"</span><span class="token punctuation">,</span>
+            <span class="token property">"subnet_id"</span><span class="token operator">:</span> <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-mackerel/providers/Microsoft.Network/virtualNetworks/rg-mackerel-vnet/subnets/subnet-1"</span><span class="token punctuation">,</span>
+            <span class="token property">"timeouts"</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">"sensitive_attributes"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"private"</span><span class="token operator">:</span> <span class="token string">"eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMH19"</span><span class="token punctuation">,</span>
+          <span class="token property">"dependencies"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">"azurerm_network_security_group.terraform-work2-nsg"</span><span class="token punctuation">,</span>
+            <span class="token string">"azurerm_resource_group.rg"</span><span class="token punctuation">,</span>
+            <span class="token string">"azurerm_subnet.terraform-work2-subnet-1"</span><span class="token punctuation">,</span>
+            <span class="token string">"azurerm_virtual_network.terraform-work2-network"</span><span class="token punctuation">,</span>
+            <span class="token string">"random_pet.prefix"</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"mode"</span><span class="token operator">:</span> <span class="token string">"managed"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"azurerm_virtual_network"</span><span class="token punctuation">,</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"terraform-work2-network"</span><span class="token punctuation">,</span>
+      <span class="token property">"provider"</span><span class="token operator">:</span> <span class="token string">"provider[\"registry.terraform.io/hashicorp/azurerm\"]"</span><span class="token punctuation">,</span>
+      <span class="token property">"instances"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"schema_version"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+          <span class="token property">"attributes"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"address_space"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+              <span class="token string">"10.0.0.0/16"</span>
+            <span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"bgp_community"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+            <span class="token property">"ddos_protection_plan"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"dns_servers"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"edge_zone"</span><span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+            <span class="token property">"encryption"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"flow_timeout_in_minutes"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+            <span class="token property">"guid"</span><span class="token operator">:</span> <span class="token string">"db60a60e-11eb-47cd-b7d5-127834e20c4d"</span><span class="token punctuation">,</span>
+            <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-mackerel/providers/Microsoft.Network/virtualNetworks/rg-mackerel-vnet"</span><span class="token punctuation">,</span>
+            <span class="token property">"location"</span><span class="token operator">:</span> <span class="token string">"japanwest"</span><span class="token punctuation">,</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"rg-mackerel-vnet"</span><span class="token punctuation">,</span>
+            <span class="token property">"resource_group_name"</span><span class="token operator">:</span> <span class="token string">"rg-mackerel"</span><span class="token punctuation">,</span>
+            <span class="token property">"subnet"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"tags"</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+            <span class="token property">"timeouts"</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">"sensitive_attributes"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"private"</span><span class="token operator">:</span> <span class="token string">"eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjoxODAwMDAwMDAwMDAwfX0="</span><span class="token punctuation">,</span>
+          <span class="token property">"dependencies"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">"azurerm_resource_group.rg"</span><span class="token punctuation">,</span>
+            <span class="token string">"random_pet.prefix"</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"mode"</span><span class="token operator">:</span> <span class="token string">"managed"</span><span class="token punctuation">,</span>
+      <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"random_pet"</span><span class="token punctuation">,</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"prefix"</span><span class="token punctuation">,</span>
+      <span class="token property">"provider"</span><span class="token operator">:</span> <span class="token string">"provider[\"registry.terraform.io/hashicorp/random\"]"</span><span class="token punctuation">,</span>
+      <span class="token property">"instances"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"schema_version"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+          <span class="token property">"attributes"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"rg-mackerel"</span><span class="token punctuation">,</span>
+            <span class="token property">"keepers"</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+            <span class="token property">"length"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+            <span class="token property">"prefix"</span><span class="token operator">:</span> <span class="token string">"rg"</span><span class="token punctuation">,</span>
+            <span class="token property">"separator"</span><span class="token operator">:</span> <span class="token string">"-"</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">"sensitive_attributes"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">"check_results"</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+</ul>
+<hr>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

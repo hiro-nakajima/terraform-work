@@ -1,0 +1,1044 @@
+<!DOCTYPE html><html><head>
+      <title>work5-readme</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\HNakajima\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.15\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="概要">概要 </h1>
+<h5 id="既に構築済みのリソースを-terraform-で管理するためには-tftfstate-ファイルを生成する必要がある">既に構築済みのリソースを Terraform で管理するためには、tf/tfstate ファイルを生成する必要がある </h5>
+<ol>
+<li>terraform import を使用する</li>
+<li>terraform import block を使用する</li>
+<li>aztfexport を使用する</li>
+</ol>
+<p>work5 では「2. terraform import block を使用する」を検証します。</p>
+<ul>
+<li>ルートのフォルダ・ファイル構成
+<ul>
+<li>terraform-work5<br>
+∟ .terrtaform - init 時に作成される Provider がダウンロードされるフォルダ<br>
+∟ image - readme の画像ファイルを格納するフォルダ<br>
+∟ tfstate - リモートバックエンドからダウンロードした tfstate ファイル<br>
+∟ .terraform.lock.hcl - init 時に作成される、Provider と .tf ファイルの依存関係等が記録されたファイル ⇒ <a href="https://developer.hashicorp.com/terraform/language/files/dependency-lock">Dependency Lock File</a><br>
+∟ <a href="http://import.tf">import.tf</a> - Import block で生成された resource ブロックを修正し、Application Gateway を追記した tf ファイル<br>
+∟ import.tf.プロパティのエラー修正前 - Import block で生成された tf ファイル (エラーあり)<br>
+∟ importblock-main.tf.bak - Import block を記述した tf ファイル<br>
+∟ <a href="http://provider.tf">provider.tf</a> - プロバイダーを記述した tf ファイル<br>
+∟ work5-readme.html - Markdown を HTML 化したファイル<br>
+∟ <a href="http://work5-readme.md">work5-readme.md</a> - この Markdown ファイル</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="実行方法結果">実行方法・結果 </h2>
+<ol start="2">
+<li>terraform import block を使用する
+<ul>
+<li>
+<p><a href="https://developer.hashicorp.com/terraform/cli/import">Import</a><br>
+<img src="image/work5-readme/1732884369947.png" alt="173288436994"></p>
+<ul>
+<li>v1.5.0以降では import block が使える。</li>
+</ul>
+</li>
+<li>
+<p><a href="https://developer.hashicorp.com/terraform/language/import">Import blocks</a><br>
+<img src="image/work5-readme/1732885293163.png" alt="1732885293163"></p>
+<ul>
+<li>Experimental で、生成される構文については将来変更される可能性がある。</li>
+<li>tf ファイルに <code>import {}</code> で複数リソースを定義しておきコマンド実行する。
+<ul>
+<li>to：Terraform リソース名.変数名</li>
+<li>id：CSP のリソース ID</li>
+</ul>
+<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code><span class="token keyword module keyword-import">import</span> <span class="token punctuation">{</span>
+    to <span class="token operator">=</span> aws_instance<span class="token punctuation">.</span><span class="token property-access">example</span>
+    id <span class="token operator">=</span> <span class="token string">"i-abcd1234"</span>
+<span class="token punctuation">}</span>
+</code></pre><ul>
+<li>生成されたファイル</li>
+</ul>
+<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code>resource <span class="token string">"aws_instance"</span> <span class="token string">"example"</span> <span class="token punctuation">{</span>
+    name <span class="token operator">=</span> <span class="token string">"hashi"</span>
+    # <span class="token punctuation">(</span>other resource arguments<span class="token spread operator">...</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+<li>コマンド：<code>terraform plan -generate-config-out="import.tf"</code>
+<ul>
+<li>import のように手書きではなく、記載した分の resource ブロックを自動生成してくれる機能。</li>
+<li>指定したファイル名で生成されるので、同名のファイルがあった場合エラーとなる。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>参考URL</p>
+<ul>
+<li><a href="https://dev.classmethod.jp/articles/terraform-import-command-and-import-block/">Terraformのimportコマンドとimportブロックを試してみた</a></li>
+<li><a href="https://blog.jbs.co.jp/entry/2024/03/11/160601">importブロックを使用して既存AzureリソースをTerraform定義ファイルに取り込む</a></li>
+<li><a href="https://zenn.dev/yuki0920/articles/736c66784e58f9">[Terraform] 既存のリソースをimportするにはimport blockが有用</a></li>
+<li><a href="https://zenn.dev/aeonpeople/articles/d63e84494d9e2c">terraform importで数年やってきたがImport blockの良さに気づきました</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="実行方法">実行方法 </h2>
+<ol>
+<li>
+<p><a href="http://importblock-main.tf">importblock-main.tf</a> にリソース分の import ブロックを用意する</p>
+<ul>
+<li>work3 のリソースに対して Terraform 化してみる。</li>
+<li>Azure のリソース ID を調査しておく。</li>
+<li>terraform の対象リソース名と変数名を指定する。</li>
+</ul>
+<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code># <span class="token maybe-class-name">Resource</span> <span class="token maybe-class-name">Group</span>
+<span class="token keyword module keyword-import">import</span> <span class="token punctuation">{</span>
+    id <span class="token operator">=</span> <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama"</span>
+    to <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span>
+<span class="token punctuation">}</span>
+
+# <span class="token maybe-class-name">VNet</span>
+<span class="token keyword module keyword-import">import</span> <span class="token punctuation">{</span>
+    id <span class="token operator">=</span> <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet"</span>
+    to <span class="token operator">=</span> azurerm_virtual_network<span class="token punctuation">.</span><span class="token property-access">terraform_work5_network</span>
+<span class="token punctuation">}</span>
+
+# <span class="token maybe-class-name">Public</span> <span class="token constant">IP</span>
+<span class="token keyword module keyword-import">import</span> <span class="token punctuation">{</span>
+    id <span class="token operator">=</span> <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-llama-public-ip"</span>
+    to <span class="token operator">=</span> azurerm_public_ip<span class="token punctuation">.</span><span class="token property-access">terraform_work5_public_ip</span>
+<span class="token punctuation">}</span>
+
+# <span class="token constant">NSG</span>
+<span class="token keyword module keyword-import">import</span> <span class="token punctuation">{</span>
+    id <span class="token operator">=</span> <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-llama-nsg"</span>
+    to <span class="token operator">=</span> azurerm_network_security_group<span class="token punctuation">.</span><span class="token property-access">terraform_work5_nsg</span>
+<span class="token punctuation">}</span>
+
+# <span class="token constant">NIC</span>
+<span class="token keyword module keyword-import">import</span> <span class="token punctuation">{</span>
+    id <span class="token operator">=</span> <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkInterfaces/win-vm-iis-llama-nic"</span>
+    to <span class="token operator">=</span> azurerm_network_interface<span class="token punctuation">.</span><span class="token property-access">terraform_work5_nic</span>
+<span class="token punctuation">}</span>
+
+# <span class="token constant">VM</span>
+<span class="token keyword module keyword-import">import</span> <span class="token punctuation">{</span>
+    id <span class="token operator">=</span> <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm"</span>
+    to <span class="token operator">=</span> azurerm_windows_virtual_machine<span class="token punctuation">.</span><span class="token property-access">main</span>
+<span class="token punctuation">}</span>
+
+# <span class="token maybe-class-name">Storage</span> <span class="token maybe-class-name">Account</span>
+<span class="token keyword module keyword-import">import</span> <span class="token punctuation">{</span>
+    id <span class="token operator">=</span> <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Storage/storageAccounts/diag3abb2f58b75025ad"</span>
+    to <span class="token operator">=</span> azurerm_storage_account<span class="token punctuation">.</span><span class="token property-access">terraform_work5_storage_account</span>
+<span class="token punctuation">}</span>
+
+# <span class="token constant">VM</span> <span class="token maybe-class-name">Extension</span>
+<span class="token keyword module keyword-import">import</span> <span class="token punctuation">{</span>
+    id <span class="token operator">=</span> <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm/extensions/win-vm-iis-llama-wsi"</span>
+    to <span class="token operator">=</span> azurerm_virtual_machine_extension<span class="token punctuation">.</span><span class="token property-access">web_server_install</span>
+<span class="token punctuation">}</span>
+
+# <span class="token maybe-class-name">Subnet</span>
+<span class="token keyword module keyword-import">import</span> <span class="token punctuation">{</span>
+    id <span class="token operator">=</span> <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet/subnets/win-vm-iis-llama-subnet"</span>
+    to <span class="token operator">=</span> azurerm_subnet<span class="token punctuation">.</span><span class="token property-access">terraform_work3_subnet</span> 
+<span class="token punctuation">}</span>
+
+# <span class="token constant">OS</span> <span class="token maybe-class-name">Disk</span> は不要
+#<span class="token keyword module keyword-import">import</span> <span class="token punctuation">{</span>
+#  id <span class="token operator">=</span> <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/RG-WIN-VM-IIS-LLAMA/providers/Microsoft.Compute/disks/myOsDisk"</span>
+#  to <span class="token operator">=</span> azurerm_managed_disk<span class="token punctuation">.</span><span class="token property-access">myOsDisk</span>
+#<span class="token punctuation">}</span>
+</code></pre></li>
+<li>
+<p>コマンドを実行する<br>
+<img src="image/work5-readme/1732887209435.png" alt="1732887209435"></p>
+<pre data-role="codeBlock" data-info="PowerShell" class="language-powershell PowerShell"><code> <span class="token function">PS</span> C:\Users\HNakajima\OneDrive <span class="token operator">-</span> 個人契約\Work\source\terraform\terraform-work5&gt; terraform plan <span class="token operator">-</span>generate-config-out=<span class="token string">"import.tf"</span> 
+ azurerm_storage_account<span class="token punctuation">.</span>terraform_work5_storage_account: Preparing import<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Storage/storageAccounts/diag3abb2f58b75025ad]</span>
+ azurerm_resource_group<span class="token punctuation">.</span>rg: Preparing import<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama]</span>
+ azurerm_subnet<span class="token punctuation">.</span>terraform_work3_subnet: Preparing import<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet/subnets/win-vm-iis-llama-subnet]</span>
+ azurerm_public_ip<span class="token punctuation">.</span>terraform_work5_public_ip: Preparing import<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-llama-public-ip]</span>
+ azurerm_network_interface<span class="token punctuation">.</span>terraform_work5_nic: Preparing import<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkInterfaces/win-vm-iis-llama-nic]</span>
+ azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Preparing import<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm/extensions/win-vm-iis-llama-wsi]</span>
+ azurerm_virtual_network<span class="token punctuation">.</span>terraform_work5_network: Preparing import<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet]</span>
+ azurerm_windows_virtual_machine<span class="token punctuation">.</span>main: Preparing import<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm]</span>
+ azurerm_network_security_group<span class="token punctuation">.</span>terraform_work5_nsg: Preparing import<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-llama-nsg]</span>
+ azurerm_virtual_network<span class="token punctuation">.</span>terraform_work5_network: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet]</span>
+ azurerm_public_ip<span class="token punctuation">.</span>terraform_work5_public_ip: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-llama-public-ip]</span>
+ azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm/extensions/win-vm-iis-llama-wsi]</span>
+ azurerm_subnet<span class="token punctuation">.</span>terraform_work3_subnet: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet/subnets/win-vm-iis-llama-subnet]</span>
+ azurerm_network_security_group<span class="token punctuation">.</span>terraform_work5_nsg: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-llama-nsg]</span>
+ azurerm_network_interface<span class="token punctuation">.</span>terraform_work5_nic: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkInterfaces/win-vm-iis-llama-nic]</span>
+ azurerm_resource_group<span class="token punctuation">.</span>rg: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama]</span>
+ azurerm_storage_account<span class="token punctuation">.</span>terraform_work5_storage_account: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Storage/storageAccounts/diag3abb2f58b75025ad]</span>
+ azurerm_windows_virtual_machine<span class="token punctuation">.</span>main: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm]</span>
+
+ Terraform planned the following actions<span class="token punctuation">,</span> but then encountered a problem:
+
+ <span class="token comment"># azurerm_network_interface.terraform_work5_nic will be imported</span>
+ <span class="token comment"># (config will be generated)</span>
+     resource <span class="token string">"azurerm_network_interface"</span> <span class="token string">"terraform_work5_nic"</span> <span class="token punctuation">{</span>
+         accelerated_networking_enabled = false
+         applied_dns_servers            = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+         auxiliary_mode                 = null
+         auxiliary_sku                  = null
+         dns_servers                    = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+         edge_zone                      = null
+         id                             = <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkInterfaces/win-vm-iis-llama-nic"</span>
+         internal_dns_name_label        = null
+         internal_domain_name_suffix    = null
+         ip_forwarding_enabled          = false
+         location                       = <span class="token string">"japanwest"</span>
+         mac_address                    = <span class="token string">"60-45-BD-53-B2-0C"</span>
+         name                           = <span class="token string">"win-vm-iis-llama-nic"</span>
+         private_ip_address             = <span class="token string">"10.0.1.4"</span>
+         private_ip_addresses           = <span class="token punctuation">[</span>
+             <span class="token string">"10.0.1.4"</span><span class="token punctuation">,</span>
+         <span class="token punctuation">]</span>
+         resource_group_name            = <span class="token string">"rg-win-vm-iis-llama"</span>
+         tags                           = <span class="token punctuation">{</span><span class="token punctuation">}</span>
+         virtual_machine_id             = <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm"</span>
+
+         ip_configuration <span class="token punctuation">{</span>
+             gateway_load_balancer_frontend_ip_configuration_id = null
+             name                                               = <span class="token string">"terraform_work3_nic_configuration"</span>
+             primary                                            = true
+             private_ip_address                                 = <span class="token string">"10.0.1.4"</span>
+             private_ip_address_allocation                      = <span class="token string">"Dynamic"</span>
+             private_ip_address_version                         = <span class="token string">"IPv4"</span>
+             public_ip_address_id                               = <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-llama-public-ip"</span>
+             subnet_id                                          = <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet/subnets/win-vm-iis-llama-subnet"</span>
+         <span class="token punctuation">}</span>
+     <span class="token punctuation">}</span>
+
+ <span class="token comment"># azurerm_network_security_group.terraform_work5_nsg will be imported</span>
+ <span class="token comment"># (config will be generated)</span>
+     resource <span class="token string">"azurerm_network_security_group"</span> <span class="token string">"terraform_work5_nsg"</span> <span class="token punctuation">{</span>
+         id                  = <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-llama-nsg"</span>
+         location            = <span class="token string">"japanwest"</span>
+         name                = <span class="token string">"win-vm-iis-llama-nsg"</span>
+         resource_group_name = <span class="token string">"rg-win-vm-iis-llama"</span>
+         security_rule       = <span class="token punctuation">[</span>
+             <span class="token punctuation">{</span>
+                 access                                     = <span class="token string">"Allow"</span>
+                 description                                = null
+                 destination_address_prefix                 = <span class="token string">"*"</span>
+                 destination_address_prefixes               = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+                 destination_application_security_group_ids = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+                 destination_port_range                     = <span class="token string">"3389"</span>
+                 destination_port_ranges                    = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+                 direction                                  = <span class="token string">"Inbound"</span>
+                 name                                       = <span class="token string">"RDP"</span>
+                 priority                                   = 1000
+                 protocol                                   = <span class="token string">"*"</span>
+                 source_address_prefix                      = <span class="token string">"120.75.97.239"</span>
+                 source_address_prefixes                    = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+                 source_application_security_group_ids      = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+                 source_port_range                          = <span class="token string">"*"</span>
+                 source_port_ranges                         = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+             <span class="token punctuation">}</span><span class="token punctuation">,</span>
+             <span class="token punctuation">{</span>
+                 access                                     = <span class="token string">"Allow"</span>
+                 description                                = null
+                 destination_address_prefix                 = <span class="token string">"*"</span>
+                 destination_address_prefixes               = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+                 destination_application_security_group_ids = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+                 destination_port_range                     = <span class="token string">"80"</span>
+                 destination_port_ranges                    = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+                 direction                                  = <span class="token string">"Inbound"</span>
+                 name                                       = <span class="token string">"web"</span>
+                 priority                                   = 1001
+                 protocol                                   = <span class="token string">"Tcp"</span>
+                 source_address_prefix                      = <span class="token string">"120.75.97.239"</span>
+                 source_address_prefixes                    = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+                 source_application_security_group_ids      = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+                 source_port_range                          = <span class="token string">"*"</span>
+                 source_port_ranges                         = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+             <span class="token punctuation">}</span><span class="token punctuation">,</span>
+         <span class="token punctuation">]</span>
+         tags                = <span class="token punctuation">{</span><span class="token punctuation">}</span>
+     <span class="token punctuation">}</span>
+
+ <span class="token comment"># azurerm_public_ip.terraform_work5_public_ip will be imported</span>
+ <span class="token comment"># (config will be generated)</span>
+     resource <span class="token string">"azurerm_public_ip"</span> <span class="token string">"terraform_work5_public_ip"</span> <span class="token punctuation">{</span>
+         allocation_method       = <span class="token string">"Static"</span>
+         ddos_protection_mode    = <span class="token string">"VirtualNetworkInherited"</span>
+         edge_zone               = null
+         id                      = <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-llama-public-ip"</span>
+         idle_timeout_in_minutes = 4
+         ip_address              = <span class="token string">"20.27.105.119"</span>
+         ip_tags                 = <span class="token punctuation">{</span><span class="token punctuation">}</span>
+         ip_version              = <span class="token string">"IPv4"</span>
+         location                = <span class="token string">"japanwest"</span>
+         name                    = <span class="token string">"win-vm-iis-llama-public-ip"</span>
+         resource_group_name     = <span class="token string">"rg-win-vm-iis-llama"</span>
+         sku                     = <span class="token string">"Standard"</span>
+         sku_tier                = <span class="token string">"Regional"</span>
+         tags                    = <span class="token punctuation">{</span><span class="token punctuation">}</span>
+         zones                   = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+     <span class="token punctuation">}</span>
+
+ <span class="token comment"># azurerm_resource_group.rg will be imported</span>
+ <span class="token comment"># (config will be generated)</span>
+     resource <span class="token string">"azurerm_resource_group"</span> <span class="token string">"rg"</span> <span class="token punctuation">{</span>
+         id         = <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama"</span>
+         location   = <span class="token string">"japanwest"</span>
+         managed_by = null
+         name       = <span class="token string">"rg-win-vm-iis-llama"</span>
+         tags       = <span class="token punctuation">{</span><span class="token punctuation">}</span>
+     <span class="token punctuation">}</span>
+
+ <span class="token comment"># azurerm_subnet.terraform_work3_subnet will be imported</span>
+ <span class="token comment"># (config will be generated)</span>
+     resource <span class="token string">"azurerm_subnet"</span> <span class="token string">"terraform_work3_subnet"</span> <span class="token punctuation">{</span>
+         address_prefixes                              = <span class="token punctuation">[</span>
+             <span class="token string">"10.0.1.0/24"</span><span class="token punctuation">,</span>
+         <span class="token punctuation">]</span>
+         default_outbound_access_enabled               = true
+         id                                            = <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet/subnets/win-vm-iis-llama-subnet"</span>
+         name                                          = <span class="token string">"win-vm-iis-llama-subnet"</span>
+         private_endpoint_network_policies             = <span class="token string">"Disabled"</span>
+         private_link_service_network_policies_enabled = true
+         resource_group_name                           = <span class="token string">"rg-win-vm-iis-llama"</span>
+         service_endpoint_policy_ids                   = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+         service_endpoints                             = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+         virtual_network_name                          = <span class="token string">"win-vm-iis-llama-vnet"</span>
+     <span class="token punctuation">}</span>
+
+ <span class="token comment"># azurerm_virtual_machine_extension.web_server_install will be imported</span>
+ <span class="token comment"># (config will be generated)</span>
+     resource <span class="token string">"azurerm_virtual_machine_extension"</span> <span class="token string">"web_server_install"</span> <span class="token punctuation">{</span>
+         auto_upgrade_minor_version  = true
+         automatic_upgrade_enabled   = false
+         failure_suppression_enabled = false
+         id                          = <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm/extensions/win-vm-iis-llama-wsi"</span>
+         name                        = <span class="token string">"win-vm-iis-llama-wsi"</span>
+         provision_after_extensions  = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+         publisher                   = <span class="token string">"Microsoft.Compute"</span>
+         settings                    = jsonencode<span class="token punctuation">(</span>
+             <span class="token punctuation">{</span>
+                 commandToExecute = <span class="token string">"powershell -ExecutionPolicy Unrestricted Install-WindowsFeature -Name Web-Server -IncludeAllSubFeature -IncludeManagementTools"</span>
+             <span class="token punctuation">}</span>
+         <span class="token punctuation">)</span>
+         tags                        = <span class="token punctuation">{</span><span class="token punctuation">}</span>
+         <span class="token function">type</span>                        = <span class="token string">"CustomScriptExtension"</span>
+         type_handler_version        = <span class="token string">"1.8"</span>
+         virtual_machine_id          = <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm"</span>
+     <span class="token punctuation">}</span>
+
+ Plan: 6 to import<span class="token punctuation">,</span> 0 to add<span class="token punctuation">,</span> 0 to change<span class="token punctuation">,</span> 0 to destroy<span class="token punctuation">.</span>
+ ╷
+ │ Warning: Config generation is experimental
+ │
+ │ Generating configuration during import is currently experimental<span class="token punctuation">,</span> and the generated configuration format may change in future versions<span class="token punctuation">.</span>
+ ╵
+ ╷
+ │ Error: Missing required argument
+ │
+ │   with azurerm_windows_virtual_machine<span class="token punctuation">.</span>main<span class="token punctuation">,</span>
+ │   on import<span class="token punctuation">.</span>tf line 1:
+ │   <span class="token punctuation">(</span>source code not available<span class="token punctuation">)</span>
+ │
+ │ The argument <span class="token string">"admin_password"</span> is required<span class="token punctuation">,</span> but no definition was found<span class="token punctuation">.</span>
+ ╵
+ ╷
+ │ Error: expected flow_timeout_in_minutes to be in the range <span class="token punctuation">(</span>4 <span class="token operator">-</span> 30<span class="token punctuation">)</span><span class="token punctuation">,</span> got 0
+ │
+ │   with azurerm_virtual_network<span class="token punctuation">.</span>terraform_work5_network<span class="token punctuation">,</span>
+ │   on import<span class="token punctuation">.</span>tf line 5:
+ │   <span class="token punctuation">(</span>source code not available<span class="token punctuation">)</span>
+ │
+ ╵
+ ╷
+ │ Error: parsing <span class="token string">""</span>: cannot parse an empty string
+ │
+ │   with azurerm_virtual_network<span class="token punctuation">.</span>terraform_work5_network<span class="token punctuation">,</span>
+ │   on import<span class="token punctuation">.</span>tf line 9:
+ │   <span class="token punctuation">(</span>source code not available<span class="token punctuation">)</span>
+ │
+ ╵
+ ╷
+ │ Error: Value <span class="token keyword keyword-for">for</span> unconfigurable attribute
+ │
+ │   with azurerm_virtual_network<span class="token punctuation">.</span>terraform_work5_network<span class="token punctuation">,</span>
+ │   on import<span class="token punctuation">.</span>tf line 9:
+ │   <span class="token punctuation">(</span>source code not available<span class="token punctuation">)</span>
+ │
+ │ Can't configure a value <span class="token keyword keyword-for">for</span> <span class="token string">"subnet.0.id"</span>: its value will be decided automatically based on the result of applying this configuration<span class="token punctuation">.</span>
+ ╵
+ ╷
+ │ Error: expected blob_properties<span class="token punctuation">.</span>0<span class="token punctuation">.</span>change_feed_retention_in_days to be in the range <span class="token punctuation">(</span>1 <span class="token operator">-</span> 146000<span class="token punctuation">)</span><span class="token punctuation">,</span> got 0
+ │
+ │   with azurerm_storage_account<span class="token punctuation">.</span>terraform_work5_storage_account<span class="token punctuation">,</span>
+ │   on import<span class="token punctuation">.</span>tf line 29:
+ │   <span class="token punctuation">(</span>source code not available<span class="token punctuation">)</span>
+ │
+ ╵
+ ╷
+ │ Error: Missing required argument
+ │
+ │   with azurerm_windows_virtual_machine<span class="token punctuation">.</span>main<span class="token punctuation">,</span>
+ │   on import<span class="token punctuation">.</span>tf line 25:
+ │   <span class="token punctuation">(</span>source code not available<span class="token punctuation">)</span>
+ │
+ │ <span class="token string">"platform_fault_domain"</span>: all of `platform_fault_domain<span class="token punctuation">,</span>virtual_machine_scale_set_id` must be specified
+ ╵
+</code></pre></li>
+<li>
+<p>CLI に出力されたエラーを解消するため、生成された <a href="http://import.tf">import.tf</a> を修正する</p>
+<ol>
+<li>VNET 修正<br>
+<img src="image/work5-readme/1732964472840.png" alt="1732964472840"></li>
+<li>VM パスワードをダミーにする
+<ul>
+<li>既存のパスワードは後続の apply 実行後も変更されなかった (宣言型ではなくポータルの機能を使うからと思われる)。
+<ul>
+<li>tfstate にはパスワードは保存されなかった。</li>
+</ul>
+</li>
+<li>パスワード要件はチェックされるので注意。<br>
+<img src="image/work5-readme/1732964553516.png" alt="1732964553516"><br>
+<img src="image/work5-readme/1732964278179.png" alt="1732964278179"><pre data-role="codeBlock" data-info="PowerShell" class="language-powershell PowerShell"><code><span class="token function">PS</span> C:\Users\HNakajima\OneDrive <span class="token operator">-</span> 個人契約\Work\source\terraform\terraform-work5&gt; terraform plan
+    ╷
+    │ Error: <span class="token string">"admin_password"</span> most be between 8 and 123 characters<span class="token punctuation">,</span> got 7
+    │
+    │   with azurerm_windows_virtual_machine<span class="token punctuation">.</span>main<span class="token punctuation">,</span>
+    │   on import<span class="token punctuation">.</span>tf line 161<span class="token punctuation">,</span> in resource <span class="token string">"azurerm_windows_virtual_machine"</span> <span class="token string">"main"</span>:
+    │  161:   admin_password                                         = <span class="token string">"dummypw"</span> <span class="token comment"># sensitive</span>
+    │
+    ╵
+    ╷
+    │ Error: <span class="token string">"admin_password"</span> has to fulfill 3 out of these 4 conditions: Has lower characters<span class="token punctuation">,</span> Has upper characters<span class="token punctuation">,</span> Has a digit<span class="token punctuation">,</span> Has a special character other than <span class="token string">"_"</span><span class="token punctuation">,</span> fullfiled only 1 conditions
+    │
+    │   with azurerm_windows_virtual_machine<span class="token punctuation">.</span>main<span class="token punctuation">,</span>
+    │   on import<span class="token punctuation">.</span>tf line 161<span class="token punctuation">,</span> in resource <span class="token string">"azurerm_windows_virtual_machine"</span> <span class="token string">"main"</span>:
+    │  161:   admin_password                                         = <span class="token string">"dummypw"</span> <span class="token comment"># sensitive</span>
+    │
+    ╵
+</code></pre></li>
+</ul>
+</li>
+<li>VM のプロパティをコメント
+<ul>
+<li>可用性セットのプロパティと思われる。<br>
+<img src="image/work5-readme/1732964731959.png" alt="1732964731959"></li>
+</ul>
+</li>
+<li>Blob のプロパティをコメント<br>
+<img src="image/work5-readme/1732964800467.png" alt="1732964800467"></li>
+</ol>
+</li>
+<li>
+<p><code>terraform plan</code> で差分を確認する</p>
+<ul>
+<li>このとき、インポートブロックを記述した <code>importblock-main.tf</code> は残しておいた状態で terraform plan する。
+<ul>
+<li>削除したり拡張子を変えてしまうと通常の plan となり、import ではなく add になってしまう
+<ul>
+<li>ハマりポイント。通常作業では、作業ディレクトリ配下の .tf ファイルがすべて対象となるため、対象の .tf ファイル以外は拡張子を変えてしまう癖がついていた。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>エラーが出なくなるまで修正する。<br>
+<img src="image/work5-readme/1732964956095.png" alt="1732964956095"><pre data-role="codeBlock" data-info="PowerShell" class="language-powershell PowerShell"><code><span class="token function">PS</span> C:\Users\HNakajima\OneDrive <span class="token operator">-</span> 個人契約\Work\source\terraform\terraform-work5&gt; terraform plan
+    azurerm_network_interface<span class="token punctuation">.</span>terraform_work5_nic: Preparing import<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkInterfaces/win-vm-iis-llama-nic]</span>
+    
+    ～略～
+
+            source_image_reference <span class="token punctuation">{</span>
+                offer     = <span class="token string">"WindowsServer"</span>
+                publisher = <span class="token string">"MicrosoftWindowsServer"</span>
+                sku       = <span class="token string">"2022-datacenter-azure-edition"</span>
+                version   = <span class="token string">"latest"</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+
+    Plan: 9 to import<span class="token punctuation">,</span> 0 to add<span class="token punctuation">,</span> 0 to change<span class="token punctuation">,</span> 0 to destroy<span class="token punctuation">.</span>
+    ──────────────────────────────────────────────────────────────────────────────────────── 
+    Note: You didn<span class="token string">'t use the -out option to save this plan, so Terraform can'</span>t guarantee to take exactly these actions <span class="token keyword keyword-if">if</span> you run <span class="token string">"terraform apply"</span> now<span class="token punctuation">.</span>
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p><code>terraform apply</code> を実行し、tfstate ファイルを生成する<br>
+<img src="image/work5-readme/1732965690608.png" alt="1732965690608"></p>
+<pre data-role="codeBlock" data-info="PowerShell" class="language-powershell PowerShell"><code><span class="token function">PS</span> C:\Users\HNakajima\OneDrive <span class="token operator">-</span> 個人契約\Work\source\terraform\terraform-work5&gt; terraform apply
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Preparing import<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm/extensions/win-vm-iis-llama-wsi]</span>
+azurerm_public_ip<span class="token punctuation">.</span>terraform_work5_public_ip: Preparing import<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-llama-public-ip]</span>
+azurerm_subnet<span class="token punctuation">.</span>terraform_work3_subnet: Preparing import<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet/subnets/win-vm-iis-llama-subnet]</span>
+azurerm_windows_virtual_machine<span class="token punctuation">.</span>main: Preparing import<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm]</span>
+azurerm_virtual_network<span class="token punctuation">.</span>terraform_work5_network: Preparing import<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet]</span>
+azurerm_network_security_group<span class="token punctuation">.</span>terraform_work5_nsg: Preparing import<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-llama-nsg]</span>
+azurerm_network_interface<span class="token punctuation">.</span>terraform_work5_nic: Preparing import<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkInterfaces/win-vm-iis-llama-nic]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Preparing import<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama]</span>
+azurerm_storage_account<span class="token punctuation">.</span>terraform_work5_storage_account: Preparing import<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Storage/storageAccounts/diag3abb2f58b75025ad]</span>
+azurerm_network_security_group<span class="token punctuation">.</span>terraform_work5_nsg: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-llama-nsg]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm/extensions/win-vm-iis-llama-wsi]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama]</span>
+azurerm_subnet<span class="token punctuation">.</span>terraform_work3_subnet: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet/subnets/win-vm-iis-llama-subnet]</span>
+azurerm_public_ip<span class="token punctuation">.</span>terraform_work5_public_ip: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-llama-public-ip]</span>
+azurerm_virtual_network<span class="token punctuation">.</span>terraform_work5_network: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet]</span>
+azurerm_network_interface<span class="token punctuation">.</span>terraform_work5_nic: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkInterfaces/win-vm-iis-llama-nic]</span>
+azurerm_storage_account<span class="token punctuation">.</span>terraform_work5_storage_account: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Storage/storageAccounts/diag3abb2f58b75025ad]</span>
+azurerm_windows_virtual_machine<span class="token punctuation">.</span>main: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm]</span>
+
+Terraform will perform the following actions:
+
+<span class="token comment"># azurerm_network_interface.terraform_work5_nic will be imported</span>
+
+～略～
+
+Plan: 9 to import<span class="token punctuation">,</span> 0 to add<span class="token punctuation">,</span> 0 to change<span class="token punctuation">,</span> 0 to destroy<span class="token punctuation">.</span>
+
+<span class="token keyword keyword-Do">Do</span> you want to perform these actions?
+Terraform will perform the actions described above<span class="token punctuation">.</span>
+Only <span class="token string">'yes'</span> will be accepted to approve<span class="token punctuation">.</span>
+
+Enter a value: yes
+
+azurerm_resource_group<span class="token punctuation">.</span>rg: Importing<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Import complete <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama]</span>
+azurerm_public_ip<span class="token punctuation">.</span>terraform_work5_public_ip: Importing<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-llama-public-ip]</span>
+azurerm_public_ip<span class="token punctuation">.</span>terraform_work5_public_ip: Import complete <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-llama-public-ip]</span>
+azurerm_subnet<span class="token punctuation">.</span>terraform_work3_subnet: Importing<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet/subnets/win-vm-iis-llama-subnet]</span>
+azurerm_subnet<span class="token punctuation">.</span>terraform_work3_subnet: Import complete <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet/subnets/win-vm-iis-llama-subnet]</span>
+azurerm_network_security_group<span class="token punctuation">.</span>terraform_work5_nsg: Importing<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-llama-nsg]</span>
+azurerm_network_security_group<span class="token punctuation">.</span>terraform_work5_nsg: Import complete <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-llama-nsg]</span>
+azurerm_virtual_network<span class="token punctuation">.</span>terraform_work5_network: Importing<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet]</span>
+azurerm_virtual_network<span class="token punctuation">.</span>terraform_work5_network: Import complete <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet]</span>
+azurerm_network_interface<span class="token punctuation">.</span>terraform_work5_nic: Importing<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkInterfaces/win-vm-iis-llama-nic]</span>
+azurerm_network_interface<span class="token punctuation">.</span>terraform_work5_nic: Import complete <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkInterfaces/win-vm-iis-llama-nic]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Importing<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm/extensions/win-vm-iis-llama-wsi]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Import complete <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm/extensions/win-vm-iis-llama-wsi]</span>
+azurerm_windows_virtual_machine<span class="token punctuation">.</span>main: Importing<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm]</span>
+azurerm_windows_virtual_machine<span class="token punctuation">.</span>main: Import complete <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm]</span>
+azurerm_storage_account<span class="token punctuation">.</span>terraform_work5_storage_account: Importing<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Storage/storageAccounts/diag3abb2f58b75025ad]</span>
+azurerm_storage_account<span class="token punctuation">.</span>terraform_work5_storage_account: Import complete <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Storage/storageAccounts/diag3abb2f58b75025ad]</span>
+
+Apply complete! Resources: 9 imported<span class="token punctuation">,</span> 0 added<span class="token punctuation">,</span> 0 changed<span class="token punctuation">,</span> 0 destroyed<span class="token punctuation">.</span>
+</code></pre><p><img src="image/work5-readme/1732965842744.png" alt="1732965842744"><br>
+<img src="image/work5-readme/1732965872163.png" alt="1732965872163"></p>
+</li>
+<li>
+<p>tfstate 生成後、<code>importblock-main.tf</code> は不要なため削除 or リネームする</p>
+</li>
+</ol>
+<hr>
+<h4 id="他リソース追加">他リソース追加 </h4>
+<ol start="7">
+<li>
+<p>生成した tf ファイルに Application Gateway を追記し、既存リソースとともに Terraform で管理可能とする<br>
+<a href="https://learn.microsoft.com/ja-jp/azure/application-gateway/quick-create-terraform">クイックスタート: Azure Application Gateway で Web トラフィックを転送する - Terraform</a></p>
+<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code># ####################################################################
+# <span class="token maybe-class-name">Application</span> <span class="token maybe-class-name">Gateway</span> を追加
+# ####################################################################
+variable <span class="token string">"backend_address_pool_name"</span> <span class="token punctuation">{</span>
+    <span class="token keyword module keyword-default">default</span> <span class="token operator">=</span> <span class="token string">"myBackendPool"</span>
+<span class="token punctuation">}</span>
+
+variable <span class="token string">"frontend_port_name"</span> <span class="token punctuation">{</span>
+    <span class="token keyword module keyword-default">default</span> <span class="token operator">=</span> <span class="token string">"myFrontendPort"</span>
+<span class="token punctuation">}</span>
+
+variable <span class="token string">"frontend_ip_configuration_name"</span> <span class="token punctuation">{</span>
+    <span class="token keyword module keyword-default">default</span> <span class="token operator">=</span> <span class="token string">"myAGIPConfig"</span>
+<span class="token punctuation">}</span>
+
+variable <span class="token string">"http_setting_name"</span> <span class="token punctuation">{</span>
+    <span class="token keyword module keyword-default">default</span> <span class="token operator">=</span> <span class="token string">"myHTTPsetting"</span>
+<span class="token punctuation">}</span>
+
+variable <span class="token string">"listener_name"</span> <span class="token punctuation">{</span>
+    <span class="token keyword module keyword-default">default</span> <span class="token operator">=</span> <span class="token string">"myListener"</span>
+<span class="token punctuation">}</span>
+
+variable <span class="token string">"request_routing_rule_name"</span> <span class="token punctuation">{</span>
+    <span class="token keyword module keyword-default">default</span> <span class="token operator">=</span> <span class="token string">"myRoutingRule"</span>
+<span class="token punctuation">}</span>
+
+resource <span class="token string">"azurerm_subnet"</span> <span class="token string">"frontend"</span> <span class="token punctuation">{</span>
+    name                 <span class="token operator">=</span> <span class="token string">"myAGSubnet"</span>
+    resource_group_name  <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">name</span>
+    virtual_network_name <span class="token operator">=</span> azurerm_virtual_network<span class="token punctuation">.</span><span class="token property-access">terraform_work5_network</span><span class="token punctuation">.</span><span class="token property-access">name</span>
+    address_prefixes     <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"10.0.10.0/24"</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+resource <span class="token string">"azurerm_public_ip"</span> <span class="token string">"pip"</span> <span class="token punctuation">{</span>
+    name                <span class="token operator">=</span> <span class="token string">"myAGPublicIPAddress"</span>
+    resource_group_name <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">name</span>
+    <span class="token dom variable">location</span>            <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">location</span>
+    allocation_method   <span class="token operator">=</span> <span class="token string">"Static"</span>
+    sku                 <span class="token operator">=</span> <span class="token string">"Standard"</span>
+<span class="token punctuation">}</span>
+
+resource <span class="token string">"azurerm_application_gateway"</span> <span class="token string">"main"</span> <span class="token punctuation">{</span>
+    name                <span class="token operator">=</span> <span class="token string">"myAppGateway"</span>
+    resource_group_name <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">name</span>
+    <span class="token dom variable">location</span>            <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">location</span>
+
+    sku <span class="token punctuation">{</span>
+        name     <span class="token operator">=</span> <span class="token string">"Standard_v2"</span>
+        tier     <span class="token operator">=</span> <span class="token string">"Standard_v2"</span>
+        capacity <span class="token operator">=</span> <span class="token number">2</span>
+    <span class="token punctuation">}</span>
+
+    gateway_ip_configuration <span class="token punctuation">{</span>
+        name      <span class="token operator">=</span> <span class="token string">"my-gateway-ip-configuration"</span>
+        subnet_id <span class="token operator">=</span> azurerm_subnet<span class="token punctuation">.</span><span class="token property-access">frontend</span><span class="token punctuation">.</span><span class="token property-access">id</span>
+    <span class="token punctuation">}</span>
+
+    frontend_port <span class="token punctuation">{</span>
+        name <span class="token operator">=</span> <span class="token keyword keyword-var">var</span><span class="token punctuation">.</span><span class="token property-access">frontend_port_name</span>
+        port <span class="token operator">=</span> <span class="token number">80</span>
+    <span class="token punctuation">}</span>
+
+    frontend_ip_configuration <span class="token punctuation">{</span>
+        name                 <span class="token operator">=</span> <span class="token keyword keyword-var">var</span><span class="token punctuation">.</span><span class="token property-access">frontend_ip_configuration_name</span>
+        public_ip_address_id <span class="token operator">=</span> azurerm_public_ip<span class="token punctuation">.</span><span class="token property-access">pip</span><span class="token punctuation">.</span><span class="token property-access">id</span>
+    <span class="token punctuation">}</span>
+
+    backend_address_pool <span class="token punctuation">{</span>
+        name <span class="token operator">=</span> <span class="token keyword keyword-var">var</span><span class="token punctuation">.</span><span class="token property-access">backend_address_pool_name</span>
+    <span class="token punctuation">}</span>
+
+    backend_http_settings <span class="token punctuation">{</span>
+        name                  <span class="token operator">=</span> <span class="token keyword keyword-var">var</span><span class="token punctuation">.</span><span class="token property-access">http_setting_name</span>
+        cookie_based_affinity <span class="token operator">=</span> <span class="token string">"Disabled"</span>
+        port                  <span class="token operator">=</span> <span class="token number">80</span>
+        protocol              <span class="token operator">=</span> <span class="token string">"Http"</span>
+        request_timeout       <span class="token operator">=</span> <span class="token number">60</span>
+    <span class="token punctuation">}</span>
+
+    http_listener <span class="token punctuation">{</span>
+        name                           <span class="token operator">=</span> <span class="token keyword keyword-var">var</span><span class="token punctuation">.</span><span class="token property-access">listener_name</span>
+        frontend_ip_configuration_name <span class="token operator">=</span> <span class="token keyword keyword-var">var</span><span class="token punctuation">.</span><span class="token property-access">frontend_ip_configuration_name</span>
+        frontend_port_name             <span class="token operator">=</span> <span class="token keyword keyword-var">var</span><span class="token punctuation">.</span><span class="token property-access">frontend_port_name</span>
+        protocol                       <span class="token operator">=</span> <span class="token string">"Http"</span>
+    <span class="token punctuation">}</span>
+
+    request_routing_rule <span class="token punctuation">{</span>
+        name                       <span class="token operator">=</span> <span class="token keyword keyword-var">var</span><span class="token punctuation">.</span><span class="token property-access">request_routing_rule_name</span>
+        rule_type                  <span class="token operator">=</span> <span class="token string">"Basic"</span>
+        http_listener_name         <span class="token operator">=</span> <span class="token keyword keyword-var">var</span><span class="token punctuation">.</span><span class="token property-access">listener_name</span>
+        backend_address_pool_name  <span class="token operator">=</span> <span class="token keyword keyword-var">var</span><span class="token punctuation">.</span><span class="token property-access">backend_address_pool_name</span>
+        backend_http_settings_name <span class="token operator">=</span> <span class="token keyword keyword-var">var</span><span class="token punctuation">.</span><span class="token property-access">http_setting_name</span>
+        priority                   <span class="token operator">=</span> <span class="token number">1</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+resource <span class="token string">"azurerm_network_interface_application_gateway_backend_address_pool_association"</span> <span class="token string">"nic-assoc"</span> <span class="token punctuation">{</span>
+    network_interface_id    <span class="token operator">=</span> azurerm_network_interface<span class="token punctuation">.</span><span class="token property-access">terraform_work5_nic</span><span class="token punctuation">.</span><span class="token property-access">id</span>
+    ip_configuration_name   <span class="token operator">=</span> <span class="token string">"terraform_work3_nic_configuration"</span>
+    backend_address_pool_id <span class="token operator">=</span> <span class="token function">one</span><span class="token punctuation">(</span>azurerm_application_gateway<span class="token punctuation">.</span><span class="token property-access">main</span><span class="token punctuation">.</span><span class="token property-access">backend_address_pool</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token property-access">id</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+<li>
+<p><code>terraform plan / terraform apply</code> する</p>
+<ul>
+<li><code>terraform plan</code> する。</li>
+</ul>
+<pre data-role="codeBlock" data-info="PowerShell" class="language-powershell PowerShell"><code><span class="token function">PS</span> C:\Users\HNakajima\OneDrive <span class="token operator">-</span> 個人契約\Work\source\terraform\terraform-work5&gt; terraform plan
+azurerm_resource_group<span class="token punctuation">.</span>rg: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm/extensions/win-vm-iis-llama-wsi]</span>
+azurerm_subnet<span class="token punctuation">.</span>terraform_work3_subnet: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet/subnets/win-vm-iis-llama-subnet]</span>
+azurerm_public_ip<span class="token punctuation">.</span>terraform_work5_public_ip: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-llama-public-ip]</span>
+azurerm_network_interface<span class="token punctuation">.</span>terraform_work5_nic: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkInterfaces/win-vm-iis-llama-nic]</span>
+azurerm_virtual_network<span class="token punctuation">.</span>terraform_work5_network: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet]</span>
+azurerm_network_security_group<span class="token punctuation">.</span>terraform_work5_nsg: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-llama-nsg]</span>
+azurerm_windows_virtual_machine<span class="token punctuation">.</span>main: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm]</span>
+azurerm_storage_account<span class="token punctuation">.</span>terraform_work5_storage_account: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Storage/storageAccounts/diag3abb2f58b75025ad]</span>
+
+Terraform used the selected providers to generate the following execution plan<span class="token punctuation">.</span> Resource actions are indicated with the following symbols:
+<span class="token operator">+</span> create
+
+Terraform will perform the following actions:
+
+<span class="token comment"># azurerm_application_gateway.main will be created</span>
+<span class="token operator">+</span> resource <span class="token string">"azurerm_application_gateway"</span> <span class="token string">"main"</span> <span class="token punctuation">{</span>
+    <span class="token operator">+</span> id                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token operator">+</span> location                    = <span class="token string">"japanwest"</span>
+    <span class="token operator">+</span> name                        = <span class="token string">"myAppGateway"</span>
+    <span class="token operator">+</span> private_endpoint_connection = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token operator">+</span> resource_group_name         = <span class="token string">"rg-win-vm-iis-llama"</span>
+
+    <span class="token operator">+</span> backend_address_pool <span class="token punctuation">{</span>
+        <span class="token operator">+</span> fqdns        = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token operator">+</span> id           = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token operator">+</span> ip_addresses = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token operator">+</span> name         = <span class="token string">"myBackendPool"</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token operator">+</span> backend_http_settings <span class="token punctuation">{</span>
+        <span class="token operator">+</span> cookie_based_affinity               = <span class="token string">"Disabled"</span>
+        <span class="token operator">+</span> id                                  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token operator">+</span> name                                = <span class="token string">"myHTTPsetting"</span>
+        <span class="token operator">+</span> pick_host_name_from_backend_address = false
+        <span class="token operator">+</span> port                                = 80
+        <span class="token operator">+</span> probe_id                            = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token operator">+</span> protocol                            = <span class="token string">"Http"</span>
+        <span class="token operator">+</span> request_timeout                     = 60
+        <span class="token operator">+</span> trusted_root_certificate_names      = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+            <span class="token comment"># (4 unchanged attributes hidden)</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token operator">+</span> frontend_ip_configuration <span class="token punctuation">{</span>
+        <span class="token operator">+</span> id                            = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token operator">+</span> name                          = <span class="token string">"myAGIPConfig"</span>
+        <span class="token operator">+</span> private_ip_address            = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token operator">+</span> private_ip_address_allocation = <span class="token string">"Dynamic"</span>
+        <span class="token operator">+</span> private_link_configuration_id = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token operator">+</span> public_ip_address_id          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token operator">+</span> frontend_port <span class="token punctuation">{</span>
+        <span class="token operator">+</span> id   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token operator">+</span> name = <span class="token string">"myFrontendPort"</span>
+        <span class="token operator">+</span> port = 80
+        <span class="token punctuation">}</span>
+
+    <span class="token operator">+</span> gateway_ip_configuration <span class="token punctuation">{</span>
+        <span class="token operator">+</span> id        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token operator">+</span> name      = <span class="token string">"my-gateway-ip-configuration"</span>
+        <span class="token operator">+</span> subnet_id = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token operator">+</span> http_listener <span class="token punctuation">{</span>
+        <span class="token operator">+</span> frontend_ip_configuration_id   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token operator">+</span> frontend_ip_configuration_name = <span class="token string">"myAGIPConfig"</span>
+        <span class="token operator">+</span> frontend_port_id               = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token operator">+</span> frontend_port_name             = <span class="token string">"myFrontendPort"</span>
+        <span class="token operator">+</span> host_names                     = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token operator">+</span> id                             = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token operator">+</span> name                           = <span class="token string">"myListener"</span>
+        <span class="token operator">+</span> protocol                       = <span class="token string">"Http"</span>
+        <span class="token operator">+</span> ssl_certificate_id             = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token operator">+</span> ssl_profile_id                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+            <span class="token comment"># (4 unchanged attributes hidden)</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token operator">+</span> request_routing_rule <span class="token punctuation">{</span>
+        <span class="token operator">+</span> backend_address_pool_id     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token operator">+</span> backend_address_pool_name   = <span class="token string">"myBackendPool"</span>
+        <span class="token operator">+</span> backend_http_settings_id    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token operator">+</span> backend_http_settings_name  = <span class="token string">"myHTTPsetting"</span>
+        <span class="token operator">+</span> http_listener_id            = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token operator">+</span> http_listener_name          = <span class="token string">"myListener"</span>
+        <span class="token operator">+</span> id                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token operator">+</span> name                        = <span class="token string">"myRoutingRule"</span>
+        <span class="token operator">+</span> priority                    = 1
+        <span class="token operator">+</span> redirect_configuration_id   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token operator">+</span> rewrite_rule_set_id         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token operator">+</span> rule_type                   = <span class="token string">"Basic"</span>
+        <span class="token operator">+</span> url_path_map_id             = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+            <span class="token comment"># (3 unchanged attributes hidden)</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token operator">+</span> sku <span class="token punctuation">{</span>
+        <span class="token operator">+</span> capacity = 2
+        <span class="token operator">+</span> name     = <span class="token string">"Standard_v2"</span>
+        <span class="token operator">+</span> tier     = <span class="token string">"Standard_v2"</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token operator">+</span> ssl_policy <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+<span class="token comment"># azurerm_network_interface_application_gateway_backend_address_pool_association.nic-assoc will be created</span>
+<span class="token operator">+</span> resource <span class="token string">"azurerm_network_interface_application_gateway_backend_address_pool_association"</span> <span class="token string">"nic-assoc"</span> <span class="token punctuation">{</span>
+    <span class="token operator">+</span> backend_address_pool_id = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token operator">+</span> id                      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token operator">+</span> ip_configuration_name   = <span class="token string">"terraform_work3_nic_configuration"</span>
+    <span class="token operator">+</span> network_interface_id    = <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkInterfaces/win-vm-iis-llama-nic"</span>
+    <span class="token punctuation">}</span>
+
+<span class="token comment"># azurerm_public_ip.pip will be created</span>
+<span class="token operator">+</span> resource <span class="token string">"azurerm_public_ip"</span> <span class="token string">"pip"</span> <span class="token punctuation">{</span>
+    <span class="token operator">+</span> allocation_method       = <span class="token string">"Static"</span>
+    <span class="token operator">+</span> ddos_protection_mode    = <span class="token string">"VirtualNetworkInherited"</span>
+    <span class="token operator">+</span> fqdn                    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token operator">+</span> id                      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token operator">+</span> idle_timeout_in_minutes = 4
+    <span class="token operator">+</span> ip_address              = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token operator">+</span> ip_version              = <span class="token string">"IPv4"</span>
+    <span class="token operator">+</span> location                = <span class="token string">"japanwest"</span>
+    <span class="token operator">+</span> name                    = <span class="token string">"myAGPublicIPAddress"</span>
+    <span class="token operator">+</span> resource_group_name     = <span class="token string">"rg-win-vm-iis-llama"</span>
+    <span class="token operator">+</span> sku                     = <span class="token string">"Standard"</span>
+    <span class="token operator">+</span> sku_tier                = <span class="token string">"Regional"</span>
+    <span class="token punctuation">}</span>
+
+<span class="token comment"># azurerm_subnet.frontend will be created</span>
+<span class="token operator">+</span> resource <span class="token string">"azurerm_subnet"</span> <span class="token string">"frontend"</span> <span class="token punctuation">{</span>
+    <span class="token operator">+</span> address_prefixes                              = <span class="token punctuation">[</span>
+        <span class="token operator">+</span> <span class="token string">"10.0.10.0/24"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+    <span class="token operator">+</span> default_outbound_access_enabled               = true
+    <span class="token operator">+</span> id                                            = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token operator">+</span> name                                          = <span class="token string">"myAGSubnet"</span>
+    <span class="token operator">+</span> private_endpoint_network_policies             = <span class="token string">"Disabled"</span>
+    <span class="token operator">+</span> private_link_service_network_policies_enabled = true
+    <span class="token operator">+</span> resource_group_name                           = <span class="token string">"rg-win-vm-iis-llama"</span>
+    <span class="token operator">+</span> virtual_network_name                          = <span class="token string">"win-vm-iis-llama-vnet"</span>
+    <span class="token punctuation">}</span>
+
+Plan: 4 to add<span class="token punctuation">,</span> 0 to change<span class="token punctuation">,</span> 0 to destroy<span class="token punctuation">.</span>
+───────────────────────────────────────────────────────────────────────────────── 
+
+Note: You didn<span class="token string">'t use the -out option to save this plan, so Terraform can'</span>t guarantee to take exactly these actions <span class="token keyword keyword-if">if</span> you run <span class="token string">"terraform apply"</span> now<span class="token punctuation">.</span>
+</code></pre><ul>
+<li><code>terraform apply</code> する。
+<ul>
+<li>apply 時にエラーとなり何回か実行したため、「1 to add」となっている。</li>
+</ul>
+</li>
+</ul>
+<pre data-role="codeBlock" data-info="PowerShell" class="language-powershell PowerShell"><code><span class="token function">PS</span> C:\Users\HNakajima\OneDrive <span class="token operator">-</span> 個人契約\Work\source\terraform\terraform-work5&gt; terraform apply
+azurerm_subnet<span class="token punctuation">.</span>terraform_work3_subnet: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet/subnets/win-vm-iis-llama-subnet]</span>
+azurerm_network_interface<span class="token punctuation">.</span>terraform_work5_nic: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkInterfaces/win-vm-iis-llama-nic]</span>
+azurerm_public_ip<span class="token punctuation">.</span>terraform_work5_public_ip: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-llama-public-ip]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm/extensions/win-vm-iis-llama-wsi]</span>
+azurerm_network_security_group<span class="token punctuation">.</span>terraform_work5_nsg: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-llama-nsg]</span>
+azurerm_virtual_network<span class="token punctuation">.</span>terraform_work5_network: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet]</span>
+azurerm_windows_virtual_machine<span class="token punctuation">.</span>main: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm]</span>
+azurerm_storage_account<span class="token punctuation">.</span>terraform_work5_storage_account: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Storage/storageAccounts/diag3abb2f58b75025ad]</span>
+azurerm_public_ip<span class="token punctuation">.</span>pip: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/publicIPAddresses/myAGPublicIPAddress]</span>
+azurerm_subnet<span class="token punctuation">.</span>frontend: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet/subnets/myAGSubnet]</span>
+azurerm_application_gateway<span class="token punctuation">.</span>main: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/applicationGateways/myAppGateway]</span>
+
+Terraform used the selected providers to generate the following execution plan<span class="token punctuation">.</span> Resource actions are indicated with the following symbols:
+<span class="token operator">+</span> create
+
+Terraform will perform the following actions:
+
+<span class="token comment"># azurerm_network_interface_application_gateway_backend_address_pool_association.nic-assoc will be created</span>
+<span class="token operator">+</span> resource <span class="token string">"azurerm_network_interface_application_gateway_backend_address_pool_association"</span> <span class="token string">"nic-assoc"</span> <span class="token punctuation">{</span>
+    <span class="token operator">+</span> backend_address_pool_id = <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/applicationGateways/myAppGateway/backendAddressPools/myBackendPool"</span>
+    <span class="token operator">+</span> id                      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token operator">+</span> ip_configuration_name   = <span class="token string">"terraform_work3_nic_configuration"</span>
+    <span class="token operator">+</span> network_interface_id    = <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkInterfaces/win-vm-iis-llama-nic"</span>
+    <span class="token punctuation">}</span>
+
+Plan: 1 to add<span class="token punctuation">,</span> 0 to change<span class="token punctuation">,</span> 0 to destroy<span class="token punctuation">.</span>
+
+<span class="token keyword keyword-Do">Do</span> you want to perform these actions?
+Terraform will perform the actions described above<span class="token punctuation">.</span>
+Only <span class="token string">'yes'</span> will be accepted to approve<span class="token punctuation">.</span>
+
+Enter a value: yes
+
+azurerm_network_interface_application_gateway_backend_address_pool_association<span class="token punctuation">.</span>nic-assoc: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+azurerm_network_interface_application_gateway_backend_address_pool_association<span class="token punctuation">.</span>nic-assoc: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>10s elapsed<span class="token punctuation">]</span>
+azurerm_network_interface_application_gateway_backend_address_pool_association<span class="token punctuation">.</span>nic-assoc: Creation complete after 10s <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkInterfaces/win-vm-iis-llama-nic/ipConfigu
+rations/terraform_work3_nic_configuration|/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/applicationGateways/myAppGateway/backendAddressPools/myBackendPool]</span>                                                             
+Apply complete! Resources: 1 added<span class="token punctuation">,</span> 0 changed<span class="token punctuation">,</span> 0 destroyed<span class="token punctuation">.</span>
+</code></pre></li>
+<li>
+<p>リソースが追加された</p>
+<ul>
+<li>Application Gateway用サブネット、Application Gateway、Public IP。<br>
+<img src="image/work5-readme/1732969896635.png" alt="1732969896635"></li>
+<li>Application Gateway の Public IP で Web ページにもアクセス可能。<br>
+<img src="image/work5-readme/1732969951524.png" alt="1732969951524"></li>
+</ul>
+</li>
+<li>
+<p>tfstate ファイルも更新されている</p>
+<ul>
+<li>Application Gateway 等が追加された。<br>
+<img src="image/work5-readme/1732970124764.png" alt="1732970124764"></li>
+</ul>
+</li>
+</ol>
+<hr>
+<h4 id="appendix-destroy">Appendix: Destroy </h4>
+<ol start="11">
+<li>
+<p><code>terraform destroy</code> を実行する</p>
+<ul>
+<li>Public IP と NSG、リソースグループが残存した。</li>
+</ul>
+<pre data-role="codeBlock" data-info="PowerShell" class="language-powershell PowerShell"><code><span class="token function">PS</span> C:\Users\HNakajima\OneDrive <span class="token operator">-</span> 個人契約\Work\source\terraform\terraform-work5&gt; terraform destroy                               
+azurerm_subnet<span class="token punctuation">.</span>terraform_work3_subnet: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet/subnets/win-vm-iis-llama-subnet]</span>
+azurerm_public_ip<span class="token punctuation">.</span>terraform_work5_public_ip: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-llama-public-ip]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm/extensions/win-vm-iis-llama-wsi]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama]</span>
+azurerm_network_interface<span class="token punctuation">.</span>terraform_work5_nic: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkInterfaces/win-vm-iis-llama-nic]</span>
+azurerm_virtual_network<span class="token punctuation">.</span>terraform_work5_network: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet]</span>
+azurerm_network_security_group<span class="token punctuation">.</span>terraform_work5_nsg: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-llama-nsg]</span>
+azurerm_windows_virtual_machine<span class="token punctuation">.</span>main: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm]</span>
+azurerm_storage_account<span class="token punctuation">.</span>terraform_work5_storage_account: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Storage/storageAccounts/diag3abb2f58b75025ad]</span>
+azurerm_public_ip<span class="token punctuation">.</span>pip: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/publicIPAddresses/myAGPublicIPAddress]</span>
+azurerm_subnet<span class="token punctuation">.</span>frontend: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet/subnets/myAGSubnet]</span>
+azurerm_application_gateway<span class="token punctuation">.</span>main: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/applicationGateways/myAppGateway]</span>
+azurerm_network_interface_application_gateway_backend_address_pool_association<span class="token punctuation">.</span>nic-assoc: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkInterfaces/win-vm-iis-llama-nic/ipConfigurations/
+terraform_work3_nic_configuration|/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/applicationGateways/myAppGateway/backendAddressPools/myBackendPool]</span>                                                                     
+Terraform used the selected providers to generate the following execution plan<span class="token punctuation">.</span> Resource actions are indicated with the following symbols:
+<span class="token operator">-</span> destroy
+
+Terraform will perform the following actions:
+
+<span class="token comment"># azurerm_application_gateway.main will be destroyed</span>
+<span class="token operator">-</span> resource <span class="token string">"azurerm_application_gateway"</span> <span class="token string">"main"</span> <span class="token punctuation">{</span>
+    <span class="token operator">-</span> enable_http2                      = false <span class="token operator">-</span>&gt; null
+    <span class="token operator">-</span> fips_enabled                      = false <span class="token operator">-</span>&gt; null
+
+～略～
+
+azurerm_resource_group<span class="token punctuation">.</span>rg: Still destroying<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-4ed5-8cf2-...3ee/resourceGroups/rg-win-vm-iis-llama, 8m40s elapsed]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Still destroying<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-4ed5-8cf2-...3ee/resourceGroups/rg-win-vm-iis-llama, 8m50s elapsed]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Still destroying<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-4ed5-8cf2-...3ee/resourceGroups/rg-win-vm-iis-llama, 9m0s elapsed]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Still destroying<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-4ed5-8cf2-...3ee/resourceGroups/rg-win-vm-iis-llama, 9m10s elapsed]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Still destroying<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-4ed5-8cf2-...3ee/resourceGroups/rg-win-vm-iis-llama, 9m20s elapsed]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Still destroying<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-4ed5-8cf2-...3ee/resourceGroups/rg-win-vm-iis-llama, 9m30s elapsed]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Still destroying<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-4ed5-8cf2-...3ee/resourceGroups/rg-win-vm-iis-llama, 9m40s elapsed]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Still destroying<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-4ed5-8cf2-...3ee/resourceGroups/rg-win-vm-iis-llama, 9m50s elapsed]</span>
+╷
+│ Error: deleting Subnet <span class="token punctuation">(</span>Subscription: <span class="token string">"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"</span>
+│ Resource <span class="token function">Group</span> Name: <span class="token string">"rg-win-vm-iis-llama"</span>
+│ Virtual Network Name: <span class="token string">"win-vm-iis-llama-vnet"</span>
+│ Subnet Name: <span class="token string">"win-vm-iis-llama-subnet"</span><span class="token punctuation">)</span>: performing Delete: unexpected status 400 <span class="token punctuation">(</span>400 Bad Request<span class="token punctuation">)</span> with error: InUseSubnetCannotBeDeleted: Subnet win-vm-iis-llama-subnet is in use by <span class="token operator">/</span>subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/RG-WIN-VM-IIS-LLAMA/providers/<span class="token function">Mi</span>
+crosoft<span class="token punctuation">.</span>Network/networkInterfaces/WIN-VM-IIS-LLAMA-NIC/ipConfigurations/TERRAFORM_WORK3_NIC_CONFIGURATION and cannot be deleted<span class="token punctuation">.</span> In order to delete the subnet<span class="token punctuation">,</span> delete all the resources within the subnet<span class="token punctuation">.</span> See aka<span class="token punctuation">.</span>ms/deletesubnet<span class="token punctuation">.</span>                                                         │
+│
+╵
+╷
+│ Error: deleting Network Security <span class="token function">Group</span> <span class="token punctuation">(</span>Subscription: <span class="token string">"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"</span>
+│ Resource <span class="token function">Group</span> Name: <span class="token string">"rg-win-vm-iis-llama"</span>
+│ Network Security <span class="token function">Group</span> Name: <span class="token string">"win-vm-iis-llama-nsg"</span><span class="token punctuation">)</span>: performing Delete: unexpected status 400 <span class="token punctuation">(</span>400 Bad Request<span class="token punctuation">)</span> with error: InUseNetworkSecurityGroupCannotBeDeleted: Network security <span class="token function">group</span> <span class="token operator">/</span>subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/provid
+ers/Microsoft<span class="token punctuation">.</span>Network/networkSecurityGroups/win-vm-iis-llama-nsg cannot be deleted because it is in use by the following resources: <span class="token operator">/</span>subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft<span class="token punctuation">.</span>Network/networkInterfaces/win-vm-iis-llama-nic<span class="token punctuation">.</span> In order to delete the Network security <span class="token function">group</span><span class="token punctuation">,</span> remove the association with the resource<span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">.</span> To learn how to <span class="token keyword keyword-do">do</span> this<span class="token punctuation">,</span> see aka<span class="token punctuation">.</span>ms/deletensg<span class="token punctuation">.</span>                                                                                                                                                 │
+│
+╵
+╷
+│ Error: deleting Resource <span class="token function">Group</span> <span class="token string">"rg-win-vm-iis-llama"</span>: the Resource <span class="token function">Group</span> still contains Resources<span class="token punctuation">.</span>
+│
+│ Terraform is configured to check <span class="token keyword keyword-for">for</span> Resources within the Resource <span class="token function">Group</span> when deleting the Resource <span class="token function">Group</span> <span class="token operator">-</span> and
+│ raise an error <span class="token keyword keyword-if">if</span> nested Resources still exist to avoid unintentionally deleting these Resources<span class="token punctuation">.</span>
+│
+│ Terraform has detected that the following Resources still exist within the Resource <span class="token function">Group</span>:
+│
+│ <span class="token operator">*</span> `<span class="token operator">/</span>subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft<span class="token punctuation">.</span>Network/networkSecurityGroups/win-vm-iis-llama-nsg`
+│ <span class="token operator">*</span> `<span class="token operator">/</span>subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft<span class="token punctuation">.</span>Network/publicIPAddresses/win-vm-iis-llama-public-ip`
+│
+│ This feature is intended to avoid the unintentional destruction of nested Resources provisioned through some
+│ other means <span class="token punctuation">(</span><span class="token keyword keyword-for">for</span> example<span class="token punctuation">,</span> an ARM Template Deployment<span class="token punctuation">)</span> <span class="token operator">-</span> as such you must either remove these Resources<span class="token punctuation">,</span> or
+│ disable this behaviour <span class="token keyword keyword-using">using</span> the feature flag `prevent_deletion_if_contains_resources` within the `features`
+│ block when configuring the Provider<span class="token punctuation">,</span> <span class="token keyword keyword-for">for</span> example:
+│
+│ provider <span class="token string">"azurerm"</span> <span class="token punctuation">{</span>
+│   features <span class="token punctuation">{</span>
+│     resource_group <span class="token punctuation">{</span>
+│       prevent_deletion_if_contains_resources = false
+│     <span class="token punctuation">}</span>
+│   <span class="token punctuation">}</span>
+│ <span class="token punctuation">}</span>
+│
+│ When that feature flag is <span class="token function">set</span><span class="token punctuation">,</span> Terraform will skip checking <span class="token keyword keyword-for">for</span> any Resources within the Resource <span class="token function">Group</span> and
+│ delete this <span class="token keyword keyword-using">using</span> the Azure API directly <span class="token punctuation">(</span>which will clear up any nested resources<span class="token punctuation">)</span><span class="token punctuation">.</span>
+│
+│ More information on the `features` block can be found in the documentation:
+│ https:<span class="token operator">/</span><span class="token operator">/</span>registry<span class="token punctuation">.</span>terraform<span class="token punctuation">.</span>io/providers/hashicorp/azurerm/latest/docs/guides/features-block
+│
+│
+│
+╵
+╷
+│ Error: deleting Extension <span class="token punctuation">(</span>Subscription: <span class="token string">"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"</span>
+│ Resource <span class="token function">Group</span> Name: <span class="token string">"rg-win-vm-iis-llama"</span>
+│ Virtual Machine Name: <span class="token string">"win-vm-iis-vm"</span>
+│ Extension Name: <span class="token string">"win-vm-iis-llama-wsi"</span><span class="token punctuation">)</span>: performing Delete: unexpected status 409 <span class="token punctuation">(</span>409 Conflict<span class="token punctuation">)</span> with error: OperationNotAllowed: Cannot modify extensions in the VM when the VM is not running<span class="token punctuation">.</span>
+│
+│
+╵
+╷
+│ Error: deleting Public I P Address <span class="token punctuation">(</span>Subscription: <span class="token string">"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"</span>
+│ Resource <span class="token function">Group</span> Name: <span class="token string">"rg-win-vm-iis-llama"</span>
+│ Public I P Addresses Name: <span class="token string">"win-vm-iis-llama-public-ip"</span><span class="token punctuation">)</span>: performing Delete: unexpected status 400 <span class="token punctuation">(</span>400 Bad Request<span class="token punctuation">)</span> with error: PublicIPAddressCannotBeDeleted: Public IP address <span class="token operator">/</span>subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microso
+<span class="token function">ft</span><span class="token punctuation">.</span>Network/publicIPAddresses/win-vm-iis-llama-public-ip can not be deleted since it is still allocated to resource <span class="token operator">/</span>subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft<span class="token punctuation">.</span>Network/networkInterfaces/win-vm-iis-llama-nic/ipConfigurations/terraform_work3_nic_configuration<span class="token punctuation">.</span> In order to delete the public IP<span class="token punctuation">,</span> disassociate/detach the Public IP address <span class="token keyword keyword-from">from</span> the resource<span class="token punctuation">.</span>  To learn how to <span class="token keyword keyword-do">do</span> this<span class="token punctuation">,</span> see aka<span class="token punctuation">.</span>ms/deletepublicip<span class="token punctuation">.</span>                                                                                                      │
+│
+╵
+Releasing state lock<span class="token punctuation">.</span> This may take a few moments<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+</code></pre><ul>
+<li>再度 <code>terraform destroy</code> するとリソースグループ含め削除された。</li>
+</ul>
+<pre data-role="codeBlock" data-info="PowerShell" class="language-powershell PowerShell"><code><span class="token function">PS</span> C:\Users\HNakajima\OneDrive <span class="token operator">-</span> 個人契約\Work\source\terraform\terraform-work5&gt; terraform destroy
+azurerm_resource_group<span class="token punctuation">.</span>rg: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama]</span>
+azurerm_subnet<span class="token punctuation">.</span>terraform_work3_subnet: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet/subnets/win-vm-iis-llama-subnet]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm/extensions/win-vm-iis-llama-wsi]</span>
+azurerm_public_ip<span class="token punctuation">.</span>terraform_work5_public_ip: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-llama-public-ip]</span>
+azurerm_network_security_group<span class="token punctuation">.</span>terraform_work5_nsg: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-llama-nsg]</span>
+
+Terraform used the selected providers to generate the following execution plan<span class="token punctuation">.</span> Resource actions are indicated with the following symbols:
+<span class="token operator">-</span> destroy
+
+Terraform will perform the following actions:
+
+<span class="token comment"># azurerm_network_security_group.terraform_work5_nsg will be destroyed</span>
+<span class="token operator">-</span> resource <span class="token string">"azurerm_network_security_group"</span> <span class="token string">"terraform_work5_nsg"</span> <span class="token punctuation">{</span>
+    <span class="token operator">-</span> id                  = <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-llama-nsg"</span> <span class="token operator">-</span>&gt; null
+    <span class="token operator">-</span> location            = <span class="token string">"japanwest"</span> <span class="token operator">-</span>&gt; null
+    <span class="token operator">-</span> name                = <span class="token string">"win-vm-iis-llama-nsg"</span> <span class="token operator">-</span>&gt; null
+
+～略～
+
+Plan: 0 to add<span class="token punctuation">,</span> 0 to change<span class="token punctuation">,</span> 3 to destroy<span class="token punctuation">.</span>
+
+<span class="token keyword keyword-Do">Do</span> you really want to destroy all resources?
+Terraform will destroy all your managed infrastructure<span class="token punctuation">,</span> as shown above<span class="token punctuation">.</span>
+There is no undo<span class="token punctuation">.</span> Only <span class="token string">'yes'</span> will be accepted to confirm<span class="token punctuation">.</span>
+
+Enter a value: yes
+
+azurerm_resource_group<span class="token punctuation">.</span>rg: Destroying<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama]</span>
+azurerm_public_ip<span class="token punctuation">.</span>terraform_work5_public_ip: Destroying<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-llama-public-ip]</span>
+azurerm_network_security_group<span class="token punctuation">.</span>terraform_work5_nsg: Destroying<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-llama-nsg]</span>
+azurerm_network_security_group<span class="token punctuation">.</span>terraform_work5_nsg: Still destroying<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-4ed5-8cf2-...orkSecurityGroups/win-vm-iis-llama-nsg, 10s elapsed]</span>
+azurerm_public_ip<span class="token punctuation">.</span>terraform_work5_public_ip: Still destroying<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-4ed5-8cf2-...IPAddresses/win-vm-iis-llama-public-ip, 10s elapsed]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Still destroying<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-4ed5-8cf2-...3ee/resourceGroups/rg-win-vm-iis-llama, 10s elapsed]</span>
+azurerm_network_security_group<span class="token punctuation">.</span>terraform_work5_nsg: Destruction complete after 11s
+azurerm_public_ip<span class="token punctuation">.</span>terraform_work5_public_ip: Destruction complete after 12s
+azurerm_resource_group<span class="token punctuation">.</span>rg: Still destroying<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-4ed5-8cf2-...3ee/resourceGroups/rg-win-vm-iis-llama, 20s elapsed]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Still destroying<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-4ed5-8cf2-...3ee/resourceGroups/rg-win-vm-iis-llama, 30s elapsed]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Still destroying<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-4ed5-8cf2-...3ee/resourceGroups/rg-win-vm-iis-llama, 40s elapsed]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Still destroying<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-4ed5-8cf2-...3ee/resourceGroups/rg-win-vm-iis-llama, 50s elapsed]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Destruction complete after 50s
+
+Destroy complete! Resources: 3 destroyed<span class="token punctuation">.</span>
+</code></pre></li>
+</ol>
+<hr>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

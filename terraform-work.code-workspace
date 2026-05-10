@@ -1,0 +1,36 @@
+{
+	"folders": [
+		{
+			"name": "terraform-work1",
+			"path": "terraform-work1",
+		},
+		{
+			"name": "terraform-work2",
+			"path": "terraform-work2"
+		},
+		{
+			"name": "terraform-work3",
+			"path": "terraform-work3"
+		},
+		{
+			"name": "terraform-work4",
+			"path": "terraform-work4"
+		},
+		{
+			"name": "terraform-work5",
+			"path": "terraform-work5"
+		},
+		{
+			"name": "terraform-work6",
+			"path": "terraform-work6"
+		},
+		{
+			"name": "terraform-work7",
+			"path": "terraform-work7"
+		}
+	],
+	"settings": {
+		"files.autoSave": "onWindowChange",
+		"editor.fontSize": 16
+	}
+}

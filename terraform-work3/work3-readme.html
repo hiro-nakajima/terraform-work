@@ -1,0 +1,1356 @@
+<!DOCTYPE html><html><head>
+      <title>work3-readme</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\HNakajima\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.15\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="概要">概要 </h1>
+<ul>
+<li>
+<p>work3 は以下の MS Learning で、Public IP で公開する VM (Web Server) を作成します。<br>
+<a href="https://learn.microsoft.com/ja-jp/azure/virtual-machines/windows/quick-create-terraform">クイック スタート: Terraform を使用して Windows VM を作成する</a><br>
+<a href="https://zenn.dev/microsoft/articles/1bfe6f97c84248">TerraformでAzureにVMをデプロイするチュートリアルを覗いてみる</a><br>
+<img src="image/work3-readme/1732855553179.png" alt="1732855553179"></p>
+</li>
+<li>
+<p>ルートのフォルダ・ファイル構成</p>
+<ul>
+<li>terraform-work3<br>
+∟ .terrtaform - init 時に作成される Provider がダウンロードされるフォルダ<br>
+∟ image - readme の画像ファイルを格納するフォルダ<br>
+∟ tfstate - リモートバックエンドからダウンロードした tfstate ファイル<br>
+∟ .terraform.lock.hcl - init 時に作成される、Provider と .tf ファイルの依存関係等が記録されたファイル ⇒ <a href="https://developer.hashicorp.com/terraform/language/files/dependency-lock">Dependency Lock File</a><br>
+∟ <a href="http://main.tf">main.tf</a> - リソースを記述した tf ファイル<br>
+∟ <a href="http://outputs.tf">outputs.tf</a> - 出力を記述した tf ファイル<br>
+∟ <a href="http://provider.tf">provider.tf</a> - プロバイダーを記述した tf ファイル<br>
+∟ <a href="http://variables.tf">variables.tf</a> - 変数を記述した tf ファイル<br>
+∟ work3-readme.html - Markdown を HTML 化したファイル<br>
+∟ <a href="http://work3-readme.md">work3-readme.md</a> - この Markdown ファイル</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>terraform ブロック</li>
+<li>variable ブロック
+<ul>
+<li>割愛</li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>resource ブロック
+<ul>
+<li>
+<p>動的な Public IP を作成し、NIC の IP 構成に紐づける (MS Learn の通り)。Private IP も動的。</p>
+</li>
+<li>
+<p>NSG の関連付けは専用のブロックで行う。</p>
+<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code># <span class="token maybe-class-name">Create</span> <span class="token keyword keyword-public">public</span> <span class="token maybe-class-name">IPs</span>
+resource <span class="token string">"azurerm_public_ip"</span> <span class="token string">"terraform_work3_public_ip"</span> <span class="token punctuation">{</span>
+  name                <span class="token operator">=</span> <span class="token string">"${random_pet.prefix.id}-public-ip"</span>
+  <span class="token dom variable">location</span>            <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">location</span>
+  resource_group_name <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">name</span>
+  allocation_method   <span class="token operator">=</span> <span class="token string">"Dynamic"</span>
+<span class="token punctuation">}</span>
+
+# <span class="token maybe-class-name">Create</span> <span class="token maybe-class-name">Network</span> <span class="token maybe-class-name">Security</span> <span class="token maybe-class-name">Group</span> and rules
+resource <span class="token string">"azurerm_network_security_group"</span> <span class="token string">"terraform_work3_nsg"</span> <span class="token punctuation">{</span>
+  name                <span class="token operator">=</span> <span class="token string">"${random_pet.prefix.id}-nsg"</span>
+  <span class="token dom variable">location</span>            <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">location</span>
+  resource_group_name <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">name</span>
+
+  security_rule <span class="token punctuation">{</span>
+    name                       <span class="token operator">=</span> <span class="token string">"RDP"</span>
+    priority                   <span class="token operator">=</span> <span class="token number">1000</span>
+    direction                  <span class="token operator">=</span> <span class="token string">"Inbound"</span>
+    access                     <span class="token operator">=</span> <span class="token string">"Allow"</span>
+    protocol                   <span class="token operator">=</span> <span class="token string">"*"</span>
+    source_port_range          <span class="token operator">=</span> <span class="token string">"*"</span>
+    destination_port_range     <span class="token operator">=</span> <span class="token string">"3389"</span>
+    source_address_prefix      <span class="token operator">=</span> <span class="token string">"120.75.97.239"</span> # your global ip
+    destination_address_prefix <span class="token operator">=</span> <span class="token string">"*"</span>
+  <span class="token punctuation">}</span>
+  security_rule <span class="token punctuation">{</span>
+    name                       <span class="token operator">=</span> <span class="token string">"web"</span>
+    priority                   <span class="token operator">=</span> <span class="token number">1001</span>
+    direction                  <span class="token operator">=</span> <span class="token string">"Inbound"</span>
+    access                     <span class="token operator">=</span> <span class="token string">"Allow"</span>
+    protocol                   <span class="token operator">=</span> <span class="token string">"Tcp"</span>
+    source_port_range          <span class="token operator">=</span> <span class="token string">"*"</span>
+    destination_port_range     <span class="token operator">=</span> <span class="token string">"80"</span>
+    source_address_prefix      <span class="token operator">=</span> <span class="token string">"120.75.97.239"</span> # your global ip
+    destination_address_prefix <span class="token operator">=</span> <span class="token string">"*"</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+# <span class="token maybe-class-name">Create</span> network <span class="token keyword keyword-interface">interface</span>
+<span class="token class-name">resource</span> <span class="token string">"azurerm_network_interface"</span> <span class="token string">"terraform_work3_nic"</span> <span class="token punctuation">{</span>
+  name                <span class="token operator">=</span> <span class="token string">"${random_pet.prefix.id}-nic"</span>
+  <span class="token dom variable">location</span>            <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">location</span>
+  resource_group_name <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">name</span>
+
+  ip_configuration <span class="token punctuation">{</span>
+    name                          <span class="token operator">=</span> <span class="token string">"terraform_work3_nic_configuration"</span>
+    subnet_id                     <span class="token operator">=</span> azurerm_subnet<span class="token punctuation">.</span><span class="token property-access">terraform_work3_subnet</span><span class="token punctuation">.</span><span class="token property-access">id</span>
+    private_ip_address_allocation <span class="token operator">=</span> <span class="token string">"Dynamic"</span>
+    public_ip_address_id          <span class="token operator">=</span> azurerm_public_ip<span class="token punctuation">.</span><span class="token property-access">terraform_work3_public_ip</span><span class="token punctuation">.</span><span class="token property-access">id</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+# <span class="token maybe-class-name">Connect</span> the security group to the network <span class="token keyword keyword-interface">interface</span>
+<span class="token class-name">resource</span> <span class="token string">"azurerm_network_interface_security_group_association"</span> <span class="token string">"example"</span> <span class="token punctuation">{</span>
+  network_interface_id      <span class="token operator">=</span> azurerm_network_interface<span class="token punctuation">.</span><span class="token property-access">terraform_work3_nic</span><span class="token punctuation">.</span><span class="token property-access">id</span>
+  network_security_group_id <span class="token operator">=</span> azurerm_network_security_group<span class="token punctuation">.</span><span class="token property-access">terraform_work3_nsg</span><span class="token punctuation">.</span><span class="token property-access">id</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+<li>
+<p>ブート診断用ストレージアカウントを作成し、その Blob エンドポイントを VM のブート診断 URI に紐づける。</p>
+</li>
+<li>
+<p>VM の SKU、OS ディスク、ソースイメージを指定する。パスワードはランダムで生成した result をセットしている。</p>
+<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code># <span class="token maybe-class-name">Create</span> storage account <span class="token keyword control-flow keyword-for">for</span> boot diagnostics
+resource <span class="token string">"azurerm_storage_account"</span> <span class="token string">"terraform_work3_storage_account"</span> <span class="token punctuation">{</span>
+  name                     <span class="token operator">=</span> <span class="token string">"diag${random_id.random_id.hex}"</span>
+  <span class="token dom variable">location</span>                 <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">location</span>
+  resource_group_name      <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">name</span>
+  account_tier             <span class="token operator">=</span> <span class="token string">"Standard"</span>
+  account_replication_type <span class="token operator">=</span> <span class="token string">"LRS"</span>
+<span class="token punctuation">}</span>
+
+# <span class="token maybe-class-name">Create</span> virtual machine
+resource <span class="token string">"azurerm_windows_virtual_machine"</span> <span class="token string">"main"</span> <span class="token punctuation">{</span>
+  name                  <span class="token operator">=</span> <span class="token string">"${var.prefix}-vm"</span>
+  admin_username        <span class="token operator">=</span> <span class="token string">"azureuser"</span>
+  admin_password        <span class="token operator">=</span> random_password<span class="token punctuation">.</span><span class="token property-access">password</span><span class="token punctuation">.</span><span class="token property-access">result</span>
+  <span class="token dom variable">location</span>              <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">location</span>
+  resource_group_name   <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">name</span>
+  network_interface_ids <span class="token operator">=</span> <span class="token punctuation">[</span>azurerm_network_interface<span class="token punctuation">.</span><span class="token property-access">terraform_work3_nic</span><span class="token punctuation">.</span><span class="token property-access">id</span><span class="token punctuation">]</span>
+  size                  <span class="token operator">=</span> <span class="token string">"Standard_DS1_v2"</span>
+
+  os_disk <span class="token punctuation">{</span>
+    name                 <span class="token operator">=</span> <span class="token string">"myOsDisk"</span>
+    caching              <span class="token operator">=</span> <span class="token string">"ReadWrite"</span>
+    storage_account_type <span class="token operator">=</span> <span class="token string">"Premium_LRS"</span>
+  <span class="token punctuation">}</span>
+
+  source_image_reference <span class="token punctuation">{</span>
+    publisher <span class="token operator">=</span> <span class="token string">"MicrosoftWindowsServer"</span>
+    offer     <span class="token operator">=</span> <span class="token string">"WindowsServer"</span>
+    sku       <span class="token operator">=</span> <span class="token string">"2022-datacenter-azure-edition"</span>
+    version   <span class="token operator">=</span> <span class="token string">"latest"</span>
+  <span class="token punctuation">}</span>
+
+  boot_diagnostics <span class="token punctuation">{</span>
+    storage_account_uri <span class="token operator">=</span> azurerm_storage_account<span class="token punctuation">.</span><span class="token property-access">terraform_work3_storage_account</span><span class="token punctuation">.</span><span class="token property-access">primary_blob_endpoint</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+<li>
+<p>IIS をインストールするため、カスタムスクリプト拡張機能を使用している。</p>
+<ul>
+<li>PowerShell スクリプトを記述している。<br>
+<a href="https://learn.microsoft.com/ja-jp/azure/virtual-machines/extensions/custom-script-windows">Windows でのカスタムのスクリプト拡張機能</a></li>
+</ul>
+</li>
+<li>
+<p>Random は常にランダムを生成するわけではなく、初回生成後 ステート (tfstate) に格納されて2回目以降は再利用される。</p>
+<ul>
+<li>ただし、Keepers に指定した値が変更された場合、ランダムが再生成される。</li>
+<li>上記の場合リソースグループ名なので、リソースを追加・設定変更する場合再利用されるが、terraform destroy した場合リソースグループごと削除されるため、再実行の際は新しいリソースグループ名やパスワードが生成される。<br>
+<a href="https://registry.terraform.io/providers/hashicorp/random/latest/docs#resource-keepers">Resource "Keepers"</a><br>
+<a href="https://nishikoh.github.io/article/terraform-random-provider/">Terraform Random Provider を使ってみた</a></li>
+</ul>
+<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code># <span class="token maybe-class-name">Install</span> <span class="token constant">IIS</span> web server to the virtual machine
+resource <span class="token string">"azurerm_virtual_machine_extension"</span> <span class="token string">"web_server_install"</span> <span class="token punctuation">{</span>
+  name                       <span class="token operator">=</span> <span class="token string">"${random_pet.prefix.id}-wsi"</span>
+  virtual_machine_id         <span class="token operator">=</span> azurerm_windows_virtual_machine<span class="token punctuation">.</span><span class="token property-access">main</span><span class="token punctuation">.</span><span class="token property-access">id</span>
+  publisher                  <span class="token operator">=</span> <span class="token string">"Microsoft.Compute"</span>
+  type                       <span class="token operator">=</span> <span class="token string">"CustomScriptExtension"</span>
+  type_handler_version       <span class="token operator">=</span> <span class="token string">"1.8"</span>
+  auto_upgrade_minor_version <span class="token operator">=</span> <span class="token boolean">true</span>
+
+  settings <span class="token operator">=</span> <span class="token operator">&lt;&lt;</span><span class="token constant">SETTINGS</span>
+    <span class="token punctuation">{</span>
+      <span class="token string-property property">"commandToExecute"</span><span class="token operator">:</span> <span class="token string">"powershell -ExecutionPolicy Unrestricted Install-WindowsFeature -Name Web-Server -IncludeAllSubFeature -IncludeManagementTools"</span>
+    <span class="token punctuation">}</span>
+  <span class="token constant">SETTINGS</span>
+<span class="token punctuation">}</span>
+
+# <span class="token maybe-class-name">Generate</span> random text <span class="token keyword control-flow keyword-for">for</span> a unique storage account name
+resource <span class="token string">"random_id"</span> <span class="token string">"random_id"</span> <span class="token punctuation">{</span>
+  keepers <span class="token operator">=</span> <span class="token punctuation">{</span>
+    # <span class="token maybe-class-name">Generate</span> a <span class="token keyword keyword-new">new</span> <span class="token class-name">ID</span> only when a <span class="token keyword keyword-new">new</span> <span class="token class-name">resource</span> group is defined
+    resource_group <span class="token operator">=</span> azurerm_resource_group<span class="token punctuation">.</span><span class="token property-access">rg</span><span class="token punctuation">.</span><span class="token property-access">name</span>
+  <span class="token punctuation">}</span>
+
+  byte_length <span class="token operator">=</span> <span class="token number">8</span>
+<span class="token punctuation">}</span>
+
+resource <span class="token string">"random_password"</span> <span class="token string">"password"</span> <span class="token punctuation">{</span>
+  length      <span class="token operator">=</span> <span class="token number">20</span>
+  min_lower   <span class="token operator">=</span> <span class="token number">1</span>
+  min_upper   <span class="token operator">=</span> <span class="token number">1</span>
+  min_numeric <span class="token operator">=</span> <span class="token number">1</span>
+  min_special <span class="token operator">=</span> <span class="token number">1</span>
+  special     <span class="token operator">=</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li>output ブロック
+<ul>
+<li>Public IP アドレス、ランダム生成されたパスワードを出力する。
+<ul>
+<li>パスワードは sensitive=true のためマスキングされる。</li>
+</ul>
+<pre data-role="codeBlock" data-info="js" class="language-javascript js"><code>output <span class="token string">"public_ip_address"</span> <span class="token punctuation">{</span>
+  value <span class="token operator">=</span> azurerm_windows_virtual_machine<span class="token punctuation">.</span><span class="token property-access">main</span><span class="token punctuation">.</span><span class="token property-access">public_ip_address</span>
+<span class="token punctuation">}</span>
+
+output <span class="token string">"admin_password"</span> <span class="token punctuation">{</span>
+  sensitive <span class="token operator">=</span> <span class="token boolean">true</span>
+  value     <span class="token operator">=</span> azurerm_windows_virtual_machine<span class="token punctuation">.</span><span class="token property-access">main</span><span class="token punctuation">.</span><span class="token property-access">admin_password</span>
+<span class="token punctuation">}</span>
+</code></pre></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="実行結果">実行結果 </h1>
+<ul>
+<li>
+<p>現時点で最新の 4.11.0 を指定した。<br>
+<img src="image/work3-readme/1732680929584.png" alt="1732680929584"></p>
+<pre data-role="codeBlock" data-info="PowerShell" class="language-powershell PowerShell"><code><span class="token function">PS</span> C:\Users\HNakajima\OneDrive <span class="token operator">-</span> 個人契約\Work\source\terraform\terraform-work3&gt; terraform init 
+Initializing the backend<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+
+Successfully configured the backend <span class="token string">"azurerm"</span><span class="token operator">!</span> Terraform will automatically
+use this backend unless the backend configuration changes<span class="token punctuation">.</span>
+Initializing provider plugins<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token operator">-</span> Finding hashicorp/azurerm versions matching <span class="token string">"4.11.0"</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token operator">-</span> Finding hashicorp/random versions matching <span class="token string">"~&gt; 3.0"</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token operator">-</span> Installing hashicorp/azurerm v4<span class="token punctuation">.</span>11<span class="token punctuation">.</span>0<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token operator">-</span> Installed hashicorp/azurerm v4<span class="token punctuation">.</span>11<span class="token punctuation">.</span>0 <span class="token punctuation">(</span>signed by HashiCorp<span class="token punctuation">)</span>
+<span class="token operator">-</span> Installing hashicorp/random v3<span class="token punctuation">.</span>6<span class="token punctuation">.</span>3<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+</code></pre><p><img src="image/work3-readme/1732680977151.png" alt="1732680977151"><br>
+<img src="image/work3-readme/1732681022904.png" alt="1732681022904"></p>
+</li>
+<li>
+<p>terraform plan で実行内容を確認。<br>
+<img src="image/work3-readme/1732681101633.png" alt="1732681101633"></p>
+<pre data-role="codeBlock" data-info="powershell" class="language-powershell powershell"><code><span class="token function">PS</span> C:\Users\HNakajima\OneDrive <span class="token operator">-</span> 個人契約\Work\source\terraform\terraform-work3&gt; terraform plan 
+
+Terraform used the selected providers to generate the following execution plan<span class="token punctuation">.</span> Resource actions are indicated with the following symbols:
+  <span class="token operator">+</span> create
+
+Terraform will perform the following actions:
+
+  <span class="token comment"># azurerm_network_interface.terraform_work3_nic will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_network_interface"</span> <span class="token string">"terraform_work3_nic"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> applied_dns_servers         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> id                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> internal_domain_name_suffix = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location                    = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> mac_address                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> name                        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> private_ip_address          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> private_ip_addresses        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> resource_group_name         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> virtual_machine_id          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+      <span class="token operator">+</span> ip_configuration <span class="token punctuation">{</span>
+          <span class="token operator">+</span> gateway_load_balancer_frontend_ip_configuration_id = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+          <span class="token operator">+</span> name                                               = <span class="token string">"terraform_work3_nic_configuration"</span>
+          <span class="token operator">+</span> primary                                            = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+          <span class="token operator">+</span> private_ip_address                                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+          <span class="token operator">+</span> private_ip_address_allocation                      = <span class="token string">"Dynamic"</span>
+          <span class="token operator">+</span> private_ip_address_version                         = <span class="token string">"IPv4"</span>
+          <span class="token operator">+</span> public_ip_address_id                               = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+          <span class="token operator">+</span> subnet_id                                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_network_interface_security_group_association.example will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_network_interface_security_group_association"</span> <span class="token string">"example"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> id                        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> network_interface_id      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> network_security_group_id = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_network_security_group.terraform_work3_nsg will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_network_security_group"</span> <span class="token string">"terraform_work3_nsg"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> id                  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location            = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> name                = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> resource_group_name = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> security_rule       = <span class="token punctuation">[</span>
+          <span class="token operator">+</span> <span class="token punctuation">{</span>
+              <span class="token operator">+</span> access                                     = <span class="token string">"Allow"</span>
+              <span class="token operator">+</span> destination_address_prefix                 = <span class="token string">"*"</span>
+              <span class="token operator">+</span> destination_address_prefixes               = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> destination_application_security_group_ids = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> destination_port_range                     = <span class="token string">"3389"</span>
+              <span class="token operator">+</span> destination_port_ranges                    = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> direction                                  = <span class="token string">"Inbound"</span>
+              <span class="token operator">+</span> name                                       = <span class="token string">"RDP"</span>
+              <span class="token operator">+</span> priority                                   = 1000
+              <span class="token operator">+</span> protocol                                   = <span class="token string">"*"</span>
+              <span class="token operator">+</span> source_address_prefix                      = <span class="token string">"120.75.97.239"</span>
+              <span class="token operator">+</span> source_address_prefixes                    = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> source_application_security_group_ids      = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> source_port_range                          = <span class="token string">"*"</span>
+              <span class="token operator">+</span> source_port_ranges                         = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+                <span class="token comment"># (1 unchanged attribute hidden)</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token operator">+</span> <span class="token punctuation">{</span>
+              <span class="token operator">+</span> access                                     = <span class="token string">"Allow"</span>
+              <span class="token operator">+</span> destination_address_prefix                 = <span class="token string">"*"</span>
+              <span class="token operator">+</span> destination_address_prefixes               = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> destination_application_security_group_ids = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> destination_port_range                     = <span class="token string">"80"</span>
+              <span class="token operator">+</span> destination_port_ranges                    = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> direction                                  = <span class="token string">"Inbound"</span>
+              <span class="token operator">+</span> name                                       = <span class="token string">"web"</span>
+              <span class="token operator">+</span> priority                                   = 1001
+              <span class="token operator">+</span> protocol                                   = <span class="token string">"Tcp"</span>
+              <span class="token operator">+</span> source_address_prefix                      = <span class="token string">"120.75.97.239"</span>
+              <span class="token operator">+</span> source_address_prefixes                    = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> source_application_security_group_ids      = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> source_port_range                          = <span class="token string">"*"</span>
+              <span class="token operator">+</span> source_port_ranges                         = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+                <span class="token comment"># (1 unchanged attribute hidden)</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_public_ip.terraform_work3_public_ip will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_public_ip"</span> <span class="token string">"terraform_work3_public_ip"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> allocation_method       = <span class="token string">"Dynamic"</span>
+      <span class="token operator">+</span> ddos_protection_mode    = <span class="token string">"VirtualNetworkInherited"</span>
+      <span class="token operator">+</span> fqdn                    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> id                      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> idle_timeout_in_minutes = 4
+      <span class="token operator">+</span> ip_address              = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> ip_version              = <span class="token string">"IPv4"</span>
+      <span class="token operator">+</span> location                = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> name                    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> resource_group_name     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> sku                     = <span class="token string">"Standard"</span>
+      <span class="token operator">+</span> sku_tier                = <span class="token string">"Regional"</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_resource_group.rg will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_resource_group"</span> <span class="token string">"rg"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> id       = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> name     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_storage_account.terraform_work3_storage_account will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_storage_account"</span> <span class="token string">"terraform_work3_storage_account"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> access_tier                        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> account_kind                       = <span class="token string">"StorageV2"</span>
+      <span class="token operator">+</span> account_replication_type           = <span class="token string">"LRS"</span>
+      <span class="token operator">+</span> account_tier                       = <span class="token string">"Standard"</span>
+      <span class="token operator">+</span> allow_nested_items_to_be_public    = true
+      <span class="token operator">+</span> cross_tenant_replication_enabled   = false
+      <span class="token operator">+</span> default_to_oauth_authentication    = false
+      <span class="token operator">+</span> dns_endpoint_type                  = <span class="token string">"Standard"</span>
+      <span class="token operator">+</span> https_traffic_only_enabled         = true
+      <span class="token operator">+</span> id                                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> infrastructure_encryption_enabled  = false
+      <span class="token operator">+</span> is_hns_enabled                     = false
+      <span class="token operator">+</span> large_file_share_enabled           = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> local_user_enabled                 = true
+      <span class="token operator">+</span> location                           = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> min_tls_version                    = <span class="token string">"TLS1_2"</span>
+      <span class="token operator">+</span> name                               = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> nfsv3_enabled                      = false
+      <span class="token operator">+</span> primary_access_key                 = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_blob_connection_string     = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_blob_endpoint              = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_blob_host                  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_blob_internet_endpoint     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_blob_internet_host         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_blob_microsoft_endpoint    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_blob_microsoft_host        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_connection_string          = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_dfs_endpoint               = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_dfs_host                   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_dfs_internet_endpoint      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_dfs_internet_host          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_dfs_microsoft_endpoint     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_dfs_microsoft_host         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_file_endpoint              = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_file_host                  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_file_internet_endpoint     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_file_internet_host         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_file_microsoft_endpoint    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_file_microsoft_host        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_location                   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_queue_endpoint             = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_queue_host                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_queue_microsoft_endpoint   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_queue_microsoft_host       = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_table_endpoint             = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_table_host                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_table_microsoft_endpoint   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_table_microsoft_host       = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_web_endpoint               = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_web_host                   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_web_internet_endpoint      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_web_internet_host          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_web_microsoft_endpoint     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_web_microsoft_host         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> public_network_access_enabled      = true
+      <span class="token operator">+</span> queue_encryption_key_type          = <span class="token string">"Service"</span>
+      <span class="token operator">+</span> resource_group_name                = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_access_key               = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_blob_connection_string   = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_blob_endpoint            = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_blob_host                = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_blob_internet_endpoint   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_blob_internet_host       = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_blob_microsoft_endpoint  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_blob_microsoft_host      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_connection_string        = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_dfs_endpoint             = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_dfs_host                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_dfs_internet_endpoint    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_dfs_internet_host        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_dfs_microsoft_endpoint   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_dfs_microsoft_host       = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_file_endpoint            = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_file_host                = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_file_internet_endpoint   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_file_internet_host       = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_file_microsoft_endpoint  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_file_microsoft_host      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_location                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_queue_endpoint           = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_queue_host               = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_queue_microsoft_endpoint = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_queue_microsoft_host     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_table_endpoint           = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_table_host               = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_table_microsoft_endpoint = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_table_microsoft_host     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_web_endpoint             = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_web_host                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_web_internet_endpoint    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_web_internet_host        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_web_microsoft_endpoint   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_web_microsoft_host       = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> sftp_enabled                       = false
+      <span class="token operator">+</span> shared_access_key_enabled          = true
+      <span class="token operator">+</span> table_encryption_key_type          = <span class="token string">"Service"</span>
+
+      <span class="token operator">+</span> blob_properties <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+      <span class="token operator">+</span> network_rules <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+      <span class="token operator">+</span> queue_properties <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+      <span class="token operator">+</span> routing <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+      <span class="token operator">+</span> share_properties <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+      <span class="token operator">+</span> static_website <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_subnet.terraform_work3_subnet will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_subnet"</span> <span class="token string">"terraform_work3_subnet"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> address_prefixes                              = <span class="token punctuation">[</span>
+          <span class="token operator">+</span> <span class="token string">"10.0.1.0/24"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+      <span class="token operator">+</span> default_outbound_access_enabled               = true
+      <span class="token operator">+</span> id                                            = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> name                                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> private_endpoint_network_policies             = <span class="token string">"Disabled"</span>
+      <span class="token operator">+</span> private_link_service_network_policies_enabled = true
+      <span class="token operator">+</span> resource_group_name                           = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> virtual_network_name                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_virtual_machine_extension.web_server_install will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_virtual_machine_extension"</span> <span class="token string">"web_server_install"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> auto_upgrade_minor_version  = true
+      <span class="token operator">+</span> failure_suppression_enabled = false
+      <span class="token operator">+</span> id                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> name                        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> publisher                   = <span class="token string">"Microsoft.Compute"</span>
+      <span class="token operator">+</span> settings                    = &lt;&lt;<span class="token operator">-</span>EOT
+            <span class="token punctuation">{</span>
+                  <span class="token string">"commandToExecute"</span>: <span class="token string">"powershell -ExecutionPolicy Unrestricted Install-WindowsFeature -Name Web-Server -IncludeAllSubFeature -IncludeManagementTools"</span>
+                <span class="token punctuation">}</span>
+        EOT
+      <span class="token operator">+</span> <span class="token function">type</span>                        = <span class="token string">"CustomScriptExtension"</span>
+      <span class="token operator">+</span> type_handler_version        = <span class="token string">"1.8"</span>
+      <span class="token operator">+</span> virtual_machine_id          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_virtual_network.terraform_work3_network will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_virtual_network"</span> <span class="token string">"terraform_work3_network"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> address_space       = <span class="token punctuation">[</span>
+          <span class="token operator">+</span> <span class="token string">"10.0.0.0/16"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+      <span class="token operator">+</span> dns_servers         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> guid                = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> id                  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location            = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> name                = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> resource_group_name = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> subnet              = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_windows_virtual_machine.main will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_windows_virtual_machine"</span> <span class="token string">"main"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> admin_password                                         = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      <span class="token operator">+</span> admin_username                                         = <span class="token string">"azureuser"</span>
+      <span class="token operator">+</span> allow_extension_operations                             = true
+      <span class="token operator">+</span> bypass_platform_safety_checks_on_user_schedule_enabled = false
+      <span class="token operator">+</span> computer_name                                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> disk_controller_type                                   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> enable_automatic_updates                               = true
+      <span class="token operator">+</span> extensions_time_budget                                 = <span class="token string">"PT1H30M"</span>
+      <span class="token operator">+</span> hotpatching_enabled                                    = false
+      <span class="token operator">+</span> id                                                     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location                                               = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> max_bid_price                                          = <span class="token operator">-</span>1
+      <span class="token operator">+</span> name                                                   = <span class="token string">"win-vm-iis-vm"</span>
+      <span class="token operator">+</span> network_interface_ids                                  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> patch_assessment_mode                                  = <span class="token string">"ImageDefault"</span>
+      <span class="token operator">+</span> patch_mode                                             = <span class="token string">"AutomaticByOS"</span>
+      <span class="token operator">+</span> platform_fault_domain                                  = <span class="token operator">-</span>1
+      <span class="token operator">+</span> priority                                               = <span class="token string">"Regular"</span>
+      <span class="token operator">+</span> private_ip_address                                     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> private_ip_addresses                                   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> provision_vm_agent                                     = true
+      <span class="token operator">+</span> public_ip_address                                      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> public_ip_addresses                                    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> resource_group_name                                    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> size                                                   = <span class="token string">"Standard_DS1_v2"</span>
+      <span class="token operator">+</span> virtual_machine_id                                     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> vm_agent_platform_updates_enabled                      = false
+
+      <span class="token operator">+</span> boot_diagnostics <span class="token punctuation">{</span>
+          <span class="token operator">+</span> storage_account_uri = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+
+      <span class="token operator">+</span> os_disk <span class="token punctuation">{</span>
+          <span class="token operator">+</span> caching                   = <span class="token string">"ReadWrite"</span>
+          <span class="token operator">+</span> disk_size_gb              = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+          <span class="token operator">+</span> name                      = <span class="token string">"myOsDisk"</span>
+          <span class="token operator">+</span> storage_account_type      = <span class="token string">"Premium_LRS"</span>
+          <span class="token operator">+</span> write_accelerator_enabled = false
+        <span class="token punctuation">}</span>
+
+      <span class="token operator">+</span> source_image_reference <span class="token punctuation">{</span>
+          <span class="token operator">+</span> offer     = <span class="token string">"WindowsServer"</span>
+          <span class="token operator">+</span> publisher = <span class="token string">"MicrosoftWindowsServer"</span>
+          <span class="token operator">+</span> sku       = <span class="token string">"2022-datacenter-azure-edition"</span>
+          <span class="token operator">+</span> version   = <span class="token string">"latest"</span>
+        <span class="token punctuation">}</span>
+
+      <span class="token operator">+</span> termination_notification <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># random_id.random_id will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"random_id"</span> <span class="token string">"random_id"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> b64_std     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> b64_url     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> byte_length = 8
+      <span class="token operator">+</span> dec         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> hex         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> id          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> keepers     = <span class="token punctuation">{</span>
+          <span class="token operator">+</span> <span class="token string">"resource_group"</span> = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># random_password.password will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"random_password"</span> <span class="token string">"password"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> bcrypt_hash = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      <span class="token operator">+</span> id          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> length      = 20
+      <span class="token operator">+</span> lower       = true
+      <span class="token operator">+</span> min_lower   = 1
+      <span class="token operator">+</span> min_numeric = 1
+      <span class="token operator">+</span> min_special = 1
+      <span class="token operator">+</span> min_upper   = 1
+      <span class="token operator">+</span> number      = true
+      <span class="token operator">+</span> numeric     = true
+      <span class="token operator">+</span> result      = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      <span class="token operator">+</span> special     = true
+      <span class="token operator">+</span> upper       = true
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># random_pet.prefix will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"random_pet"</span> <span class="token string">"prefix"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> id        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> length    = 1
+      <span class="token operator">+</span> prefix    = <span class="token string">"win-vm-iis"</span>
+      <span class="token operator">+</span> separator = <span class="token string">"-"</span>
+    <span class="token punctuation">}</span>
+
+Plan: 13 to add<span class="token punctuation">,</span> 0 to change<span class="token punctuation">,</span> 0 to destroy<span class="token punctuation">.</span>
+
+Changes to Outputs:
+  <span class="token operator">+</span> admin_password      = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+  <span class="token operator">+</span> public_ip_address   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+  <span class="token operator">+</span> resource_group_name = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+────────────────────────────────────────────────────────
+
+Note: You didn<span class="token string">'t use the -out option to save this plan, so Terraform can'</span>t guarantee to take exactly these actions <span class="token keyword keyword-if">if</span> you run <span class="token string">"terraform apply"</span> now<span class="token punctuation">.</span>
+</code></pre></li>
+<li>
+<p>terraform apply で環境に適用する。</p>
+<ul>
+<li>「Enter a value: yes」も入力したが、適用中にエラーとなった。<br>
+<img src="image/work3-readme/1732690392420.png" alt="1732690392420"><pre data-role="codeBlock" data-info="PowerShell" class="language-powershell PowerShell"><code><span class="token function">PS</span> C:\Users\HNakajima\OneDrive <span class="token operator">-</span> 個人契約\Work\source\terraform\terraform-work3&gt; terraform apply
+
+Terraform used the selected providers to generate the following execution plan<span class="token punctuation">.</span> Resource actions are indicated with the following symbols:
+  <span class="token operator">+</span> create
+
+Terraform will perform the following actions:
+
+  <span class="token comment"># azurerm_network_interface.terraform_work3_nic will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_network_interface"</span> <span class="token string">"terraform_work3_nic"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> applied_dns_servers         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> id                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> internal_domain_name_suffix = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location                    = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> mac_address                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> name                        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> private_ip_address          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> private_ip_addresses        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> resource_group_name         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> virtual_machine_id          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+      <span class="token operator">+</span> ip_configuration <span class="token punctuation">{</span>
+          <span class="token operator">+</span> gateway_load_balancer_frontend_ip_configuration_id = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+          <span class="token operator">+</span> name                                               = <span class="token string">"terraform_work3_nic_configuration"</span>
+          <span class="token operator">+</span> primary                                            = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+          <span class="token operator">+</span> private_ip_address                                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+          <span class="token operator">+</span> private_ip_address_allocation                      = <span class="token string">"Dynamic"</span>
+          <span class="token operator">+</span> private_ip_address_version                         = <span class="token string">"IPv4"</span>
+          <span class="token operator">+</span> public_ip_address_id                               = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+          <span class="token operator">+</span> subnet_id                                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_network_interface_security_group_association.example will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_network_interface_security_group_association"</span> <span class="token string">"example"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> id                        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> network_interface_id      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> network_security_group_id = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_network_security_group.terraform_work3_nsg will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_network_security_group"</span> <span class="token string">"terraform_work3_nsg"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> id                  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location            = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> name                = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> resource_group_name = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> security_rule       = <span class="token punctuation">[</span>
+          <span class="token operator">+</span> <span class="token punctuation">{</span>
+              <span class="token operator">+</span> access                                     = <span class="token string">"Allow"</span>
+              <span class="token operator">+</span> destination_address_prefix                 = <span class="token string">"*"</span>
+              <span class="token operator">+</span> destination_address_prefixes               = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> destination_application_security_group_ids = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> destination_port_range                     = <span class="token string">"3389"</span>
+              <span class="token operator">+</span> destination_port_ranges                    = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> direction                                  = <span class="token string">"Inbound"</span>
+              <span class="token operator">+</span> name                                       = <span class="token string">"RDP"</span>
+              <span class="token operator">+</span> priority                                   = 1000
+              <span class="token operator">+</span> protocol                                   = <span class="token string">"*"</span>
+              <span class="token operator">+</span> source_address_prefix                      = <span class="token string">"120.75.97.239"</span>
+              <span class="token operator">+</span> source_address_prefixes                    = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> source_application_security_group_ids      = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> source_port_range                          = <span class="token string">"*"</span>
+              <span class="token operator">+</span> source_port_ranges                         = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+                <span class="token comment"># (1 unchanged attribute hidden)</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token operator">+</span> <span class="token punctuation">{</span>
+              <span class="token operator">+</span> access                                     = <span class="token string">"Allow"</span>
+              <span class="token operator">+</span> destination_address_prefix                 = <span class="token string">"*"</span>
+              <span class="token operator">+</span> destination_address_prefixes               = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> destination_application_security_group_ids = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> destination_port_range                     = <span class="token string">"80"</span>
+              <span class="token operator">+</span> destination_port_ranges                    = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> direction                                  = <span class="token string">"Inbound"</span>
+              <span class="token operator">+</span> name                                       = <span class="token string">"web"</span>
+              <span class="token operator">+</span> priority                                   = 1001
+              <span class="token operator">+</span> protocol                                   = <span class="token string">"Tcp"</span>
+              <span class="token operator">+</span> source_address_prefix                      = <span class="token string">"120.75.97.239"</span>
+              <span class="token operator">+</span> source_address_prefixes                    = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> source_application_security_group_ids      = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+              <span class="token operator">+</span> source_port_range                          = <span class="token string">"*"</span>
+              <span class="token operator">+</span> source_port_ranges                         = <span class="token punctuation">[</span><span class="token punctuation">]</span>
+                <span class="token comment"># (1 unchanged attribute hidden)</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_public_ip.terraform_work3_public_ip will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_public_ip"</span> <span class="token string">"terraform_work3_public_ip"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> allocation_method       = <span class="token string">"Dynamic"</span>
+      <span class="token operator">+</span> ddos_protection_mode    = <span class="token string">"VirtualNetworkInherited"</span>
+      <span class="token operator">+</span> fqdn                    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> id                      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> idle_timeout_in_minutes = 4
+      <span class="token operator">+</span> ip_address              = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> ip_version              = <span class="token string">"IPv4"</span>
+      <span class="token operator">+</span> location                = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> name                    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> resource_group_name     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> sku                     = <span class="token string">"Standard"</span>
+      <span class="token operator">+</span> sku_tier                = <span class="token string">"Regional"</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_resource_group.rg will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_resource_group"</span> <span class="token string">"rg"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> id       = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> name     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_storage_account.terraform_work3_storage_account will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_storage_account"</span> <span class="token string">"terraform_work3_storage_account"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> access_tier                        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> account_kind                       = <span class="token string">"StorageV2"</span>
+      <span class="token operator">+</span> account_replication_type           = <span class="token string">"LRS"</span>
+      <span class="token operator">+</span> account_tier                       = <span class="token string">"Standard"</span>
+      <span class="token operator">+</span> allow_nested_items_to_be_public    = true
+      <span class="token operator">+</span> cross_tenant_replication_enabled   = false
+      <span class="token operator">+</span> default_to_oauth_authentication    = false
+      <span class="token operator">+</span> dns_endpoint_type                  = <span class="token string">"Standard"</span>
+      <span class="token operator">+</span> https_traffic_only_enabled         = true
+      <span class="token operator">+</span> id                                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> infrastructure_encryption_enabled  = false
+      <span class="token operator">+</span> is_hns_enabled                     = false
+      <span class="token operator">+</span> large_file_share_enabled           = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> local_user_enabled                 = true
+      <span class="token operator">+</span> location                           = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> min_tls_version                    = <span class="token string">"TLS1_2"</span>
+      <span class="token operator">+</span> name                               = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> nfsv3_enabled                      = false
+      <span class="token operator">+</span> primary_access_key                 = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_blob_connection_string     = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_blob_endpoint              = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_blob_host                  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_blob_internet_endpoint     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_blob_internet_host         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_blob_microsoft_endpoint    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_blob_microsoft_host        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_connection_string          = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_dfs_endpoint               = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_dfs_host                   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_dfs_internet_endpoint      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_dfs_internet_host          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_dfs_microsoft_endpoint     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_dfs_microsoft_host         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_file_endpoint              = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_file_host                  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_file_internet_endpoint     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_file_internet_host         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_file_microsoft_endpoint    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_file_microsoft_host        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_location                   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_queue_endpoint             = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_queue_host                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_queue_microsoft_endpoint   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_queue_microsoft_host       = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_table_endpoint             = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_table_host                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_table_microsoft_endpoint   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_table_microsoft_host       = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_web_endpoint               = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_web_host                   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_web_internet_endpoint      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_web_internet_host          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_web_microsoft_endpoint     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> primary_web_microsoft_host         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> public_network_access_enabled      = true
+      <span class="token operator">+</span> queue_encryption_key_type          = <span class="token string">"Service"</span>
+      <span class="token operator">+</span> resource_group_name                = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_access_key               = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_blob_connection_string   = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_blob_endpoint            = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_blob_host                = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_blob_internet_endpoint   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_blob_internet_host       = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_blob_microsoft_endpoint  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_blob_microsoft_host      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_connection_string        = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_dfs_endpoint             = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_dfs_host                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_dfs_internet_endpoint    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_dfs_internet_host        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_dfs_microsoft_endpoint   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_dfs_microsoft_host       = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_file_endpoint            = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_file_host                = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_file_internet_endpoint   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_file_internet_host       = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_file_microsoft_endpoint  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_file_microsoft_host      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_location                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_queue_endpoint           = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_queue_host               = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_queue_microsoft_endpoint = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_queue_microsoft_host     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_table_endpoint           = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_table_host               = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_table_microsoft_endpoint = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_table_microsoft_host     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_web_endpoint             = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_web_host                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_web_internet_endpoint    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_web_internet_host        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_web_microsoft_endpoint   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> secondary_web_microsoft_host       = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> sftp_enabled                       = false
+      <span class="token operator">+</span> shared_access_key_enabled          = true
+      <span class="token operator">+</span> table_encryption_key_type          = <span class="token string">"Service"</span>
+
+      <span class="token operator">+</span> blob_properties <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+      <span class="token operator">+</span> network_rules <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+      <span class="token operator">+</span> queue_properties <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+      <span class="token operator">+</span> routing <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+      <span class="token operator">+</span> share_properties <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+      <span class="token operator">+</span> static_website <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_subnet.terraform_work3_subnet will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_subnet"</span> <span class="token string">"terraform_work3_subnet"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> address_prefixes                              = <span class="token punctuation">[</span>
+          <span class="token operator">+</span> <span class="token string">"10.0.1.0/24"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+      <span class="token operator">+</span> default_outbound_access_enabled               = true
+      <span class="token operator">+</span> id                                            = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> name                                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> private_endpoint_network_policies             = <span class="token string">"Disabled"</span>
+      <span class="token operator">+</span> private_link_service_network_policies_enabled = true
+      <span class="token operator">+</span> resource_group_name                           = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> virtual_network_name                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_virtual_machine_extension.web_server_install will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_virtual_machine_extension"</span> <span class="token string">"web_server_install"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> auto_upgrade_minor_version  = true
+      <span class="token operator">+</span> failure_suppression_enabled = false
+      <span class="token operator">+</span> id                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> name                        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> publisher                   = <span class="token string">"Microsoft.Compute"</span>
+      <span class="token operator">+</span> settings                    = &lt;&lt;<span class="token operator">-</span>EOT
+            <span class="token punctuation">{</span>
+                  <span class="token string">"commandToExecute"</span>: <span class="token string">"powershell -ExecutionPolicy Unrestricted Install-WindowsFeature -Name Web-Server -IncludeAllSubFeature -IncludeManagementTools"</span>
+                <span class="token punctuation">}</span>
+        EOT
+      <span class="token operator">+</span> <span class="token function">type</span>                        = <span class="token string">"CustomScriptExtension"</span>
+      <span class="token operator">+</span> type_handler_version        = <span class="token string">"1.8"</span>
+      <span class="token operator">+</span> virtual_machine_id          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_virtual_network.terraform_work3_network will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_virtual_network"</span> <span class="token string">"terraform_work3_network"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> address_space       = <span class="token punctuation">[</span>
+          <span class="token operator">+</span> <span class="token string">"10.0.0.0/16"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span>
+      <span class="token operator">+</span> dns_servers         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> guid                = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> id                  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location            = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> name                = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> resource_group_name = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> subnet              = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_windows_virtual_machine.main will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_windows_virtual_machine"</span> <span class="token string">"main"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> admin_password                                         = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      <span class="token operator">+</span> admin_username                                         = <span class="token string">"azureuser"</span>
+      <span class="token operator">+</span> allow_extension_operations                             = true
+      <span class="token operator">+</span> bypass_platform_safety_checks_on_user_schedule_enabled = false
+      <span class="token operator">+</span> computer_name                                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> disk_controller_type                                   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> enable_automatic_updates                               = true
+      <span class="token operator">+</span> extensions_time_budget                                 = <span class="token string">"PT1H30M"</span>
+      <span class="token operator">+</span> hotpatching_enabled                                    = false
+      <span class="token operator">+</span> id                                                     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location                                               = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> max_bid_price                                          = <span class="token operator">-</span>1
+      <span class="token operator">+</span> name                                                   = <span class="token string">"win-vm-iis-vm"</span>
+      <span class="token operator">+</span> network_interface_ids                                  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> patch_assessment_mode                                  = <span class="token string">"ImageDefault"</span>
+      <span class="token operator">+</span> patch_mode                                             = <span class="token string">"AutomaticByOS"</span>
+      <span class="token operator">+</span> platform_fault_domain                                  = <span class="token operator">-</span>1
+      <span class="token operator">+</span> priority                                               = <span class="token string">"Regular"</span>
+      <span class="token operator">+</span> private_ip_address                                     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> private_ip_addresses                                   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> provision_vm_agent                                     = true
+      <span class="token operator">+</span> public_ip_address                                      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> public_ip_addresses                                    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> resource_group_name                                    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> size                                                   = <span class="token string">"Standard_DS1_v2"</span>
+      <span class="token operator">+</span> virtual_machine_id                                     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> vm_agent_platform_updates_enabled                      = false
+
+      <span class="token operator">+</span> boot_diagnostics <span class="token punctuation">{</span>
+          <span class="token operator">+</span> storage_account_uri = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+
+      <span class="token operator">+</span> os_disk <span class="token punctuation">{</span>
+          <span class="token operator">+</span> caching                   = <span class="token string">"ReadWrite"</span>
+          <span class="token operator">+</span> disk_size_gb              = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+          <span class="token operator">+</span> name                      = <span class="token string">"myOsDisk"</span>
+          <span class="token operator">+</span> storage_account_type      = <span class="token string">"Premium_LRS"</span>
+          <span class="token operator">+</span> write_accelerator_enabled = false
+        <span class="token punctuation">}</span>
+
+      <span class="token operator">+</span> source_image_reference <span class="token punctuation">{</span>
+          <span class="token operator">+</span> offer     = <span class="token string">"WindowsServer"</span>
+          <span class="token operator">+</span> publisher = <span class="token string">"MicrosoftWindowsServer"</span>
+          <span class="token operator">+</span> sku       = <span class="token string">"2022-datacenter-azure-edition"</span>
+          <span class="token operator">+</span> version   = <span class="token string">"latest"</span>
+        <span class="token punctuation">}</span>
+
+      <span class="token operator">+</span> termination_notification <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># random_id.random_id will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"random_id"</span> <span class="token string">"random_id"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> b64_std     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> b64_url     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> byte_length = 8
+      <span class="token operator">+</span> dec         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> hex         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> id          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> keepers     = <span class="token punctuation">{</span>
+          <span class="token operator">+</span> <span class="token string">"resource_group"</span> = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># random_password.password will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"random_password"</span> <span class="token string">"password"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> bcrypt_hash = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      <span class="token operator">+</span> id          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> length      = 20
+      <span class="token operator">+</span> lower       = true
+      <span class="token operator">+</span> min_lower   = 1
+      <span class="token operator">+</span> min_numeric = 1
+      <span class="token operator">+</span> min_special = 1
+      <span class="token operator">+</span> min_upper   = 1
+      <span class="token operator">+</span> number      = true
+      <span class="token operator">+</span> numeric     = true
+      <span class="token operator">+</span> result      = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      <span class="token operator">+</span> special     = true
+      <span class="token operator">+</span> upper       = true
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># random_pet.prefix will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"random_pet"</span> <span class="token string">"prefix"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> id        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> length    = 1
+      <span class="token operator">+</span> prefix    = <span class="token string">"win-vm-iis"</span>
+      <span class="token operator">+</span> separator = <span class="token string">"-"</span>
+    <span class="token punctuation">}</span>
+
+Plan: 13 to add<span class="token punctuation">,</span> 0 to change<span class="token punctuation">,</span> 0 to destroy<span class="token punctuation">.</span>
+
+Changes to Outputs:
+  <span class="token operator">+</span> admin_password      = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+  <span class="token operator">+</span> public_ip_address   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+  <span class="token operator">+</span> resource_group_name = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+<span class="token keyword keyword-Do">Do</span> you want to perform these actions?
+  Terraform will perform the actions described above<span class="token punctuation">.</span>
+  Only <span class="token string">'yes'</span> will be accepted to approve<span class="token punctuation">.</span>
+
+  Enter a value: yes
+
+random_pet<span class="token punctuation">.</span>prefix: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+random_pet<span class="token punctuation">.</span>prefix: Creation complete after 0s <span class="token namespace">[id=win-vm-iis-cricket]</span>
+random_password<span class="token punctuation">.</span>password: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+random_password<span class="token punctuation">.</span>password: Creation complete after 1s <span class="token namespace">[id=none]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>10s elapsed<span class="token punctuation">]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Creation complete after 11s <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-cricket]</span>
+azurerm_virtual_network<span class="token punctuation">.</span>terraform_work3_network: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+azurerm_public_ip<span class="token punctuation">.</span>terraform_work3_public_ip: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+random_id<span class="token punctuation">.</span>random_id: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+random_id<span class="token punctuation">.</span>random_id: Creation complete after 0s <span class="token namespace">[id=Al61oLoA6do]</span>
+azurerm_network_security_group<span class="token punctuation">.</span>terraform_work3_nsg: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+azurerm_storage_account<span class="token punctuation">.</span>terraform_work3_storage_account: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+azurerm_network_security_group<span class="token punctuation">.</span>terraform_work3_nsg: Creation complete after 3s <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-cricket/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-cricket-nsg]</span>
+azurerm_virtual_network<span class="token punctuation">.</span>terraform_work3_network: Creation complete after 5s <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-cricket/providers/Microsoft.Network/virtualNetworks/win-vm-iis-cricket-vnet]</span>
+azurerm_subnet<span class="token punctuation">.</span>terraform_work3_subnet: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+azurerm_subnet<span class="token punctuation">.</span>terraform_work3_subnet: Creation complete after 3s <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-cricket/providers/Microsoft.Network/virtualNetworks/win-vm-iis-cricket-vnet/subnets/win-vm-iis-cricket-subnet]</span>
+azurerm_storage_account<span class="token punctuation">.</span>terraform_work3_storage_account: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>10s elapsed<span class="token punctuation">]</span>
+azurerm_storage_account<span class="token punctuation">.</span>terraform_work3_storage_account: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>20s elapsed<span class="token punctuation">]</span>
+azurerm_storage_account<span class="token punctuation">.</span>terraform_work3_storage_account: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>30s elapsed<span class="token punctuation">]</span>
+azurerm_storage_account<span class="token punctuation">.</span>terraform_work3_storage_account: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>40s elapsed<span class="token punctuation">]</span>
+azurerm_storage_account<span class="token punctuation">.</span>terraform_work3_storage_account: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>50s elapsed<span class="token punctuation">]</span>
+azurerm_storage_account<span class="token punctuation">.</span>terraform_work3_storage_account: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>1m0s elapsed<span class="token punctuation">]</span>
+azurerm_storage_account<span class="token punctuation">.</span>terraform_work3_storage_account: Creation complete after 1m9s <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-cricket/providers/Microsoft.Storage/storageAccounts/diag025eb5a0ba00e9da]</span>
+╷
+│ Error: static IP allocation must be used when creating Standard SKU public IP addresses
+│
+│   with azurerm_public_ip<span class="token punctuation">.</span>terraform_work3_public_ip<span class="token punctuation">,</span>
+│   on main<span class="token punctuation">.</span>tf line 29<span class="token punctuation">,</span> in resource <span class="token string">"azurerm_public_ip"</span> <span class="token string">"terraform_work3_public_ip"</span>:
+│   29: resource <span class="token string">"azurerm_public_ip"</span> <span class="token string">"terraform_work3_public_ip"</span> <span class="token punctuation">{</span>
+│
+╵
+</code></pre></li>
+</ul>
+</li>
+<li>
+<p>Public IP を Dynamic で作成できなかったため。</p>
+<ul>
+<li>azurerm_punlic_ip のオプションのプロパティ sku がデフォルトで Standard であるため、Dynamic で作成できないため。</li>
+<li>このようなパターンは検知してくれない模様。<br>
+<a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/public_ip">azurerm_public_ip</a><pre data-role="codeBlock" data-info="" class="language-text"><code>sku - (Optional) The SKU of the Public IP. Accepted values are Basic and Standard. Defaults to Standard. 
+</code></pre><img src="image/work3-readme/1732683428093.png" alt="1732683428093"></li>
+<li>Basic Public IP はリタイア予定であるため、Static に修正してリトライする。<br>
+<img src="image/work3-readme/1732682873008.png" alt="1732682873008"></li>
+</ul>
+</li>
+<li>
+<p>terraform apply で環境に適用する。9分程度掛かった。<br>
+<img src="image/work3-readme/1732683654582.png" alt="1732683654582"></p>
+<pre data-role="codeBlock" data-info="powershell" class="language-powershell powershell"><code><span class="token function">PS</span> C:\Users\HNakajima\OneDrive <span class="token operator">-</span> 個人契約\Work\source\terraform\terraform-work3&gt; terraform apply
+random_pet<span class="token punctuation">.</span>prefix: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=win-vm-iis-cricket]</span>
+random_password<span class="token punctuation">.</span>password: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=none]</span>
+azurerm_resource_group<span class="token punctuation">.</span>rg: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-cricket]</span>
+random_id<span class="token punctuation">.</span>random_id: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=Al61oLoA6do]</span>
+azurerm_virtual_network<span class="token punctuation">.</span>terraform_work3_network: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-cricket/providers/Microsoft.Network/virtualNetworks/win-vm-iis-cricket-vnet]</span>
+azurerm_network_security_group<span class="token punctuation">.</span>terraform_work3_nsg: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-cricket/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-cricket-nsg]</span>
+azurerm_storage_account<span class="token punctuation">.</span>terraform_work3_storage_account: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-cricket/providers/Microsoft.Storage/storageAccounts/diag025eb5a0ba00e9da]</span>
+azurerm_subnet<span class="token punctuation">.</span>terraform_work3_subnet: Refreshing state<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-cricket/providers/Microsoft.Network/virtualNetworks/win-vm-iis-cricket-vnet/subnets/win-vm-iis-cricket-subnet]</span>
+
+Terraform used the selected providers to generate the following execution plan<span class="token punctuation">.</span> Resource actions are indicated with the following symbols:
+  <span class="token operator">+</span> create
+
+Terraform will perform the following actions:
+
+  <span class="token comment"># azurerm_network_interface.terraform_work3_nic will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_network_interface"</span> <span class="token string">"terraform_work3_nic"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> applied_dns_servers         = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> id                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> internal_domain_name_suffix = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location                    = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> mac_address                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> name                        = <span class="token string">"win-vm-iis-cricket-nic"</span>
+      <span class="token operator">+</span> private_ip_address          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> private_ip_addresses        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> resource_group_name         = <span class="token string">"rg-win-vm-iis-cricket"</span>
+      <span class="token operator">+</span> virtual_machine_id          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+      <span class="token operator">+</span> ip_configuration <span class="token punctuation">{</span>
+          <span class="token operator">+</span> gateway_load_balancer_frontend_ip_configuration_id = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+          <span class="token operator">+</span> name                                               = <span class="token string">"terraform_work3_nic_configuration"</span>
+          <span class="token operator">+</span> primary                                            = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+          <span class="token operator">+</span> private_ip_address                                 = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+          <span class="token operator">+</span> private_ip_address_allocation                      = <span class="token string">"Dynamic"</span>
+          <span class="token operator">+</span> private_ip_address_version                         = <span class="token string">"IPv4"</span>
+          <span class="token operator">+</span> public_ip_address_id                               = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+          <span class="token operator">+</span> subnet_id                                          = <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-cricket/providers/Microsoft.Network/virtualNetworks/win-vm-iis-cricket-vnet/subnets/win-vm-iis-cricket-subnet"</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_network_interface_security_group_association.example will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_network_interface_security_group_association"</span> <span class="token string">"example"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> id                        = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> network_interface_id      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> network_security_group_id = <span class="token string">"/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-cricket/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-cricket-nsg"</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_public_ip.terraform_work3_public_ip will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_public_ip"</span> <span class="token string">"terraform_work3_public_ip"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> allocation_method       = <span class="token string">"Static"</span>
+      <span class="token operator">+</span> ddos_protection_mode    = <span class="token string">"VirtualNetworkInherited"</span>
+      <span class="token operator">+</span> fqdn                    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> id                      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> idle_timeout_in_minutes = 4
+      <span class="token operator">+</span> ip_address              = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> ip_version              = <span class="token string">"IPv4"</span>
+      <span class="token operator">+</span> location                = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> name                    = <span class="token string">"win-vm-iis-cricket-public-ip"</span>
+      <span class="token operator">+</span> resource_group_name     = <span class="token string">"rg-win-vm-iis-cricket"</span>
+      <span class="token operator">+</span> sku                     = <span class="token string">"Standard"</span>
+      <span class="token operator">+</span> sku_tier                = <span class="token string">"Regional"</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_virtual_machine_extension.web_server_install will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_virtual_machine_extension"</span> <span class="token string">"web_server_install"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> auto_upgrade_minor_version  = true
+      <span class="token operator">+</span> failure_suppression_enabled = false
+      <span class="token operator">+</span> id                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> name                        = <span class="token string">"win-vm-iis-cricket-wsi"</span>
+      <span class="token operator">+</span> publisher                   = <span class="token string">"Microsoft.Compute"</span>
+      <span class="token operator">+</span> settings                    = &lt;&lt;<span class="token operator">-</span>EOT
+            <span class="token punctuation">{</span>
+                  <span class="token string">"commandToExecute"</span>: <span class="token string">"powershell -ExecutionPolicy Unrestricted Install-WindowsFeature -Name Web-Server -IncludeAllSubFeature -IncludeManagementTools"</span>
+                <span class="token punctuation">}</span>
+        EOT
+      <span class="token operator">+</span> <span class="token function">type</span>                        = <span class="token string">"CustomScriptExtension"</span>
+      <span class="token operator">+</span> type_handler_version        = <span class="token string">"1.8"</span>
+      <span class="token operator">+</span> virtual_machine_id          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token comment"># azurerm_windows_virtual_machine.main will be created</span>
+  <span class="token operator">+</span> resource <span class="token string">"azurerm_windows_virtual_machine"</span> <span class="token string">"main"</span> <span class="token punctuation">{</span>
+      <span class="token operator">+</span> admin_password                                         = <span class="token punctuation">(</span>sensitive value<span class="token punctuation">)</span>
+      <span class="token operator">+</span> admin_username                                         = <span class="token string">"azureuser"</span>
+      <span class="token operator">+</span> allow_extension_operations                             = true
+      <span class="token operator">+</span> bypass_platform_safety_checks_on_user_schedule_enabled = false
+      <span class="token operator">+</span> computer_name                                          = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> disk_controller_type                                   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> enable_automatic_updates                               = true
+      <span class="token operator">+</span> extensions_time_budget                                 = <span class="token string">"PT1H30M"</span>
+      <span class="token operator">+</span> hotpatching_enabled                                    = false
+      <span class="token operator">+</span> id                                                     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> location                                               = <span class="token string">"japanwest"</span>
+      <span class="token operator">+</span> max_bid_price                                          = <span class="token operator">-</span>1
+      <span class="token operator">+</span> name                                                   = <span class="token string">"win-vm-iis-vm"</span>
+      <span class="token operator">+</span> network_interface_ids                                  = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> patch_assessment_mode                                  = <span class="token string">"ImageDefault"</span>
+      <span class="token operator">+</span> patch_mode                                             = <span class="token string">"AutomaticByOS"</span>
+      <span class="token operator">+</span> platform_fault_domain                                  = <span class="token operator">-</span>1
+      <span class="token operator">+</span> priority                                               = <span class="token string">"Regular"</span>
+      <span class="token operator">+</span> private_ip_address                                     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> private_ip_addresses                                   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> provision_vm_agent                                     = true
+      <span class="token operator">+</span> public_ip_address                                      = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> public_ip_addresses                                    = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> resource_group_name                                    = <span class="token string">"rg-win-vm-iis-cricket"</span>
+      <span class="token operator">+</span> size                                                   = <span class="token string">"Standard_DS1_v2"</span>
+      <span class="token operator">+</span> virtual_machine_id                                     = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+      <span class="token operator">+</span> vm_agent_platform_updates_enabled                      = false
+
+      <span class="token operator">+</span> boot_diagnostics <span class="token punctuation">{</span>
+          <span class="token operator">+</span> storage_account_uri = <span class="token string">"https://diag025eb5a0ba00e9da.blob.core.windows.net/"</span>
+        <span class="token punctuation">}</span>
+
+      <span class="token operator">+</span> os_disk <span class="token punctuation">{</span>
+          <span class="token operator">+</span> caching                   = <span class="token string">"ReadWrite"</span>
+          <span class="token operator">+</span> disk_size_gb              = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+          <span class="token operator">+</span> name                      = <span class="token string">"myOsDisk"</span>
+          <span class="token operator">+</span> storage_account_type      = <span class="token string">"Premium_LRS"</span>
+          <span class="token operator">+</span> write_accelerator_enabled = false
+        <span class="token punctuation">}</span>
+
+      <span class="token operator">+</span> source_image_reference <span class="token punctuation">{</span>
+          <span class="token operator">+</span> offer     = <span class="token string">"WindowsServer"</span>
+          <span class="token operator">+</span> publisher = <span class="token string">"MicrosoftWindowsServer"</span>
+          <span class="token operator">+</span> sku       = <span class="token string">"2022-datacenter-azure-edition"</span>
+          <span class="token operator">+</span> version   = <span class="token string">"latest"</span>
+        <span class="token punctuation">}</span>
+
+      <span class="token operator">+</span> termination_notification <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+Plan: 5 to add<span class="token punctuation">,</span> 0 to change<span class="token punctuation">,</span> 0 to destroy<span class="token punctuation">.</span>
+
+Changes to Outputs:
+  <span class="token operator">+</span> public_ip_address   = <span class="token punctuation">(</span>known after apply<span class="token punctuation">)</span>
+
+<span class="token keyword keyword-Do">Do</span> you want to perform these actions?
+  Terraform will perform the actions described above<span class="token punctuation">.</span>
+  Only <span class="token string">'yes'</span> will be accepted to approve<span class="token punctuation">.</span>
+
+  Enter a value: yes
+
+azurerm_public_ip<span class="token punctuation">.</span>terraform_work3_public_ip: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+azurerm_public_ip<span class="token punctuation">.</span>terraform_work3_public_ip: Creation complete after 4s <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-cricket/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-cricket-public-ip]</span>
+azurerm_network_interface<span class="token punctuation">.</span>terraform_work3_nic: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+azurerm_network_interface<span class="token punctuation">.</span>terraform_work3_nic: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>10s elapsed<span class="token punctuation">]</span>
+azurerm_network_interface<span class="token punctuation">.</span>terraform_work3_nic: Creation complete after 13s <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-cricket/providers/Microsoft.Network/networkInterfaces/win-vm-iis-cricket-nic]</span>
+azurerm_network_interface_security_group_association<span class="token punctuation">.</span>example: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+azurerm_windows_virtual_machine<span class="token punctuation">.</span>main: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+azurerm_network_interface_security_group_association<span class="token punctuation">.</span>example: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>10s elapsed<span class="token punctuation">]</span>
+azurerm_windows_virtual_machine<span class="token punctuation">.</span>main: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>10s elapsed<span class="token punctuation">]</span>
+azurerm_network_interface_security_group_association<span class="token punctuation">.</span>example: Creation complete after 13s <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-cricket/providers/Microsoft.Network/networkInterfaces/win-vm-iis-cricket-nic|/subscriptions/xxxxxxxx-xxxx-4ed5-8cf2-f9
+fb178cb3ee/resourceGroups/rg-win-vm-iis-cricket/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-cricket-nsg]</span>                                                                                                                                                                            azurerm_windows_virtual_machine<span class="token punctuation">.</span>main: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>20s elapsed<span class="token punctuation">]</span>
+azurerm_windows_virtual_machine<span class="token punctuation">.</span>main: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>30s elapsed<span class="token punctuation">]</span>
+azurerm_windows_virtual_machine<span class="token punctuation">.</span>main: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>40s elapsed<span class="token punctuation">]</span>
+azurerm_windows_virtual_machine<span class="token punctuation">.</span>main: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>50s elapsed<span class="token punctuation">]</span>
+azurerm_windows_virtual_machine<span class="token punctuation">.</span>main: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>1m0s elapsed<span class="token punctuation">]</span>
+azurerm_windows_virtual_machine<span class="token punctuation">.</span>main: Creation complete after 1m6s <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-cricket/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>10s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>20s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>30s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>40s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>50s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>1m0s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>1m10s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>1m20s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>1m30s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>1m40s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>1m50s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>2m0s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>2m11s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>2m21s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>2m31s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>2m41s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>2m51s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>3m1s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>3m11s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>3m21s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>3m31s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>3m41s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>3m51s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>4m1s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>4m11s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>4m21s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>4m31s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>4m41s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>4m51s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>5m1s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>5m11s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>5m21s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>5m31s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>5m41s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>5m51s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>6m1s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>6m11s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>6m21s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>6m31s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>6m41s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>6m51s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>7m1s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Still creating<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span>7m11s elapsed<span class="token punctuation">]</span>
+azurerm_virtual_machine_extension<span class="token punctuation">.</span>web_server_install: Creation complete after 7m18s <span class="token namespace">[id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-cricket/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm/extensions/win-vm-iis-cricket-wsi]</span>
+
+Apply complete! Resources: 5 added<span class="token punctuation">,</span> 0 changed<span class="token punctuation">,</span> 0 destroyed<span class="token punctuation">.</span>
+
+Outputs:
+
+admin_password = &lt;sensitive&gt;
+public_ip_address = <span class="token string">"20.78.184.148"</span>
+resource_group_name = <span class="token string">"rg-win-vm-iis-cricket"</span>
+</code></pre><ul>
+<li>リソースグループ(ペット名は cricket)、Public IP、VM パスワードが出力された。</li>
+<li>VM のパスワードはマスキングされている。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="実行結果-1">実行結果 </h2>
+<ul>
+<li>
+<p>リソースグループ、仮想ネットワーク、サブネット、NSG、VM一式が作成された。<br>
+<img src="image/work3-readme/1732683709496.png" alt="1732683709496"><br>
+<img src="image/work3-readme/1732683798273.png" alt="1732683798273"><br>
+<img src="image/work3-readme/1732683851525.png" alt="1732683851525"></p>
+</li>
+<li>
+<p>IIS も動作していた。<br>
+<img src="image/work3-readme/1732683758582.png" alt="1732683758582"></p>
+</li>
+<li>
+<p>tfstateを確認する。<br>
+<img src="image/work3-readme/1732687093700.png" alt="1732687093700"></p>
+</li>
+<li>
+<p>マスキングされた VM パスワードは tfstate で確認可能。<br>
+<img src="image/work3-readme/1732690392437.png" alt="1732690392437"></p>
+</li>
+</ul>
+<hr>
+<h1 id="所感">所感 </h1>
+<ul>
+<li>
+<p>(一般的な開発環境を考えると) 一回作成すれば、環境を直ぐに再作成可能なため節約になる。再作成の際もコマンド打つだけなので時間短縮になる。</p>
+<ul>
+<li>再作成するの面倒だな、停止して残しておこう…から再作成が直ぐにできるし節約になるから一旦壊しておこうになる。</li>
+<li>あるいは、一旦壊しとこう、後で時間掛かるけどポチポチ作ろう…からコマンド打つだけで再作成できるの楽、になる。</li>
+</ul>
+</li>
+<li>
+<p>Bicep と比較して、より抽象化した記述ができるので楽。</p>
+<ul>
+<li>サブネット等をネストして書かなくて良い (＝関連を覚えていなくても良い)。
+<ul>
+<li>Terraform では例えば NSG の割当は専用の resource ブロックがある。</li>
+<li>Bicep はネストが深くなる傾向にある。Properties で書くのが辛かった記憶がある (今は楽になっているかもしれない)。<br>
+<a href="https://aka.ms/bicepdemo#eJytWVtv2zYUfvev4ENR2UPtOMlarAaKJW2yLFviGrGTPRRFQUu0TUQiVZKy6xb+7zukbqQutjc0LRpJ5+Php8NzVS8CIn1BY0U563qPkgiGI4IWXCC1IuiJCpXgEN1jf0UZGXi9TowFjhAOIsoKuFSCsmWnc+Fom2ApN1wE+7RdgJo7wpZq1T09g1tJ/ESQrrNNoad5m0dGvyYEXY2naGxznyTzkProdoISSQKkOMK+T6Tc/2IBk3d4TsKJIAv6LdsSvYPld3xDRNd78WMd6X12/Rc/ErP11GC6gkieCJ/cCJ7E3d6ABq9QCu3tQH2F9U+gGptVt/G4PAIg6kXbVN3txKtuehmG3Mf6GkVErXjwvxlcYFC1IUH3Uwch72oLbkB9T19PFWwAl58rNCfl5vfp3iXlYn2F7/Tvx5/E8D2WJT8WYBHUGcbT58QilS2pUJrBbv9QFvCNRGsipLZl4d/3AzRbUYk2NAxRTP1nhNEiCcMtirHyV0CbRnhJEF8AHnBLuiasqq5O/mx4+qYfYIV9whQR/SVhECecBV6TFIISNPV9Lkh/eXYQIiPYK6DyuRV8CLChagW6mMJgeiHbYN9XPrNkb21ZhWxd1kSijmpnchh7cIea1d8estLb46y0F3ZQr2vWszNbhr9DMu2TgGrfPYwwhjkSVhI7YsF+rHv4DbIGG7iolsfuuiLcP06fssAtg/2A5ap5iX7PgpigdZZ6omp6XkcGVu6RZ54vV2fyy/p1Tetdnpt1PgHmKK8oslRa5O9CbbXs5IjGgnOYc6WYSBrFIemvo7oNdKWmaotm27hQfDAPl9kXbmYikYoEdzhh/so6IJmpNppLLhV4Z40FSLmAjHrp+zxhypAH5JxzFVC8lAdLNJRmo4dRP18cbZ/uxzrz6+c4CGCRzLoBkJ4OB+bPyembFCGTOSPFzlNzZ0salp79mgKyYxgTBe3Nc67ifvs0vp5ltFJRbmvDO8cFZIGTUPXH05tsvww1EXxBQ/KXBDd5h36ApROgMCVKgQ3kyDxBKZq8B0tdMzwPSTBCSiTEyNazOKo+3XWQczAj566zMxTINwVZEvwjJ3mTEKkulYJ/cRpKDswUdbkiwrw49QWXfKEGlzr6BvlbD7IC2a4mj2dt5MEwFUYYzwjDpVM0UwHYNQtiTpkCEBxZ6m9dj0Sx2qZ+471CQ/gLPVzuQBW/s7lPU8mJi5AXJsMMX/eHp152Krp1HjV4MIjyIB4VV9r6z0l+eOnSMqPcPUy97IyewVhGZNR6cDAl67zRsflm3ndStGmpx5N2xnbfeTRXq8fKiMaCx0QoSgqXbOsUR60Sswxa9qpzw0MeQQXVFE07P6o09ga1M0xsAzXFW5OxmnDtBmuL4jbj1S2Th9pDEuqHn7KXzF+2cIg8J5ic2z8//+2tV0DqWvPnlGvdI3Q6HA4tQdpfg1Zt9Y1nSQIqiJ/S9m7ZHBw3cMQQYpSZt5lwoR4wW2pyLh1DSHGfw9l4Mz+2Jelp2Gt/qYsv7dRchVgU9uB2Hfv355o7uAm6yRFcRLsL1FP98Yef1aBpDM1JeXROZbKdoiLKnn7ulC+aFqY9flTWtIPeg13r2jXPQjVFgKsHIRo0RwpUaQu3O/rwoKTvCd1b3eYtwKJ7wjbtCY4/KBp/4GxBl4kwmH2BSmPfQE+Pis81VqQpLdqDdwF383iTlfNc3GbZ3EOa1ubmvQ26h8PhJPM0KKD1AHhluVnv6BPWoR0TFsiPTJs3bVcc3R0NdaI4sv3gA4/iRJGcatap5l5wXo/c6L85wQrq8QYLknVhpQ3TeWCU/bbCkcsa1k9JirFLQf84X95G7q0Nyb+ajdxbOw2kLUJtc/ON4oEsiCDMzjiZb+l2bWRZNOvOpuabQumJfLEwuBaxaRCKSax4nH0DgXUh1p2a57iAttUVzHM2J18QQH6Ms3L0h+DRbWQ6nxwRYQb3QXUhqrReaVNb9FTT6VXeVjV5I/ghTItap5N6bfV68tRHffNel9azc0sUJsDVrrWVt7jWzWd9azuJZ3msdnq1/NZGz+Rb6ttJoGkfPUcxDtXUr7upnrOuSrltXVIbKiyLPwpabXwHZSTBJbig2OZ9uRzMQz53rL9zuqKCV7frjI7vakNjD/3eOCaBJZIw7NUbgOg6nzGOyCEnxUBSTSd0cQy3ly8tlEVvYM9vg9rgpnVpK6cKDq63hrtiZa9njg7Gb8KUTjhF+nMmuuOzoJUp6sOeQSgTblX16fM/IQRDIp7yZFAd9NK2KFH8MV4KHJB7yniJLjwu9cFLwEX6m3QGtgCyNjZY82Fay22fvse4PmjoH2uIHNk3LqQcR0fubUuKKcYTnihwN7SCKLP+uwXcqijkVvBY09Bg8TVgnX8BB0tGKQ==">microsoft.compute/vm-simple-windows/main.bicep</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Backend の管理が重要。</p>
+<ul>
+<li><a href="https://qiita.com/zumax/items/74fad1270d3deab7379f">Terraform ステートを試してみた</a></li>
+<li>リモートバックエンドならばロックがサポートされている。
+<ul>
+<li>Blob のリースを取得することでロックされる。</li>
+<li>例）destroy 実行時に CLI が反応せず中断するとロックされたままになったため、Azure ポータルで Blob のリース解約を行う必要があった。<br>
+<img src="image/work3-readme/1733022227503.png" alt="1733022227503"><br>
+<img src="image/work3-readme/1733022504660.png" alt="1733022504660"></li>
+<li>ローカルバックエンドになる Git 等のバージョン管理システムは推奨されていない。
+<ul>
+<li>Push や Pull 忘れによりデグレードが発生する。</li>
+<li>同時の apply 実行を防止するロックの仕組みがない。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Azure ポータルとより連携できると有り難い。</p>
+<ul>
+<li>Preview で Azure ポータルのテンプレートメニューから Terraform ファイルをエクスポート可能であるので今後楽になるかもしれない (tfstate があれば)。</li>
+<li>Bicep はテンプレートスペックに対応している (ただし、テンプレートスペックが適用可能な環境は限られる)。<br>
+<a href="https://qiita.com/07JP27/items/d76711102858501ce157">Azure Resource Manager テンプレートスペックに Bicep ファイルを格納してデプロイする</a><br>
+<a href="https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/templates/template-specs?tabs=azure-powershell">Azure Resource Manager テンプレート スペック</a></li>
+</ul>
+</li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

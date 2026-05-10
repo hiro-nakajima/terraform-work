@@ -7,7 +7,7 @@ resource "azurerm_windows_virtual_machine" "res-1" {
   admin_username        = "azureuser"
   location              = "japanwest"
   name                  = "win-vm-iis-vm"
-  network_interface_ids = ["/subscriptions/d96eb8c2-2deb-4ed5-8cf2-f9fb178cb3ee/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/networkInterfaces/win-vm-iis-monkfish-nic"]
+  network_interface_ids = ["/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/networkInterfaces/win-vm-iis-monkfish-nic"]
   resource_group_name   = "rg-win-vm-iis-monkfish"
   size                  = "Standard_DS1_v2"
   boot_diagnostics {
@@ -36,7 +36,7 @@ resource "azurerm_virtual_machine_extension" "res-2" {
   })
   type                 = "CustomScriptExtension"
   type_handler_version = "1.8"
-  virtual_machine_id   = "/subscriptions/d96eb8c2-2deb-4ed5-8cf2-f9fb178cb3ee/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm"
+  virtual_machine_id   = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm"
   depends_on = [
     azurerm_windows_virtual_machine.res-1,
   ]
@@ -48,8 +48,8 @@ resource "azurerm_network_interface" "res-3" {
   ip_configuration {
     name                          = "terraform_work3_nic_configuration"
     private_ip_address_allocation = "Dynamic"
-    public_ip_address_id          = "/subscriptions/d96eb8c2-2deb-4ed5-8cf2-f9fb178cb3ee/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-monkfish-public-ip"
-    subnet_id                     = "/subscriptions/d96eb8c2-2deb-4ed5-8cf2-f9fb178cb3ee/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/virtualNetworks/win-vm-iis-monkfish-vnet/subnets/win-vm-iis-monkfish-subnet"
+    public_ip_address_id          = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-monkfish-public-ip"
+    subnet_id                     = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/virtualNetworks/win-vm-iis-monkfish-vnet/subnets/win-vm-iis-monkfish-subnet"
   }
   depends_on = [
     azurerm_public_ip.res-8,
@@ -57,8 +57,8 @@ resource "azurerm_network_interface" "res-3" {
   ]
 }
 resource "azurerm_network_interface_security_group_association" "res-4" {
-  network_interface_id      = "/subscriptions/d96eb8c2-2deb-4ed5-8cf2-f9fb178cb3ee/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/networkInterfaces/win-vm-iis-monkfish-nic"
-  network_security_group_id = "/subscriptions/d96eb8c2-2deb-4ed5-8cf2-f9fb178cb3ee/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-monkfish-nsg"
+  network_interface_id      = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/networkInterfaces/win-vm-iis-monkfish-nic"
+  network_security_group_id = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-monkfish-nsg"
   depends_on = [
     azurerm_network_interface.res-3,
     azurerm_network_security_group.res-5,

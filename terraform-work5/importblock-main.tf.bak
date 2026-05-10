@@ -1,59 +1,59 @@
 # Resource Group
 import{
-  id = "/subscriptions/d96eb8c2-2deb-4ed5-8cf2-f9fb178cb3ee/resourceGroups/rg-win-vm-iis-llama"
+  id = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama"
   to = azurerm_resource_group.rg
 }
 
 # VNet
 import{
-  id = "/subscriptions/d96eb8c2-2deb-4ed5-8cf2-f9fb178cb3ee/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet"
+  id = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet"
   to = azurerm_virtual_network.terraform_work5_network
 }
 
 # Public IP
 import{
-  id = "/subscriptions/d96eb8c2-2deb-4ed5-8cf2-f9fb178cb3ee/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-llama-public-ip"
+  id = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/publicIPAddresses/win-vm-iis-llama-public-ip"
   to = azurerm_public_ip.terraform_work5_public_ip
 }
 
 # NSG
 import{
-  id = "/subscriptions/d96eb8c2-2deb-4ed5-8cf2-f9fb178cb3ee/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-llama-nsg"
+  id = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkSecurityGroups/win-vm-iis-llama-nsg"
   to = azurerm_network_security_group.terraform_work5_nsg
 }
 
 # NIC
 import{
-  id = "/subscriptions/d96eb8c2-2deb-4ed5-8cf2-f9fb178cb3ee/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkInterfaces/win-vm-iis-llama-nic"
+  id = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkInterfaces/win-vm-iis-llama-nic"
   to = azurerm_network_interface.terraform_work5_nic
 }
 
 # VM
 import{
-  id = "/subscriptions/d96eb8c2-2deb-4ed5-8cf2-f9fb178cb3ee/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm"
+  id = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm"
   to = azurerm_windows_virtual_machine.main
 }
 
 # Storage Account
 import{
-  id = "/subscriptions/d96eb8c2-2deb-4ed5-8cf2-f9fb178cb3ee/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Storage/storageAccounts/diag3abb2f58b75025ad"
+  id = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Storage/storageAccounts/diag3abb2f58b75025ad"
   to = azurerm_storage_account.terraform_work5_storage_account
 }
 
 # VM Extension
 import {
-  id = "/subscriptions/d96eb8c2-2deb-4ed5-8cf2-f9fb178cb3ee/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm/extensions/win-vm-iis-llama-wsi"
+  id = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm/extensions/win-vm-iis-llama-wsi"
   to = azurerm_virtual_machine_extension.web_server_install
 }
 
 # Subnet
 import{
-  id = "/subscriptions/d96eb8c2-2deb-4ed5-8cf2-f9fb178cb3ee/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet/subnets/win-vm-iis-llama-subnet"
+  id = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/virtualNetworks/win-vm-iis-llama-vnet/subnets/win-vm-iis-llama-subnet"
   to = azurerm_subnet.terraform_work3_subnet 
 }
 
 # OS Disk は不要
 #import {
-#  id = "/subscriptions/d96eb8c2-2deb-4ed5-8cf2-f9fb178cb3ee/resourceGroups/RG-WIN-VM-IIS-LLAMA/providers/Microsoft.Compute/disks/myOsDisk"
+#  id = "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/RG-WIN-VM-IIS-LLAMA/providers/Microsoft.Compute/disks/myOsDisk"
 #  to = azurerm_managed_disk.myOsDisk
 #}

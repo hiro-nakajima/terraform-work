@@ -10,7 +10,7 @@ work4 では「1. terraform import を使用する」を検証します。
 
 * ルートのフォルダ・ファイル構成
 
-  ```text
+```text
 terraform-work4
  ∟ image - readme の画像ファイルを格納するフォルダ
  ∟ tfstate - リモートバックエンドからダウンロードした tfstate ファイル
@@ -18,7 +18,7 @@ terraform-work4
  ∟ provider.tf - プロバイダーを記述した tf ファイル
  ∟ work4-readme.html - Markdown を HTML 化したファイル
  ∟ README.md - この Markdown ファイル
-  ```
+```
 
 ---
 

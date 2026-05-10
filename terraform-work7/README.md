@@ -11,7 +11,7 @@ work7 では「1. Data Sources を使用する」を検証します。
 
 * ルートのフォルダ・ファイル構成
 
-  ```text
+```text
 terraform-work7
  ∟ .terrtaform - init 時に作成される Provider がダウンロードされるフォルダ
  ∟ .terraform.lock.hcl - init 時に作成される、Provider と .tf ファイルの依存関係等が記録されたファイル ⇒ [Dependency Lock File](https://developer.hashicorp.com/terraform/language/files/dependency-lock)
@@ -21,7 +21,7 @@ terraform-work7
  ∟ tfstate - リモートバックエンドからダウンロードした tfstate ファイル
  ∟ work7-readme.html - Markdown を HTML 化したファイル
  ∟ README.md - この Markdown ファイル
-  ```
+```
 
 ---
 

@@ -10,7 +10,7 @@ work5 では「2. terraform import block を使用する」を検証します。
 
 * ルートのフォルダ・ファイル構成
 
-  ```text
+```text
 terraform-work5
  ∟ .terrtaform - init 時に作成される Provider がダウンロードされるフォルダ
  ∟ image - readme の画像ファイルを格納するフォルダ
@@ -22,7 +22,7 @@ terraform-work5
  ∟ provider.tf - プロバイダーを記述した tf ファイル
  ∟ work5-readme.html - Markdown を HTML 化したファイル
  ∟ README.md - この Markdown ファイル
-  ```
+```
 
 ---
 

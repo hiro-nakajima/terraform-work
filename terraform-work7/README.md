@@ -10,25 +10,33 @@
 work7 では「1. Data Sources を使用する」を検証します。
 
 * ルートのフォルダ・ファイル構成
-  * terraform-work7
-    ∟ .terrtaform - init 時に作成される Provider がダウンロードされるフォルダ
-    ∟ .terraform.lock.hcl - init 時に作成される、Provider と .tf ファイルの依存関係等が記録されたファイル ⇒ [Dependency Lock File](https://developer.hashicorp.com/terraform/language/files/dependency-lock)
-    ∟ image - readme の画像ファイルを格納するフォルダ
-    ∟ main.tf - リソースを記述した tf ファイル
-    ∟ provider.tf - プロバイダーを記述した tf ファイル
-    ∟ tfstate - リモートバックエンドからダウンロードした tfstate ファイル
-    ∟ work7-readme.html - Markdown を HTML 化したファイル
-    ∟ work7-readme.md - この Markdown ファイル
+
+  ```text
+terraform-work7
+ ∟ .terrtaform - init 時に作成される Provider がダウンロードされるフォルダ
+ ∟ .terraform.lock.hcl - init 時に作成される、Provider と .tf ファイルの依存関係等が記録されたファイル ⇒ [Dependency Lock File](https://developer.hashicorp.com/terraform/language/files/dependency-lock)
+ ∟ image - readme の画像ファイルを格納するフォルダ
+ ∟ main.tf - リソースを記述した tf ファイル
+ ∟ provider.tf - プロバイダーを記述した tf ファイル
+ ∟ tfstate - リモートバックエンドからダウンロードした tfstate ファイル
+ ∟ work7-readme.html - Markdown を HTML 化したファイル
+ ∟ README.md - この Markdown ファイル
+  ```
 
 ---
 
 ## 実行方法・結果
 
 1. Data Sources を使用する
+
    [Data Source: azurerm_resource_group](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/resource_group)
+
    ![1737198770511](image/work7-readme/1737198770511.png)
+
    [Data Source: azurerm_resources](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/resources)
+
    ![1737198821187](image/work7-readme/1737198821187.png)
+
    
 * 既存リソースを data block にて定義し参照する
   * 既存リソースの tfstate ファイルを生成する必要がない。
@@ -40,7 +48,9 @@ work7 では「1. Data Sources を使用する」を検証します。
 ---
 
 1.  work3 で作成したリソースグループに Application Gateway を追加する
+
     ![1737205084176](image/work7-readme/1737205084176.png)
+
 2.  main.tf に既存リソースの data block を用意する (必要な参照のみ、一意になるように指定する)
     ```js
     data "azurerm_resource_group" "res-rg" {
@@ -165,12 +175,19 @@ work7 では「1. Data Sources を使用する」を検証します。
     ```
 
 4. `terraform plan` を実行する
+
    ![1737204666688](image/work7-readme/1737204666688.png)
+
 5. `terraform apply` を実行する
+
    ![1737204978322](image/work7-readme/1737204978322.png)
+
 6. リソースが作成された
+
    ![1737205174690](image/work7-readme/1737205174690.png)
+
 7. tfstate を確認する
+
    ![1737205320548](image/work7-readme/1737205320548.png)
 
 ---
@@ -179,4 +196,3 @@ work7 では「1. Data Sources を使用する」を検証します。
 * Data Sources
   * 管理できないリソースの tfstate は作成してもハマるだけと思われる
   * よって Data Sources を利用することが望ましいと思われる
-

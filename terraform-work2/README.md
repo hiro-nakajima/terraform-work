@@ -2,21 +2,26 @@
 
 * work2 は以下の MS Learning を拡張し、リソースグループ・仮想ネットワーク・サブネット・サブネットへの委任・NSGを作成します。
 * random、backend、variables、output を使用します。
+
   [クイックスタート: Terraform を使用して仮想ネットワークを作成する - Azure Virtual Network | Microsoft Learn](https://learn.microsoft.com/ja-jp/azure/virtual-network/quick-create-terraform?tabs=azure-cli)
+
   ![1732539883991](image/work2-readme/1732539883991.png)
 
 * ルートのフォルダ・ファイル構成
-  * terraform-work2
-    ∟ .terrtaform - init 時に作成される Provider がダウンロードされるフォルダ
-    ∟ image - readme の画像ファイルを格納するフォルダ
-    ∟ tfstate - リモートバックエンドからダウンロードした tfstate ファイル
-    ∟ .terraform.lock.hcl - init 時に作成される、Provider と .tf ファイルの依存関係等が記録されたファイル ⇒ [Dependency Lock File](https://developer.hashicorp.com/terraform/language/files/dependency-lock)
-    ∟ main.tf - リソースを記述した tf ファイル
-    ∟ outputs.tf - 出力を記述した tf ファイル
-    ∟ provider.tf - プロバイダーを記述した tf ファイル
-    ∟ variables.tf - 変数を記述した tf ファイル
-    ∟ work2-readme.html - Markdown を HTML 化したファイル
-    ∟ work2-readme.md - この Markdown ファイル
+
+  ```text
+terraform-work2
+ ∟ .terrtaform - init 時に作成される Provider がダウンロードされるフォルダ
+ ∟ image - readme の画像ファイルを格納するフォルダ
+ ∟ tfstate - リモートバックエンドからダウンロードした tfstate ファイル
+ ∟ .terraform.lock.hcl - init 時に作成される、Provider と .tf ファイルの依存関係等が記録されたファイル ⇒ [Dependency Lock File](https://developer.hashicorp.com/terraform/language/files/dependency-lock)
+ ∟ main.tf - リソースを記述した tf ファイル
+ ∟ outputs.tf - 出力を記述した tf ファイル
+ ∟ provider.tf - プロバイダーを記述した tf ファイル
+ ∟ variables.tf - 変数を記述した tf ファイル
+ ∟ work2-readme.html - Markdown を HTML 化したファイル
+ ∟ README.md - この Markdown ファイル
+  ```
 
 ---
 
@@ -50,11 +55,15 @@
     * backend の認証は Entra、Access Key、SAS で設定する。
       * 環境変数(ARM_ACCESS_KEY)、AzCLI、ServicePrincipal、Managed ID、Access Key、SAS Token 等を指定可能。
         以下参照。
+
         [Backend Type: azurerm | Terraform | HashiCorp Developer](https://developer.hashicorp.com/terraform/language/backend/azurerm)
+
         [Terraform 状態を Azure Storage に格納する](https://learn.microsoft.com/ja-jp/azure/developer/terraform/store-state-in-azure-storage?tabs=azure-cli)
+
     * backend 自体はローカル以外に Blob、S3、Kubernetes、HTTP、PostgreSQL等を設定・保存可能。
     * ローカル－リモート間で backend を切り替えることが可能。ローカルで作成してしまった後共有するため等。
       terraform init -migrate-state / terraform -reconfigure を使用する。
+
       [【Terraform】Backend の切り替え方法とは？](https://qiita.com/empty948/items/9564858aa4783ffa9cf7)
 
 ---
@@ -82,7 +91,9 @@
 * resource ブロック
   * random_pet でランダムなペット名を生成する。
     * prefix に変数をセットしている。length は 単語数 (デフォルト 2)。
+
     [Terraform Randomの使い方をAzure ストレージアカウント作成しながら学ぶ](https://www.tama-negi.com/2021/12/18/terraform_randam/)
+
   * リソースグループに location と random_pet の変数をセットして作成する。  
     ```js
     resource "random_pet" "prefix" {
@@ -168,10 +179,14 @@
 
 * output ブロック
   * terraform apply 実行後、CLI にプリントする。Public IP アドレスや Random で作成した VM パスワード等。
+
     [Terraformのoutputとは何か](https://qiita.com/kyntk/items/2cdd38c2438ac257ac4e)
+
   * 実際の運用では、別ファイル化した (モジュール化した) リソース作成において、作成したリソースの ID を output で連携して他リソース作成時のプロパティとして使用する事が多いと思われる。
     例）VNET/Subnet 作成後、VM に 割り当てる NIC に サブネット ID を連携して使用する。
+
     [TerraformのModule間で値をやり取りする](https://zenn.dev/not75743/articles/8b98519fc9fde0)
+
     ```
     output "resource_group_name" {
       description = "The name of the created resource group."
@@ -192,8 +207,11 @@
 ## 実行方法
 
 * terraform init で初期化。プロバイダー (azurerm / random) がダウンロードされる。
+
   ![1732680052891](image/work2-readme/1732680052891.png)
+
   ![1732681022904](image/work2-readme/1732681022904.png)
+
   ```PowerShell
   PS C:\Users\HNakajima\OneDrive - 個人契約\Work\source\terraform\terraform-work2> terraform init 
   Initializing the backend...
@@ -225,7 +243,9 @@
 
 * terraform plan で実行内容を確認する。
   * サブネットにおいて VNET の変数名を間違えているエラーだった。その他、リージョン名が間違っている場合などエラーがあれば表示される。
+
     ![1732680133358](image/work2-readme/1732680133358.png)
+
     ```PowerShell
     PS C:\Users\HNakajima\OneDrive - 個人契約\Work\source\terraform\terraform-work2> terraform plan 
     ╷
@@ -246,11 +266,15 @@
     ╵
     ```
   * 変数名を正しいものに修正した。
+
   ![1732680298490](image/work2-readme/1732680298490.png)
+
   ![1732680332180](image/work2-readme/1732680332180.png)
 
 * 改めて terraform plan で実行内容を確認すると、エラーは解消された。
+
   ![1732680396182](image/work2-readme/1732680396182.png)
+
   ```PowerShell
   PS C:\Users\HNakajima\OneDrive - 個人契約\Work\source\terraform\terraform-work2> terraform plan
 
@@ -380,7 +404,9 @@
   ```
 
 * terraform apply で環境に適用する。45秒程度掛かった。
+
   ![1732680529489](image/work2-readme/1732680529489.png)
+
   ```PowerShell
   PS C:\Users\HNakajima\OneDrive - 個人契約\Work\source\terraform\terraform-work2> terraform apply
 
@@ -540,22 +566,31 @@
 ## 実行結果
 
 * リソースグループ、仮想ネットワーク、サブネット、NSG が作成された。
+
   ![1732680676507](image/work2-readme/1732680676507.png)
+
   ![1732680697183](image/work2-readme/1732680697183.png)
 
 * アドレス空間が重複している警告は出なかった。
+
   ![1732680727586](image/work2-readme/1732680727586.png)
 
 * Subnet1 に NSG の割当及び委任先が設定されている。
+
   ![1732680788452](image/work2-readme/1732680788452.png)
+
 * Subnet 2 にサービスエンドポイントが設定されている。
+
   ![1732680844561](image/work2-readme/1732680844561.png)
 
 * デプロイ履歴には残らない。
+
   ![1732680844565](image/work2-readme/1732680844565.png)
 
 * Backend に tfstate が生成される。
+
   ![1732687108014](image/work2-readme/1732687108014.png)
+
   * tfstate の内容は以下 Json となる。terraform apply 毎に作成され管理する。
   * 指定していないプロパティ等のリソースの状態が保持されている。
     * 例えば tfstate を削除してしまった後、terraform apply するとリソースが存在するためエラーとなり、復旧が必要となる (復旧はかなり難しいとの記述が多数見受けられる)。

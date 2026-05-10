@@ -9,27 +9,32 @@
 work6 では「3. aztfexport を使用する」を検証します。
 
 * ルートのフォルダ・ファイル構成
-  * terraform-work6
-    ∟ aztfexportfiles - aztfexport を実行した作業ディレクトリ
-    　∟ .terrtaform - init 時に作成される Provider がダウンロードされるフォルダ
-    　∟ .terraform.lock.hcl - init 時に作成される、Provider と .tf ファイルの依存関係等が記録されたファイル ⇒ [Dependency Lock File](https://developer.hashicorp.com/terraform/language/files/dependency-lock)
-    　∟ aztfexportResourceMapping.json - CSP のリソース ID と .tf ファイルのリソース名がマッピングされている Json ファイル
-    　∟ aztfexportSkippedResources.txt - スキップされたリソースが記載されているファイル
-    　∟ main.tf - 「main.tf.AppGw追加前」に Application Gateway を追記した tf ファイル
-    　∟ main.tf.AppGw追加前 - aztfexport で生成された、resource ブロックが記述されている tf ファイル
-    　∟ provider.tf - aztfexport で生成された、provider ブロックが記述されている tf ファイル
-    　∟ terraform.tf - aztfexport で生成された、terraform ブロックが記述されている tf ファイル
-    　∟ terraform.tfstate - aztfexport で生成された tfstate ファイル (後にリモートバックエンドに移行)
-    ∟ image - readme の画像ファイルを格納するフォルダ
-    ∟ tfstate - リモートバックエンドからダウンロードした tfstate ファイル
-    ∟ work6-readme.html - Markdown を HTML 化したファイル
-    ∟ work6-readme.md - この Markdown ファイル
+
+  ```text
+terraform-work6
+ ∟ aztfexportfiles - aztfexport を実行した作業ディレクトリ
+  ∟ .terrtaform - init 時に作成される Provider がダウンロードされるフォルダ
+  ∟ .terraform.lock.hcl - init 時に作成される、Provider と .tf ファイルの依存関係等が記録されたファイル ⇒ [Dependency Lock File](https://developer.hashicorp.com/terraform/language/files/dependency-lock)
+  ∟ aztfexportResourceMapping.json - CSP のリソース ID と .tf ファイルのリソース名がマッピングされている Json ファイル
+  ∟ aztfexportSkippedResources.txt - スキップされたリソースが記載されているファイル
+  ∟ main.tf - 「main.tf.AppGw追加前」に Application Gateway を追記した tf ファイル
+  ∟ main.tf.AppGw追加前 - aztfexport で生成された、resource ブロックが記述されている tf ファイル
+  ∟ provider.tf - aztfexport で生成された、provider ブロックが記述されている tf ファイル
+  ∟ terraform.tf - aztfexport で生成された、terraform ブロックが記述されている tf ファイル
+  ∟ terraform.tfstate - aztfexport で生成された tfstate ファイル (後にリモートバックエンドに移行)
+ ∟ image - readme の画像ファイルを格納するフォルダ
+ ∟ tfstate - リモートバックエンドからダウンロードした tfstate ファイル
+ ∟ work6-readme.html - Markdown を HTML 化したファイル
+ ∟ README.md - この Markdown ファイル
+  ```
 
 ---
 
 3. aztfexport を使用する
     * Microsoft が提供する Terraform 移行ツール。
+
     [Azure Export for Terraform の概要](https://learn.microsoft.com/ja-jp/azure/developer/terraform/azure-export-for-terraform/export-terraform-overview)
+
       > * Azure 上の Terraform への移行を簡略化します。
       >   * Azure Export for Terraform を使用すると、単一のコマンドで Azure リソースを Terraform に移行できます。
       > * 単一のコマンドで、ユーザー指定のリソース セットを Terraform HCL コードと状態にエクスポートします。
@@ -48,31 +53,52 @@ work6 では「3. aztfexport を使用する」を検証します。
 1. Azure Export for Terraform のダウンロード
    * [Azure/aztfexport](https://github.com/Azure/aztfexport/releases)
    * 2024/12時点で v0.15.0
+
    ![1733021041028](image/work6-readme/1733021041028.png)
 
 2. work3 で作成したリソースグループを aztfexport でエクスポートする
+
    ![1733024543543](image/work6-readme/1733024543543.png)
+
    1) `aztfexport resource-group rg-win-vm-iis-monkfish`
       * ファイルやフォルダがあると以下のダイアログが表示される ("N" であれば新しいファイルが生成された)。
+
       ![1733024763202](image/work6-readme/1733024763202.png)
+
       * 空のディレクトリを用意し、実行した。
+
       ![1733024827241](image/work6-readme/1733024827241.png)
+
       * CUI が表示される。
+
       ![1733024934109](image/work6-readme/1733024934109.png)
+
       * リソースグループ内のリソース一覧が表示される。
+
       ![1733025040471](image/work6-readme/1733025040471.png)
+
       * フィルターや取り込まないようスキップすることが可能。
+
       ![1733025059855](image/work6-readme/1733025059855.png)
+
       * w でインポート開始する。
+
       ![1733025089666](image/work6-readme/1733025089666.png)
+
       * 数秒で完了した。
+
       ![1733025128252](image/work6-readme/1733025128252.png)
+
       ![1733025140904](image/work6-readme/1733025140904.png)
+
       ![1733025291751](image/work6-readme/1733025291751.png)
 
       * 以下のファイルが生成された。
+
       ![1733025163367](image/work6-readme/1733025163367.png)
+
       * ローカルに tfstate が生成される。(backend を設定していないためリモートバックエンドは生成されない)。
+
       ![1733025336728](image/work6-readme/1733025336728.png)
 
       * `terraform.tf`
@@ -314,19 +340,28 @@ work6 では「3. aztfexport を使用する」を検証します。
         - /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish/providers/Microsoft.Storage/storageAccounts/diagb547f32af9c5b514/tableServices/default
         ```
       * terraform.tfstate
+
       ![1733026663015](image/work6-readme/1733026663015.png)
+
  
 3. `terraform init / terraform plan` してみる
    * VM パスワードの要件のみエラーとなった。
+
    ![1733025602335](image/work6-readme/1733025602335.png)
+
    * パスワードをダミーに修正する。
+
    ![1733026775148](image/work6-readme/1733026775148.png)
+
    * リモートバックエンドに修正する。
+
    ![1733026848599](image/work6-readme/1733026848599.png)
 
 4. 再度 `terraform init / terraform plan` してみる
    * Backend が変わった旨エラーとなっている。
+
    ![1733026942632](image/work6-readme/1733026942632.png)
+
       ```PowerShell
         PS C:\Users\HNakajima\OneDrive - 個人契約\Work\source\terraform\terraform-work6\aztfexportfiles> terraform init
         Initializing the backend...
@@ -341,15 +376,21 @@ work6 では「3. aztfexport を使用する」を検証します。
       ```
       * 参考URL
         * migrate-state は既存のステートを移行する場合、reconfigure は新しいバックエンドに更新する場合に使用する (要確認)。
+
       [Command: init - Backend Initialization](https://developer.hashicorp.com/terraform/cli/commands/init#backend-initialization)
+
       ![1733027904596](image/work6-readme/1733027904596.png)
+
       [【Terraform】Backend の切り替え方法とは？](https://qiita.com/empty948/items/9564858aa4783ffa9cf7)
+
       [tfstateをローカルからs3に持っていく方法を模索する](https://zenn.dev/not75743/articles/7a68064286c95f)
+
       [Terraformの仕組み調査](https://zenn.dev/takamin55/scraps/eeb4f5f54fefa4#comment-23586cb99589f5)
 
-
 5. 既存のステートをリモートに持っていきたいので `terraform init -migrate-state` を実行する
+
    ![1733028521553](image/work6-readme/1733028521553.png)
+
    ```PowerShell
     PS C:\Users\HNakajima\OneDrive - 個人契約\Work\source\terraform\terraform-work6\aztfexportfiles> terraform init -migrate-state
     Initializing the backend...
@@ -363,21 +404,26 @@ work6 では「3. aztfexport を使用する」を検証します。
 
       Enter a value: yes
 
-
     Successfully configured the backend "azurerm"! Terraform will automatically
     use this backend unless the backend configuration changes.
     Initializing provider plugins...
     - Reusing previous version of hashicorp/azurerm from the dependency lock file
    ```
    * リモートバックエンドに移行された。
+
    ![1733028611861](image/work6-readme/1733028611861.png)
+
      * aztfexport コマンドの引数に設定することでリモートバックエンドにエクスポート可能。
+
       [高度なシナリオでの Azure Export for Terraform の使用 - インライン エクスペリエンス](https://learn.microsoft.com/ja-jp/azure/developer/terraform/azure-export-for-terraform/export-advanced-scenarios#inline-experience)
+
       ![1733058981888](image/work6-readme/1733058981888.png)
 
 6. `terraform plan` を実行する
     * 何もエラーは発生しなかった。
+
     ![1733028695469](image/work6-readme/1733028695469.png)
+
       ```
       PS C:\Users\HNakajima\OneDrive - 個人契約\Work\source\terraform\terraform-work6\aztfexportfiles> terraform plan    
       azurerm_resource_group.res-0: Refreshing state... [id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish]
@@ -402,7 +448,9 @@ work6 では「3. aztfexport を使用する」を検証します。
 #### Appendix: 他リソース追加
 
 7. 生成した tf ファイルに Application Gateway を追記し、既存リソースとともに Terraform で管理可能とする
+
     [クイックスタート: Azure Application Gateway で Web トラフィックを転送する - Terraform](https://learn.microsoft.com/ja-jp/azure/application-gateway/quick-create-terraform)
+
     ```js
     # ####################################################################
     # Application Gateway を追加
@@ -445,7 +493,6 @@ work6 では「3. aztfexport を使用する」を検証します。
       allocation_method   = "Static"
       sku                 = "Standard"
     }
-
 
     resource "azurerm_application_gateway" "main" {
       name                = "myAppGateway"
@@ -511,7 +558,9 @@ work6 では「3. aztfexport を使用する」を検証します。
 
 8. `terraform plan / terraform apply` する
     * `terraform plan` する。
+
     ![1733029478922](image/work6-readme/1733029478922.png)
+
       ```PowerShell
       PS C:\Users\HNakajima\OneDrive - 個人契約\Work\source\terraform\terraform-work6\aztfexportfiles> terraform plan
       azurerm_resource_group.res-0: Refreshing state... [id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish]
@@ -666,18 +715,25 @@ work6 では「3. aztfexport を使用する」を検証します。
       Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run "terraform apply" now.
       ```
     * `terraform apply` する。
+
     ![1733029791303](image/work6-readme/1733029791303.png)
+
     ![1733029878877](image/work6-readme/1733029878877.png)
 
 9.  リソースが追加された
     * Application Gateway用サブネット、Application Gateway、Public IP。
+
     ![1733029929950](image/work6-readme/1733029929950.png)
+
     ![1733029961530](image/work6-readme/1733029961530.png)
+
     * Application Gateway の Public IP で Web ページにもアクセス可能。
+
     ![1733029982801](image/work6-readme/1733029982801.png)
 
 10. tfstate ファイルも更新されている
     * Application Gateway 等が追加された
+
     ![1733030116446](image/work6-readme/1733030116446.png)
 
 ---
@@ -685,7 +741,9 @@ work6 では「3. aztfexport を使用する」を検証します。
 
 11. `terraform destroy` 実行する。
     * 特に問題なく完了した。
+
     ![1733030747697](image/work6-readme/1733030747697.png)
+
       ```PowerShell
       PS C:\Users\HNakajima\OneDrive - 個人契約\Work\source\terraform\terraform-work6\aztfexportfiles> terraform destroy
       azurerm_resource_group.res-0: Refreshing state... [id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-monkfish]
@@ -764,7 +822,9 @@ work6 では「3. aztfexport を使用する」を検証します。
       ```
  
     * tfstate ファイルは destroy しても残る (リソースはないが Terraform 定義だけ記述されている)。
+
     ![1733030845298](image/work6-readme/1733030845298.png)
+
     ![1733030980570](image/work6-readme/1733030980570.png)
 
 ---
@@ -788,8 +848,13 @@ work6 では「3. aztfexport を使用する」を検証します。
 
 #### 検証で試していないこと
 * linter や各種構文、テスト、ディレクトリ構成については考慮が必要。
+
   [terraform-linters / tflint](https://github.com/terraform-linters/tflint/releases)
+
   [Terraformで複数のサブネットを作りmapにまとめる](https://qiita.com/hikaru_motomiya/items/83ea6b56c6790d3e1a7d)
+
   [Terraform コードのテスト](https://learn.microsoft.com/ja-jp/azure/developer/terraform/best-practices-testing-overview)
+
   [Terraform プロジェクトの効果的なディレクトリ構成パターン](https://techblog.forgevision.com/entry/Terraform/directory)
+
   [【tfsec】Terraformの静的セキュリティスキャンを行ってみよう！](https://dev.classmethod.jp/articles/tfsec-overview-scanning/)

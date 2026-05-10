@@ -1,22 +1,28 @@
 # 概要
 
 * work3 は以下の MS Learning で、Public IP で公開する VM (Web Server) を作成します。
+
   [クイック スタート: Terraform を使用して Windows VM を作成する](https://learn.microsoft.com/ja-jp/azure/virtual-machines/windows/quick-create-terraform)
+
   [TerraformでAzureにVMをデプロイするチュートリアルを覗いてみる](https://zenn.dev/microsoft/articles/1bfe6f97c84248)
+
   ![1732855553179](image/work3-readme/1732855553179.png)
 
 * ルートのフォルダ・ファイル構成
-  * terraform-work3
-    ∟ .terrtaform - init 時に作成される Provider がダウンロードされるフォルダ
-    ∟ image - readme の画像ファイルを格納するフォルダ
-    ∟ tfstate - リモートバックエンドからダウンロードした tfstate ファイル
-    ∟ .terraform.lock.hcl - init 時に作成される、Provider と .tf ファイルの依存関係等が記録されたファイル ⇒ [Dependency Lock File](https://developer.hashicorp.com/terraform/language/files/dependency-lock)
-    ∟ main.tf - リソースを記述した tf ファイル
-    ∟ outputs.tf - 出力を記述した tf ファイル
-    ∟ provider.tf - プロバイダーを記述した tf ファイル
-    ∟ variables.tf - 変数を記述した tf ファイル
-    ∟ work3-readme.html - Markdown を HTML 化したファイル
-    ∟ work3-readme.md - この Markdown ファイル
+
+  ```text
+terraform-work3
+ ∟ .terrtaform - init 時に作成される Provider がダウンロードされるフォルダ
+ ∟ image - readme の画像ファイルを格納するフォルダ
+ ∟ tfstate - リモートバックエンドからダウンロードした tfstate ファイル
+ ∟ .terraform.lock.hcl - init 時に作成される、Provider と .tf ファイルの依存関係等が記録されたファイル ⇒ [Dependency Lock File](https://developer.hashicorp.com/terraform/language/files/dependency-lock)
+ ∟ main.tf - リソースを記述した tf ファイル
+ ∟ outputs.tf - 出力を記述した tf ファイル
+ ∟ provider.tf - プロバイダーを記述した tf ファイル
+ ∟ variables.tf - 変数を記述した tf ファイル
+ ∟ work3-readme.html - Markdown を HTML 化したファイル
+ ∟ README.md - この Markdown ファイル
+  ```
 
 ---
 
@@ -132,12 +138,17 @@
   
   * IIS をインストールするため、カスタムスクリプト拡張機能を使用している。
     * PowerShell スクリプトを記述している。
+
     [Windows でのカスタムのスクリプト拡張機能](https://learn.microsoft.com/ja-jp/azure/virtual-machines/extensions/custom-script-windows)
+
   * Random は常にランダムを生成するわけではなく、初回生成後 ステート (tfstate) に格納されて2回目以降は再利用される。
     * ただし、Keepers に指定した値が変更された場合、ランダムが再生成される。
     * 上記の場合リソースグループ名なので、リソースを追加・設定変更する場合再利用されるが、terraform destroy した場合リソースグループごと削除されるため、再実行の際は新しいリソースグループ名やパスワードが生成される。
+
       [Resource "Keepers"](https://registry.terraform.io/providers/hashicorp/random/latest/docs#resource-keepers)
+
       [Terraform Random Provider を使ってみた](https://nishikoh.github.io/article/terraform-random-provider/)
+
     ```js  
     # Install IIS web server to the virtual machine
     resource "azurerm_virtual_machine_extension" "web_server_install" {
@@ -194,7 +205,9 @@
 ---
 # 実行結果
 * 現時点で最新の 4.11.0 を指定した。
+
   ![1732680929584](image/work3-readme/1732680929584.png)
+
   ```PowerShell
   PS C:\Users\HNakajima\OneDrive - 個人契約\Work\source\terraform\terraform-work3> terraform init 
   Initializing the backend...
@@ -208,11 +221,15 @@
   - Installed hashicorp/azurerm v4.11.0 (signed by HashiCorp)
   - Installing hashicorp/random v3.6.3...
   ```
+
   ![1732680977151](image/work3-readme/1732680977151.png)
+
   ![1732681022904](image/work3-readme/1732681022904.png)
 
 * terraform plan で実行内容を確認。
+
   ![1732681101633](image/work3-readme/1732681101633.png)
+
   ```powershell
   PS C:\Users\HNakajima\OneDrive - 個人契約\Work\source\terraform\terraform-work3> terraform plan 
 
@@ -583,7 +600,9 @@
 
 * terraform apply で環境に適用する。
   * 「Enter a value: yes」も入力したが、適用中にエラーとなった。
+
   ![1732690392420](image/work3-readme/1732690392420.png)
+
     ```PowerShell
     PS C:\Users\HNakajima\OneDrive - 個人契約\Work\source\terraform\terraform-work3> terraform apply
 
@@ -990,16 +1009,23 @@
 * Public IP を Dynamic で作成できなかったため。
   * azurerm_punlic_ip のオプションのプロパティ sku がデフォルトで Standard であるため、Dynamic で作成できないため。
   * このようなパターンは検知してくれない模様。
+
     [azurerm_public_ip](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/public_ip)
+
     ```
     sku - (Optional) The SKU of the Public IP. Accepted values are Basic and Standard. Defaults to Standard. 
     ```
+
     ![1732683428093](image/work3-readme/1732683428093.png)
+
   * Basic Public IP はリタイア予定であるため、Static に修正してリトライする。
+
   ![1732682873008](image/work3-readme/1732682873008.png)
 
 * terraform apply で環境に適用する。9分程度掛かった。
+
 ![1732683654582](image/work3-readme/1732683654582.png)
+
   ```powershell
   PS C:\Users\HNakajima\OneDrive - 個人契約\Work\source\terraform\terraform-work3> terraform apply
   random_pet.prefix: Refreshing state... [id=win-vm-iis-cricket]
@@ -1221,17 +1247,23 @@
 
 ## 実行結果
 * リソースグループ、仮想ネットワーク、サブネット、NSG、VM一式が作成された。
+
   ![1732683709496](image/work3-readme/1732683709496.png)
+
   ![1732683798273](image/work3-readme/1732683798273.png)
+
   ![1732683851525](image/work3-readme/1732683851525.png)
 
 * IIS も動作していた。
+
   ![1732683758582](image/work3-readme/1732683758582.png)
 
 * tfstateを確認する。
+
   ![1732687093700](image/work3-readme/1732687093700.png)
 
 * マスキングされた VM パスワードは tfstate で確認可能。
+
   ![1732690392437](image/work3-readme/1732690392437.png)
 
 ---
@@ -1246,6 +1278,7 @@
   * サブネット等をネストして書かなくて良い (＝関連を覚えていなくても良い)。
     * Terraform では例えば NSG の割当は専用の resource ブロックがある。
     * Bicep はネストが深くなる傾向にある。Properties で書くのが辛かった記憶がある (今は楽になっているかもしれない)。
+
     [microsoft.compute/vm-simple-windows/main.bicep](https://aka.ms/bicepdemo#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)
 
 * Backend の管理が重要。
@@ -1253,8 +1286,11 @@
   * リモートバックエンドならばロックがサポートされている。
     * Blob のリースを取得することでロックされる。
     * 例）destroy 実行時に CLI が反応せず中断するとロックされたままになったため、Azure ポータルで Blob のリース解約を行う必要があった。
+
     ![1733022227503](image/work3-readme/1733022227503.png)
+
     ![1733022504660](image/work3-readme/1733022504660.png)
+
     * ローカルバックエンドになる Git 等のバージョン管理システムは推奨されていない。
       * Push や Pull 忘れによりデグレードが発生する。
       * 同時の apply 実行を防止するロックの仕組みがない。
@@ -1262,6 +1298,7 @@
 * Azure ポータルとより連携できると有り難い。
   * Preview で Azure ポータルのテンプレートメニューから Terraform ファイルをエクスポート可能であるので今後楽になるかもしれない (tfstate があれば)。
   * Bicep はテンプレートスペックに対応している (ただし、テンプレートスペックが適用可能な環境は限られる)。
-    [Azure Resource Manager テンプレートスペックに Bicep ファイルを格納してデプロイする](https://qiita.com/07JP27/items/d76711102858501ce157)
-    [Azure Resource Manager テンプレート スペック](https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/templates/template-specs?tabs=azure-powershell)
 
+    [Azure Resource Manager テンプレートスペックに Bicep ファイルを格納してデプロイする](https://qiita.com/07JP27/items/d76711102858501ce157)
+
+    [Azure Resource Manager テンプレート スペック](https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/templates/template-specs?tabs=azure-powershell)

@@ -16,4 +16,4 @@ Terraform 学習用の作業フォルダ集です。`terraform-work1` から `te
 | `terraform-work6` | aztfexport を使った既存 Azure 環境の Terraform 化 |
 | `terraform-work7` | Azure Application Gateway など、追加構成を含む Terraform 作業メモ |
 
-各フォルダの詳しい手順やスクリーンショットは、それぞれの `work*-readme.md` を参照してください。
+各フォルダの詳しい手順やスクリーンショットは、それぞれの `README.md` を参照してください。

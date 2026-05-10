@@ -9,17 +9,20 @@
 work5 では「2. terraform import block を使用する」を検証します。
 
 * ルートのフォルダ・ファイル構成
-  * terraform-work5
-    ∟ .terrtaform - init 時に作成される Provider がダウンロードされるフォルダ
-    ∟ image - readme の画像ファイルを格納するフォルダ
-    ∟ tfstate - リモートバックエンドからダウンロードした tfstate ファイル
-    ∟ .terraform.lock.hcl - init 時に作成される、Provider と .tf ファイルの依存関係等が記録されたファイル ⇒ [Dependency Lock File](https://developer.hashicorp.com/terraform/language/files/dependency-lock)
-    ∟ import.tf - Import block で生成された resource ブロックを修正し、Application Gateway を追記した tf ファイル
-    ∟ import.tf.プロパティのエラー修正前 - Import block で生成された tf ファイル (エラーあり)
-    ∟ importblock-main.tf.bak - Import block を記述した tf ファイル
-    ∟ provider.tf - プロバイダーを記述した tf ファイル
-    ∟ work5-readme.html - Markdown を HTML 化したファイル
-    ∟ work5-readme.md - この Markdown ファイル
+
+  ```text
+terraform-work5
+ ∟ .terrtaform - init 時に作成される Provider がダウンロードされるフォルダ
+ ∟ image - readme の画像ファイルを格納するフォルダ
+ ∟ tfstate - リモートバックエンドからダウンロードした tfstate ファイル
+ ∟ .terraform.lock.hcl - init 時に作成される、Provider と .tf ファイルの依存関係等が記録されたファイル ⇒ [Dependency Lock File](https://developer.hashicorp.com/terraform/language/files/dependency-lock)
+ ∟ import.tf - Import block で生成された resource ブロックを修正し、Application Gateway を追記した tf ファイル
+ ∟ import.tf.プロパティのエラー修正前 - Import block で生成された tf ファイル (エラーあり)
+ ∟ importblock-main.tf.bak - Import block を記述した tf ファイル
+ ∟ provider.tf - プロバイダーを記述した tf ファイル
+ ∟ work5-readme.html - Markdown を HTML 化したファイル
+ ∟ README.md - この Markdown ファイル
+  ```
 
 ---
 
@@ -27,11 +30,15 @@ work5 では「2. terraform import block を使用する」を検証します。
 
 2. terraform import block を使用する
    * [Import](https://developer.hashicorp.com/terraform/cli/import)
+
    ![173288436994](image/work5-readme/1732884369947.png)
+
      * v1.5.0以降では import block が使える。
 
    * [Import blocks](https://developer.hashicorp.com/terraform/language/import)
+
      ![1732885293163](image/work5-readme/1732885293163.png)
+
      * Experimental で、生成される構文については将来変更される可能性がある。
      * tf ファイルに `import {}` で複数リソースを定義しておきコマンド実行する。
        * to：Terraform リソース名.変数名
@@ -130,7 +137,9 @@ work5 では「2. terraform import block を使用する」を検証します。
     ```
 
 2. コマンドを実行する
+
    ![1732887209435](image/work5-readme/1732887209435.png)
+
    ```PowerShell
     PS C:\Users\HNakajima\OneDrive - 個人契約\Work\source\terraform\terraform-work5> terraform plan -generate-config-out="import.tf" 
     azurerm_storage_account.terraform_work5_storage_account: Preparing import... [id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Storage/storageAccounts/diag3abb2f58b75025ad]
@@ -367,13 +376,18 @@ work5 では「2. terraform import block を使用する」を検証します。
 
 3. CLI に出力されたエラーを解消するため、生成された import.tf を修正する
    1) VNET 修正
+
     ![1732964472840](image/work5-readme/1732964472840.png)
+
    2) VM パスワードをダミーにする
       * 既存のパスワードは後続の apply 実行後も変更されなかった (宣言型ではなくポータルの機能を使うからと思われる)。
         * tfstate にはパスワードは保存されなかった。
       * パスワード要件はチェックされるので注意。
+
         ![1732964553516](image/work5-readme/1732964553516.png)
+
         ![1732964278179](image/work5-readme/1732964278179.png) 
+
         ```PowerShell
         PS C:\Users\HNakajima\OneDrive - 個人契約\Work\source\terraform\terraform-work5> terraform plan
             ╷
@@ -395,8 +409,11 @@ work5 では「2. terraform import block を使用する」を検証します。
         ```
    3) VM のプロパティをコメント
       * 可用性セットのプロパティと思われる。
+
       ![1732964731959](image/work5-readme/1732964731959.png)
+
    4) Blob のプロパティをコメント
+
       ![1732964800467](image/work5-readme/1732964800467.png)
 
 4. `terraform plan` で差分を確認する
@@ -404,7 +421,9 @@ work5 では「2. terraform import block を使用する」を検証します。
      * 削除したり拡張子を変えてしまうと通常の plan となり、import ではなく add になってしまう
        * ハマりポイント。通常作業では、作業ディレクトリ配下の .tf ファイルがすべて対象となるため、対象の .tf ファイル以外は拡張子を変えてしまう癖がついていた。
    * エラーが出なくなるまで修正する。
+
    ![1732964956095](image/work5-readme/1732964956095.png)
+
         ```PowerShell
         PS C:\Users\HNakajima\OneDrive - 個人契約\Work\source\terraform\terraform-work5> terraform plan
             azurerm_network_interface.terraform_work5_nic: Preparing import... [id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Network/networkInterfaces/win-vm-iis-llama-nic]
@@ -425,7 +444,9 @@ work5 では「2. terraform import block を使用する」を検証します。
         ```
 
 5. `terraform apply` を実行し、tfstate ファイルを生成する
+
     ![1732965690608](image/work5-readme/1732965690608.png)
+
     ```PowerShell
     PS C:\Users\HNakajima\OneDrive - 個人契約\Work\source\terraform\terraform-work5> terraform apply
     azurerm_virtual_machine_extension.web_server_install: Preparing import... [id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-win-vm-iis-llama/providers/Microsoft.Compute/virtualMachines/win-vm-iis-vm/extensions/win-vm-iis-llama-wsi]
@@ -482,7 +503,9 @@ work5 では「2. terraform import block を使用する」を検証します。
 
     Apply complete! Resources: 9 imported, 0 added, 0 changed, 0 destroyed.
     ```
+
     ![1732965842744](image/work5-readme/1732965842744.png)
+
     ![1732965872163](image/work5-readme/1732965872163.png)
 
 6. tfstate 生成後、`importblock-main.tf` は不要なため削除 or リネームする
@@ -491,7 +514,9 @@ work5 では「2. terraform import block を使用する」を検証します。
 #### 他リソース追加
 
 7. 生成した tf ファイルに Application Gateway を追記し、既存リソースとともに Terraform で管理可能とする
+
     [クイックスタート: Azure Application Gateway で Web トラフィックを転送する - Terraform](https://learn.microsoft.com/ja-jp/azure/application-gateway/quick-create-terraform)
+
     ```js
     # ####################################################################
     # Application Gateway を追加
@@ -796,12 +821,16 @@ work5 では「2. terraform import block を使用する」を検証します。
 
 9.  リソースが追加された
     * Application Gateway用サブネット、Application Gateway、Public IP。
+
     ![1732969896635](image/work5-readme/1732969896635.png)
+
     * Application Gateway の Public IP で Web ページにもアクセス可能。
+
     ![1732969951524](image/work5-readme/1732969951524.png)
 
 10. tfstate ファイルも更新されている
     * Application Gateway 等が追加された。
+
     ![1732970124764](image/work5-readme/1732970124764.png)
 
 ---
